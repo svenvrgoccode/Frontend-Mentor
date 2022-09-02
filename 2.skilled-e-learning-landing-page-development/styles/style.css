@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap");
+/* Gradient Colors */
+button {
+  background: #13183f;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  border: none;
+}
+button a {
+  color: white !important;
+  font-weight: 700;
+}
+
+.hero button {
+  background-image: linear-gradient(to bottom, #ff6f48, #f02aa6);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  margin: auto;
+}
+
+.container-fluid {
+  padding: 0rem clamp(15rem, 15vw, 50rem) !important;
+  max-width: 200rem !important;
+}
+
+.col-lg {
+  padding: 0rem !important;
+}
+
+.col-md {
+  padding: 0rem !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.logo {
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  max-width: 45rem;
+  color: black;
+}
+
+i {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+}
+
+h1 {
+  font-size: clamp(4rem, 3vw + 1rem, 4.9rem);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+  max-width: 35rem;
+  color: black !important;
+}
+
+h2 {
+  font-size: clamp(2.4rem, 4vw + 1rem, 3.2rem);
+}
+
+h3 {
+  font-size: clamp(1.8rem, 3vw + 1rem, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black !important;
+}
+
+nav {
+  padding: 1.5rem 0rem;
+}
+nav .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero {
+  min-height: 70vh;
+}
+.hero .mob {
+  display: none;
+}
+.hero .container-fluid {
+  display: flex;
+  justify-content: space-between;
+}
+.hero .text-wrap {
+  margin-top: 15rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.hero .img-wrap {
+  width: 50%;
+  position: relative;
+}
+.hero .img-wrap .desk {
+  position: absolute;
+  top: -25rem;
+  right: -50rem;
+}
+.hero .img-wrap .tablet {
+  display: none;
+}
+.hero h1 {
+  font-weight: bold;
+  color: #13183f !important;
+  white-space: nowrap;
+}
+.hero p {
+  color: #ACADAF !important;
+}
+
+@media only screen and (max-width: 1300px) {
+  .desk {
+    display: none !important;
+  }
+  .tablet {
+    display: block !important;
+    position: absolute;
+    top: -5rem;
+    height: 75rem;
+    width: 75rem;
+    object-fit: cover;
+    right: -32rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  .hero .text-wrap {
+    margin-top: 5rem;
+  }
+  .hero .col-lg {
+    width: 100% !important;
+    display: flex;
+    justify-content: centet;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero .container-fluid {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .container-fluid .tablet {
+    display: none !important;
+  }
+  .mob {
+    display: block !important;
+    transform: scale(0.8);
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .container-fluid {
+    padding: 0rem clamp(2vw, 2vw + 2rem, 100rem) !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

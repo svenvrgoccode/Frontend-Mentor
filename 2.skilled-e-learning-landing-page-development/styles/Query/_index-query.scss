@@ -1,0 +1,62 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+// @media only screen and (max-width: 768px) {
+   
+//   }
+// @media only screen and (max-width: 992px) {
+   
+//   }
+// @media only screen and (max-width: 1200px) {
+   
+//   }
+
+
+@media only screen and (max-width: 1300px) {
+  .desk{
+    display: none !important;
+  }
+  .tablet{
+    display: block !important;
+    position: absolute;
+    top: -5rem;
+    height: 75rem;
+    width: 75rem;
+    object-fit: cover;
+
+    right: -32rem;
+  }
+ 
+  }
+
+@media only screen and (max-width: 768px) {
+  html{
+    font-size: 55%;
+  }
+ 
+  .hero{
+    .text-wrap{
+      margin-top: 5rem;
+    }
+    .col-lg{
+      width: 100% !important;
+      @include flex(centet,center,column);
+      text-align: center;
+     
+    }
+    .container-fluid{
+      display: flex;
+      flex-direction: column;
+      
+      .tablet{
+        display: none !important;
+      }
+    }
+  }
+  .mob{
+    display: block !important;
+    transform: scale(0.8);
+  }
+  }

@@ -1,0 +1,37 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+body{
+  overflow-x: hidden;
+  // min-height: 100vh; 
+  // display: flex; 
+  // flex-direction: column;
+  //   justify-content: space-between ;
+  margin: auto
+  
+}
+
+
+.container-fluid{
+  padding: 0rem clamp(15rem,15vw,50rem) !important;
+  max-width: 200rem !important;
+  }
+  
+.col-lg{
+  padding: 0rem !important;
+}
+.col-md{
+  padding: 0rem !important;
+}

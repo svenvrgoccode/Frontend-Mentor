@@ -1,0 +1,12 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+nav{
+    padding: 1.5rem 0rem;
+
+    .container-fluid{
+        display: flex;
+        align-items: center;
+    justify-content: space-between;
+    }
+}

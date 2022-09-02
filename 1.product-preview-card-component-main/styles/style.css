@@ -109,7 +109,7 @@ body {
   max-width: 90vw;
 }
 .product-card .img-wrap {
-  background-image: url(/1.product-preview-card-component-main/images/image-product-desktop.jpg);
+  background-image: url(../images/image-product-desktop.jpg);
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   background-position: center;
@@ -177,7 +177,7 @@ button:hover {
     width: 40rem;
   }
   .product-card .img-wrap {
-    background-image: url(/1.product-preview-card-component-main/images/image-product-mobile.jpg);
+    background-image: url(../images/image-product-mobile.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
