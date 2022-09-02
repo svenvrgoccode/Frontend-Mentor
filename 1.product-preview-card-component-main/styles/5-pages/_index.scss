@@ -1,0 +1,80 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+body{
+    background-color: $color-main-cream;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+
+.product-card{
+    background-color: white;
+    display: flex;
+    border-radius: 1rem;
+    width: 80rem;
+    max-width: 90vw;
+    .img-wrap{
+        background-image: url(/1.product-preview-card-component-main/images/image-product-desktop.jpg);
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        @include background
+    }
+    .wrap{
+        width: 50%;
+        min-height: clamp(35rem,45vh,50rem);
+
+    }
+    .text-wrap{
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 3rem;
+        .price-wrap{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            p{
+                text-decoration: line-through;
+            }
+        }
+        button{
+            border-radius: 1rem;
+            background-color: $color-main-d-cyan;
+            border: none;
+            padding: 1.5rem;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            a,i{
+                color: $text-color-white !important;
+            }
+            a{
+                font-weight: bold;
+            }
+            transition: background 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+    }
+    h2{
+        letter-spacing: 1rem;
+        opacity: 0.6;
+
+    }
+    h1{
+        font-family: 'Fraunces', serif;
+    }
+    h3{
+        font-family: 'Fraunces', serif;
+        color: $color-main-d-cyan !important;
+    }
+    p{
+        opacity: 0.6;
+    }
+    
+}
