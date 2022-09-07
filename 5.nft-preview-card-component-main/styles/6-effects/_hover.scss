@@ -1,0 +1,21 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+.img-wrap:hover::after {
+    opacity: 1;
+} 
+
+.img-wrap:hover .eye{
+    opacity: 1;
+}
+
+h2:hover{
+    color:hsl(178, 100%, 50%) !important ;
+
+}
+
+.user span:hover{
+    color:hsl(178, 100%, 50%) !important ;
+
+}

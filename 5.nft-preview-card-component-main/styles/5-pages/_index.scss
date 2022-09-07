@@ -1,0 +1,121 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin: 2rem;
+    .img-wrap{
+        cursor: pointer;
+        position: relative;
+        .eye{
+            opacity: 0;
+            height: 8rem;
+            width: 8rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 5;
+        @include transition;
+
+        }
+    }
+    .img-wrap::after{
+        @include transition;
+        z-index: 2;
+
+        opacity: 0;
+    border-radius: 1rem;
+
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: hsla(178, 100%, 50%, 0.438);
+    }
+    box-shadow: 0px 10px 0px 25px #0C1729;
+    background-color: 
+    hsl(216, 50%, 16%)
+    ;
+    width: 400px;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    h2{
+        color: white;
+        @include transition;
+        cursor: pointer;
+
+    }
+
+    img{
+        border-radius: 1rem;
+    }
+    .price-wrap > div{
+        display: flex;
+        align-items: center;
+    }
+    .price-wrap{
+        img{
+            height: 2rem;
+        }
+        display: flex;
+        justify-content: space-between;
+        .price{
+            display: flex;
+            gap: 1rem;
+            p{
+                color:hsl(178, 100%, 50%) !important ;
+            }
+        }
+        .date{
+            display: flex;
+            gap: 1rem;
+            p{
+                color: #65768d !important;
+            }
+
+        }
+    }
+    .user{
+        img{
+            height: 4rem;
+            border-radius: 2rem;
+            border: 1px solid white;
+        }
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        p{
+            color: #65768d !important;
+            span{
+                color: white;
+        @include transition;
+        cursor: pointer;
+
+            }
+        }
+    }
+    hr{
+        opacity: 0.2;
+    }
+    
+}
+
+.container > p{
+    color: #65768d !important;
+}
+
