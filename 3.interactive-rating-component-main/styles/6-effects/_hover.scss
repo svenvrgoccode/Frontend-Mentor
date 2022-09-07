@@ -1,0 +1,18 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+.circle:hover{
+    background-color: #FC7614 !important;
+    p{
+        color: white !important;
+    }
+}
+
+
+.circle:focus{
+    background-color: #7C8898 !important;
+    p{
+        color: white !important;
+    }
+
+}

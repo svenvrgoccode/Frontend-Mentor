@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+.container-fluid {
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.col-lg {
+  padding: 0rem !important;
+}
+
+.col-md {
+  padding: 0rem !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+}
+
+.logo {
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  max-width: 45rem;
+  color: black;
+}
+
+i {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+}
+
+h1 {
+  font-size: clamp(3.7rem, 5vw + 1rem, 4.5rem);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+  max-width: 35rem;
+  color: black !important;
+}
+
+h2 {
+  font-size: clamp(2.4rem, 4vw + 1rem, 3.2rem);
+}
+
+h3 {
+  font-size: clamp(1.8rem, 3vw + 1rem, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black !important;
+}
+
+body {
+  background-color: #141519;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-image: radial-gradient(circle at top, #222931, #171E28);
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 450px;
+  padding: 4rem;
+  border-radius: 3rem;
+}
+
+.submit .img-wrap {
+  background-color: #262F38;
+  display: flex;
+  border-radius: 2rem;
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+}
+.submit img {
+  height: 1.9rem;
+}
+.submit label, .submit h3, .submit p {
+  color: white !important;
+}
+.submit p {
+  color: rgba(103, 110, 120, 0.8274509804) !important;
+  margin: 2rem 0rem;
+}
+.submit .circle-wrap {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+}
+.submit .circle-wrap .circle {
+  padding: 0.5rem;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8rem;
+  border: none;
+  background-color: #262F38;
+  color: rgba(103, 110, 120, 0.8274509804) !important;
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  cursor: pointer;
+}
+.submit button[type=submit] {
+  background-color: #FC7614;
+  border: none;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  color: white !important;
+  cursor: pointer;
+}
+
+.review {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+.review h3 {
+  color: white;
+}
+.review p {
+  color: rgba(103, 110, 120, 0.8274509804) !important;
+}
+.review .value {
+  color: #FC7614 !important;
+  background-color: #262F38;
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  padding: 0.5rem;
+  width: 100%;
+  display: none;
+}
+
+.circle:hover {
+  background-color: #FC7614 !important;
+}
+.circle:hover p {
+  color: white !important;
+}
+
+.circle:focus {
+  background-color: #7C8898 !important;
+}
+.circle:focus p {
+  color: white !important;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 55%;
+  }
+  .container {
+    width: 300px;
+    height: 370px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
