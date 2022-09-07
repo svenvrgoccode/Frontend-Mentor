@@ -1,0 +1,22 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+button:hover{
+    background-color: #766CF1;
+}
+
+.change{
+    @include transition;
+}
+
+.change:hover{
+    color: #766CF1 !important;
+}
+
+.cancel{
+    @include transition;
+}
+.cancel:hover{
+    color: black !important;
+}

@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+.container button {
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.418);
+  padding: 1.3rem !important;
+  border: none;
+  background-color: #382AE1;
+}
+.container button a {
+  color: white !important;
+}
+
+.container-fluid {
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.col-lg {
+  padding: 0rem !important;
+}
+
+.col-md {
+  padding: 0rem !important;
+}
+
+body {
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-color: #E0E8FF;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  max-width: 45rem;
+  color: black;
+}
+
+i {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+}
+
+h1 {
+  font-size: clamp(3.7rem, 5vw + 1rem, 4.5rem);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+  max-width: 35rem;
+}
+
+h2 {
+  font-size: clamp(2.4rem, 4vw + 1rem, 3.2rem);
+}
+
+h3 {
+  font-size: clamp(1.8rem, 3vw + 1rem, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  box-shadow: 0px 0px 20px 10px #dbe4fd;
+  margin: 0rem 1rem;
+  padding: 0rem;
+  background-color: white;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  gap: 2rem;
+  text-align: center;
+}
+.container .img-wrap img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.container h2 {
+  font-weight: bold;
+  color: #202B4A !important;
+}
+.container p {
+  color: #717787 !important;
+}
+.container .plan-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F8F9FE !important;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.container .plan-wrap a {
+  color: #382AE1;
+  text-decoration: underline;
+  font-weight: 700;
+}
+.container .plan {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.container .plan .text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container .plan {
+  font-weight: bold;
+  color: #202B4A !important;
+}
+.container .call-wrap {
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.container .call-wrap button {
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.container .call-wrap .cancel {
+  color: #717787;
+  font-weight: 700;
+}
+
+.container > .text-wrap {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+button:hover {
+  background-color: #766CF1;
+}
+
+.change {
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.change:hover {
+  color: #766CF1 !important;
+}
+
+.cancel {
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.cancel:hover {
+  color: black !important;
+}
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
