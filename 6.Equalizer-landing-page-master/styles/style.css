@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap");
+.showcase button {
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 1.5rem;
+  border: none;
+}
+.showcase button a {
+  font-weight: bold;
+}
+.showcase button:first-of-type {
+  background-color: #181826;
+}
+.showcase button:first-of-type a {
+  color: white !important;
+}
+
+.container-fluid {
+  max-width: 1300px;
+  padding: 0rem 2rem;
+}
+
+.col-lg {
+  padding: 0rem !important;
+}
+
+.col-lg-3 {
+  padding: 0rem !important;
+}
+
+.col-md {
+  padding: 0rem !important;
+}
+
+body {
+  max-width: 1250px;
+  margin: auto;
+  position: relative;
+}
+body .desk-bg {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  scale: 1.2;
+}
+body .tablet-bg, body .mobile-bg {
+  display: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.logo {
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  max-width: 85rem;
+  color: black;
+}
+
+i {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+}
+
+h1 {
+  font-size: clamp(4.7rem, 5vw + 1rem, 8.5rem);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+  max-width: 65rem;
+  color: black !important;
+}
+
+h2 {
+  font-size: clamp(3.4rem, 4vw + 1rem, 5.2rem);
+}
+
+h3 {
+  font-size: clamp(2.8rem, 3vw + 1rem, 4.5rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black !important;
+}
+
+header {
+  padding-top: 5rem;
+  position: absolute;
+  inset: 0;
+}
+header .container-fluid {
+  position: relative;
+}
+header .container-fluid::after {
+  content: url(../images/bg-pattern-1.svg);
+  position: absolute;
+  right: 0;
+  top: -12rem;
+  z-index: 5;
+}
+
+footer {
+  padding: 4rem 0rem;
+  margin-top: 20rem;
+}
+footer .col-lg:nth-of-type(2) span {
+  font-weight: bold;
+}
+footer .col-lg:last-of-type {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.icon {
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.hero {
+  min-height: 80rem;
+  padding-top: 20rem;
+}
+.hero h1 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.bg-image {
+  z-index: -1;
+}
+
+.showcase {
+  z-index: 5;
+}
+.showcase .container-fluid .row {
+  background-color: #181826;
+}
+.showcase .illustration {
+  height: 60rem;
+}
+.showcase .row {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem;
+  min-height: 60rem;
+}
+.showcase .col-lg {
+  max-width: 35rem !important;
+  max-height: 50rem;
+}
+.showcase .col-lg:first-of-type {
+  transform: translateY(-15rem) translateX(-5rem);
+  z-index: 5;
+}
+.showcase .col-lg:last-of-type {
+  z-index: 5;
+  transform: translateY(15rem) translateX(5rem);
+  padding: 3rem !important;
+  min-width: 45rem;
+  min-height: 55rem;
+  background-color: #FA7253;
+  border-radius: 1rem;
+  display: flex;
+}
+.showcase .col-lg:last-of-type h3, .showcase .col-lg:last-of-type h2, .showcase .col-lg:last-of-type p {
+  color: white !important;
+}
+.showcase .col-lg:last-of-type h2 {
+  font-weight: bold;
+}
+.showcase .col-lg:last-of-type h3 {
+  font-weight: bold;
+}
+.showcase .col-lg:last-of-type .price {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.showcase .col-lg:last-of-type p {
+  max-width: 35rem;
+}
+.showcase .col-lg:last-of-type .text-wrap {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.showcase .col-lg:last-of-type .button-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.showcase .showcase-pattern {
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  object-fit: contain;
+  scale: 1.5;
+  transform: translateX(-3rem) translateY(8rem);
+}
+
+.showcase button:first-of-type:hover {
+  background-color: #66E2DC;
+  scale: 1.03;
+}
+.showcase button:last-of-type:hover {
+  background-color: #FFB964;
+  scale: 1.03;
+}
+
+.icon:hover {
+  scale: 1.3;
+}
+
+@media (max-width: 1300px) {
+  header .container-fluid::after {
+    content: url(../images/bg-pattern-1.svg);
+    position: absolute;
+    transform: translateX(10rem);
+    top: -12rem;
+    scale: 0.8;
+  }
+  .desk-bg {
+    display: none;
+  }
+  .tablet-bg {
+    display: block !important;
+    position: absolute;
+    top: -15rem;
+  }
+  .hero h1 {
+    max-width: 66rem;
+  }
+  .hero p {
+    max-width: 50rem;
+  }
+  .container-fluid {
+    max-width: 1000px !important;
+  }
+  .showcase .col-lg:first-of-type {
+    transform: translateY(-15rem) translateX(0rem) !important;
+  }
+  .showcase .col-lg:last-of-type {
+    transform: translateY(15rem) translateX(0rem) !important;
+  }
+}
+@media (max-width: 850px) {
+  header .container-fluid::after {
+    content: url(../images/bg-pattern-1.svg);
+    display: none;
+  }
+  .tablet-bg {
+    display: none !important;
+  }
+  .mobile-bg {
+    display: block !important;
+    position: absolute;
+    top: -15rem;
+    right: -15rem;
+  }
+  .hero {
+    min-height: 60rem;
+  }
+  .hero h1, .hero p {
+    max-width: 100% !important;
+  }
+  .showcase .col-lg:first-of-type {
+    transform: translateY(0rem) translateX(0rem) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .showcase .showcase-pattern {
+    top: 50%;
+    left: 63%;
+    transform: translateX(0rem) translateY(0rem);
+    width: auto;
+    height: 38rem;
+    transform: translate(-50%, -50%) !important;
+  }
+  .showcase .col-lg:last-of-type {
+    min-width: 100% !important;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  footer .row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer .col-lg:last-of-type {
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

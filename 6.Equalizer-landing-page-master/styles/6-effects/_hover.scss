@@ -1,0 +1,23 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+.showcase{
+    button:first-of-type:hover{
+        background-color: #66E2DC;
+        scale: 1.03;
+        
+    }
+    button:last-of-type:hover{
+        background-color: #FFB964;
+        scale: 1.03;
+
+    }
+}
+
+
+
+.icon:hover{
+    scale: 1.3;
+
+}

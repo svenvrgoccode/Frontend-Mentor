@@ -1,0 +1,26 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+footer{
+    padding: 4rem 0rem;
+    margin-top: 20rem;
+    .col-lg:nth-of-type(2){
+        span{
+            font-weight: bold;
+        }
+    }
+    .col-lg:last-of-type{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            gap: 2rem;
+    }
+}
+
+.icon{
+    @include transition;
+    cursor: pointer;
+    z-index: 100;
+
+}

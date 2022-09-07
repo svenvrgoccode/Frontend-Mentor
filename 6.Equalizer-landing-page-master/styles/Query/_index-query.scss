@@ -1,0 +1,112 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+// @media only screen and (max-width: 768px) {
+   
+//   }
+// @media only screen and (max-width: 992px) {
+   
+//   }
+// @media only screen and (max-width: 1200px) {
+   
+//   }
+
+
+@media(max-width:1300px){
+    header{
+        .container-fluid::after{
+            content: url(../images/bg-pattern-1.svg);
+            position: absolute;
+            transform: translateX(10rem);
+            top: -12rem;
+            scale: 0.8;
+        }
+    }
+    .desk-bg{
+        display: none;
+    }
+    .tablet-bg{
+        display: block !important;
+        position: absolute;
+        top: -15rem;
+    }
+    .hero{
+        h1{
+            max-width: 66rem;
+        }
+        p{
+            max-width: 50rem;
+
+        }
+    }
+    .container-fluid{
+        max-width: 1000px !important;
+    }
+   .showcase{
+    .col-lg:first-of-type{
+        transform: translateY(-15rem) translateX(-0rem) !important;
+
+    }
+    .col-lg:last-of-type{
+        transform: translateY(15rem) translateX(0rem) !important;
+
+    }
+   }
+}
+
+@media(max-width:850px){
+    header{
+        .container-fluid::after{
+            content: url(../images/bg-pattern-1.svg);
+            display: none;
+        }
+    
+    }
+    .tablet-bg{
+        display: none !important;
+    }
+    .mobile-bg{
+        display: block !important;
+        position: absolute;
+        top: -15rem;
+        right: -15rem;
+    }
+    .hero{
+        min-height: 60rem;
+        h1,p{
+            max-width: 100% !important;
+        }
+    }
+   .showcase{
+    .col-lg:first-of-type{
+        transform: translateY(0rem) translateX(0rem) !important;
+        @include flex(center,center,column);
+
+    }
+    .showcase-pattern{
+        top: 50%;
+        left: 63%;
+        transform: translateX(0rem) translateY(0rem);
+        width: auto;
+        height: 38rem;
+
+        transform: translate(-50%,-50%) !important;
+    }
+    .col-lg:last-of-type{
+        min-width: 100% !important;
+
+    }
+   }
+
+
+
+}
+
+
+@media(max-width: 500px){
+    html{
+        font-size: 55%;
+    }
+}

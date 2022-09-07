@@ -1,0 +1,35 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+.container-fluid{
+  max-width: 1300px ; 
+  padding: 0rem 2rem;
+  }
+  
+.col-lg{
+  padding: 0rem !important;
+}
+.col-lg-3{
+  padding: 0rem !important;
+}
+.col-md{
+  padding: 0rem !important;
+}
+
+
+body{
+  max-width: 1250px ; 
+margin: auto;
+  position: relative;
+  .desk-bg{
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    scale: 1.2;
+  }
+  .tablet-bg,.mobile-bg{
+    display: none;
+  }
+}

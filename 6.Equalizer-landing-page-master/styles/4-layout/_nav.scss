@@ -1,0 +1,19 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+header{
+    padding-top: 5rem;
+    position: absolute;
+    inset: 0;
+    .container-fluid{
+        position: relative;
+    }
+    .container-fluid::after{
+        content: url(../images/bg-pattern-1.svg);
+        position: absolute;
+        right: 0;
+        top: -12rem;
+        z-index: 5 ;
+    }
+}

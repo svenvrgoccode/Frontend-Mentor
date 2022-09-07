@@ -1,0 +1,26 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+.showcase{
+    button{
+        @include transition;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        gap: 1.5rem;
+        border: none;
+        a{
+            font-weight: bold;
+        }
+    }
+    button:first-of-type{
+        a{
+            color: white !important ;
+        }
+        background-color: #181826;
+
+    }
+}
