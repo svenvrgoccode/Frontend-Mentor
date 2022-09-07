@@ -1,12 +1,12 @@
 @use '../1-helpers-colors/mixins' as *;
 @use '../1-helpers-colors/variables' as *;
 
-nav{
-    padding: 1.5rem 0rem;
 
-    .container-fluid{
+header{
+    .container{
+        padding-top: 2rem;
         display: flex;
         align-items: center;
-    justify-content: space-between;
+        justify-content: space-between;
     }
 }

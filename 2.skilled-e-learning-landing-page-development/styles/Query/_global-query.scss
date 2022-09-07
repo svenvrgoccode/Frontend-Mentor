@@ -12,9 +12,92 @@
    
 //   }
 
-@media only screen and (max-width: 1300px) {
-    .container-fluid{
-  padding: 0rem clamp(2vw,2vw + 2rem ,100rem) !important;
 
+
+
+
+@media (max-width: 1450px){
+    .container{
+        max-width: 750px !important;
+      }
+      .hero{
+        .desk{
+          display: none;
+        }
+        .tablet{
+          display: block !important;
+          position: absolute;
+          transform: scale(2) translateY(4rem) translateX(7rem);
+        }
+      }
+      .cards{
+        .container{
+          display: grid;
+          gap: 5rem;
+          grid-template-areas: 
+          "card1 card2 "
+          "card3 card4 "
+          "card5 card6"
+          ;
+      }
+      }
+}
+
+@media (max-width: 850px){
+  .container{
+    max-width: 500px !important;
+  }
+  .image-wrap-mob{
+    display: flex;
+    justify-content: center;
+    img{
+      min-width: 35rem;
+      min-height: 35rem;
     }
   }
+  .image-wrap{
+    display: none;
+  }
+  .hero{
+    min-height: 55rem;
+    .text-wrap{
+      padding-top: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+ 
+.wrap{
+  width: 100%;
+}
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    button{
+      margin: auto;
+    }
+  }
+  .cards{
+    .container{
+      display: grid;
+      gap: 5rem;
+      grid-template-areas: 
+      "card1  "
+      "card2  "
+      "card3  "
+      "card4  "
+      "card5 "
+      "card6 "
+      ;
+  }
+  .card1{
+    min-height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  }
+}

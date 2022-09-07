@@ -2,36 +2,14 @@
 @use '../1-helpers-colors/variables' as *;
 
 
-*,*::before,*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-html{
-  scroll-behavior: smooth;
+.container{
+  padding: 0rem 1rem;
+  max-width: 1100px !important;
+  margin: auto;
 }
 
 
 body{
-  overflow-x: hidden;
-  // min-height: 100vh; 
-  // display: flex; 
-  // flex-direction: column;
-  //   justify-content: space-between ;
-  margin: auto
-  
-}
-
-
-.container-fluid{
-  padding: 0rem clamp(15rem,15vw,50rem) !important;
-  max-width: 200rem !important;
-  }
-  
-.col-lg{
-  padding: 0rem !important;
-}
-.col-md{
-  padding: 0rem !important;
+  background-color: #F8F8FF;
 }

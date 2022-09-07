@@ -1,2 +1,13 @@
 @use '../1-helpers-colors/mixins' as *;
 @use '../1-helpers-colors/variables' as *;
+
+
+footer{
+    padding: 4rem 0rem;
+    background-color: $blue;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

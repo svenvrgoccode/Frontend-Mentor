@@ -2,19 +2,26 @@
 @use '../1-helpers-colors/variables' as *;
 
 
-button{
-    background: $blue;
-    padding: 1rem 3rem;
-    border-radius: 2rem;
-    border: none;
 
+button{
+    padding: 1rem 3rem;
+    border-radius: 20rem;
+    border: none;
     a{
-        color: $text-color-white !important;
-        font-weight: 700;
+    color: $text-color-white !important;
+
     }
+}
+
+
+header button{
+    background-color: $blue;
 }
 
 .hero button{
     background-image: linear-gradient(to bottom,$gradient-orange,$gradient-pink);
+}
 
+footer button{
+    background-image: linear-gradient(to bottom,$gradient-pink,$gradient-blue);
 }

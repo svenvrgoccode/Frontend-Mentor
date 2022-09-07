@@ -1,6 +1,6 @@
 // FONT SIZES
 
-$header1: clamp(4rem,3vw + 1rem,4.9rem); 
+$header1: clamp(3.7rem,3vw + 1rem,4.5rem); 
 $header2: clamp(2.4rem,4vw + 1rem,3.2rem);
 $header3: clamp(1.8rem,3vw + 1rem,2.6rem); 
 $header4: clamp(1.4rem,2vw + 1rem,2rem);
@@ -22,11 +22,9 @@ $white:white;
 
 // COLOR PALLETE
 
-$color-main:#005E4B;
-
 $purple: #666ca3;
 $blue: #13183f;
-$gray: #ACADAF;
+$gray: #9c9ba0;
 $pink-dark: #f74780;
 $pink-light: #ffa7c3;
 $white: #fff;
@@ -36,3 +34,4 @@ $gradient-pink: #f02aa6;
 $gradient-orange: #ff6f48;
 $gradient-blue: #4851ff;
 $gradient-background-bottom: #f0f1ff;
+

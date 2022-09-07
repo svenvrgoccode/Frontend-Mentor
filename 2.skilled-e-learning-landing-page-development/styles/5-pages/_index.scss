@@ -1,45 +1,106 @@
 @use '../1-helpers-colors/mixins' as *;
 @use '../1-helpers-colors/variables' as *;
 
+.image-wrap-mob{
+    display: none;
+  }
 
 .hero{
-    .mob{
-        display: none;
-    }
-    min-height: 70vh;
-    .container-fluid{
+    min-height: 80rem;
+    .container{
         display: flex;
-        justify-content: space-between;
+    }
+    h1{
+        font-weight: bold;
+    }
+    .wrap{
+        width: 50%;
     }
     .text-wrap{
-        margin-top: 15rem;
-        width: 50%;
+        padding-top: 15rem;
         display: flex;
         flex-direction: column;
         gap: 2rem;
         align-items: flex-start;
     }
-    .img-wrap{
-        width: 50%;
 
+    .image-wrap{
+    
         position: relative;
         .desk{
             position: absolute;
-            top: -25rem;
-            right: -50rem;
+            scale: 2;
+            transform: translateX(15rem);
         }
         .tablet{
+            display: none ;
+        }
+        .mobile{
             display: none;
         }
     }
-    // TEXT ++ 
-    h1{
-        font-weight: bold;
-        color: $blue !important;
-        white-space: nowrap;
-    }
-    p{
-        color: $gray !important;
-    }
+}
 
+.cards{
+    margin-bottom: 10rem;
+    .card{
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        min-width: 100% !important;
+        min-height: 30rem;
+        border-radius: 1rem;
+        padding: 2.5rem;
+        h3{
+            font-weight: bold;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        position: relative;
+        a{
+            position: absolute;
+            bottom: 0rem;
+            color: $pink-dark !important;
+            font-weight: 500;
+        }
+        img{
+            transform: translateY(-5rem) !important;
+        }
+    }
+    .card:not(.card1) > * {
+        transform: translateY(-3.5rem);
+
+    }
+    .card1{
+        grid-area: card1;
+        background-image: linear-gradient(to bottom,$gradient-orange,$gradient-pink);
+        h2{
+            color: $text-color-white !important;
+            font-weight: bold;
+        }
+    }
+    .card2{
+        grid-area: card2;
+    }
+    .card3{
+        grid-area: card3;
+    }
+    .card4{
+        grid-area: card4;
+    }
+    .card5{
+        grid-area: card5;
+    }
+    .card6{
+        grid-area: card6;
+    }
+    .container{
+        display: grid;
+        gap: 5rem;
+        grid-template-areas: 
+        "card1 card2 card3"
+        "card4 card5 card6"
+        ;
+    }
 }
