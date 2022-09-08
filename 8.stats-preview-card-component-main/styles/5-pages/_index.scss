@@ -1,0 +1,93 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+h1{
+    font-weight: bold;
+    margin-bottom: 3rem;
+    span{
+        color: #AB5FD9;
+    }
+  }
+
+
+body{
+    background-color: #0A0C1B;
+}
+  
+
+
+.card-wrap{
+    margin: 2rem;
+    h3{
+        color: white;
+        font-weight: bold;
+    }
+    border-radius: 2rem ;
+    .stat{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .stat P:first-of-type{
+        font-weight: bold;
+    }
+    .stat p:last-of-type{
+        color: #7A7791;
+    }
+    h1,p{
+        color: white;
+    }
+    max-width: 120rem;
+    .stats{
+        display: flex;
+        gap: 8rem;
+        margin-top: 8rem;
+    } 
+    background-color: #1C1938;
+    img{
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        object-fit: cover;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+    .col-lg:first-of-type{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .text-wrap{
+        padding: 6rem;
+        display: flex;
+        flex-direction: column;
+        p{
+            max-width: 80%;
+        }
+    }
+    .text-wrap > p{
+        color: #7A7791;
+    }
+
+
+
+    .col-lg:last-of-type{
+        position: relative;
+    }
+    
+    
+    .col-lg:last-of-type::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        background-color: #aa5fd97e;
+        height: 100%;
+        width: 100%;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        
+    }
+}
+
