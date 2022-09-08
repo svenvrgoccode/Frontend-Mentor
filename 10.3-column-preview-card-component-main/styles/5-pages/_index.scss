@@ -1,2 +1,57 @@
 @use '../1-helpers-colors/mixins' as *;
 @use '../1-helpers-colors/variables' as *;
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    
+    min-height: 30rem;
+    display: flex;
+    align-items: center;
+    .column{
+        h2{
+            color: white;
+            font-weight: bold;
+        }
+    min-height: 30rem;
+    max-height: 60rem;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 4rem;
+        max-width: 30rem;
+        p{
+            min-height: 15rem;
+            color: white;
+            opacity: 0.5;
+        }
+    }
+    .column:nth-of-type(1){
+        background-color:#E28525 ;
+    }
+    .column:nth-of-type(2){
+        background-color: #016972;
+    }
+    .column:last-of-type{
+        background-color: #00403F;
+    }
+    button{
+        margin-top: 5rem;
+        cursor: pointer;
+        border: 2px solid transparent !important;
+        background: white;
+        border: none;
+        border-radius: 2rem;
+        padding: 0.5rem 2rem;
+        @include transition;
+    }
+}

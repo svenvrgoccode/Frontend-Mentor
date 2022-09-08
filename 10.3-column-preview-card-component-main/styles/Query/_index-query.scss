@@ -12,3 +12,13 @@
 // @media only screen and (max-width: 1200px) {
    
 //   }
+
+
+
+@media (max-width: 1000px){
+    .container{
+        margin: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+}

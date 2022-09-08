@@ -1,2 +1,8 @@
 @use '../1-helpers-colors/mixins' as *;
 @use '../1-helpers-colors/variables' as *;
+
+button:hover{
+    background: none;
+    border: 2px solid white !important;
+    color: white !important;
+}
