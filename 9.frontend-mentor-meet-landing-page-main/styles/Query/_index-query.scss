@@ -1,0 +1,62 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+// @media only screen and (max-width: 768px) {
+   
+//   }
+// @media only screen and (max-width: 992px) {
+   
+//   }
+// @media only screen and (max-width: 1200px) {
+   
+//   }
+
+
+@media only screen and (max-width: 1250px) {
+    .hero-bg{
+        display: none;
+    }
+    .tablet{
+        display: block !important;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+    .text-wrap{
+        order: 2;
+    }
+    .tablet{
+        order: 1;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .hero{
+        .button-wrap{
+            display: flex;
+            flex-direction: column;
+        }
+        img{
+            min-height: 20rem;
+            min-width: 130%;
+            object-fit: cover;
+        }
+    }
+
+    .gallery{
+     
+        .container{
+         
+        grid-template-areas: "gallery1 gallery2" 
+        "gallery3 gallery4"
+    
+        }
+}
+}

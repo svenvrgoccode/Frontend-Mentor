@@ -1,0 +1,25 @@
+
+// 1 - BASICS =======================
+
+@use './2-basics/buttons';
+@use './2-basics/global';
+@use './2-basics/links';
+@use './2-basics/typography';
+
+// 4 - LAYOUT =====================
+@use './4-layout/nav';
+@use './4-layout/footer';
+
+// 5 - PAGES =====================
+@use './5-pages/index';
+
+// 6 - EFFECTS =====================
+@use './6-effects/animation';
+@use './6-effects/hover';
+
+
+// MEDIA QUERY ===========
+
+@use './Query/index-query';
+@use './Query/global-query';
+@use './Query/footer-nav-query';

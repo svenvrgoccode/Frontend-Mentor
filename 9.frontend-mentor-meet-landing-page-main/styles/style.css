@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap");
+button {
+  padding: 1rem 4rem;
+  border: none;
+  border-radius: 2rem;
+}
+button p {
+  font-weight: bold;
+}
+button p span {
+  opacity: 0.5;
+}
+
+.hero h1 {
+  font-weight: bold;
+}
+.hero button:first-of-type {
+  background-color: #4C96A8 !important;
+}
+.hero button:first-of-type p {
+  color: white !important;
+}
+.hero button:last-of-type {
+  background-color: #845FB2 !important;
+}
+.hero button:last-of-type p {
+  color: white !important;
+}
+
+footer button {
+  background-color: #845FB2;
+}
+footer button p {
+  color: white;
+}
+
+.container {
+  padding: 0rem 2rem;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.container-fluid {
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.col-lg {
+  padding: 0rem !important;
+}
+
+.col-md {
+  padding: 0rem !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.logo {
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  max-width: 45rem;
+  color: black;
+}
+
+i {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+}
+
+h1 {
+  font-size: clamp(3.7rem, 5vw + 1rem, 4.5rem);
+  line-height: 1.1;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+  max-width: 35rem;
+  color: black;
+}
+
+h2 {
+  font-size: clamp(2.4rem, 4vw + 1rem, 3.2rem);
+}
+
+h3 {
+  font-size: clamp(1.8rem, 3vw + 1rem, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+footer {
+  margin-top: 3rem;
+  background-image: linear-gradient(to bottom, rgba(51, 108, 122, 0.8470588235), rgba(51, 108, 122, 0.8470588235)), url(../assets/desktop/image-footer.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+footer .container {
+  display: flex;
+  min-height: 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+footer h3, footer h1, footer p {
+  color: white !important;
+}
+footer h1 {
+  font-weight: bold;
+}
+
+.hero {
+  margin-top: 10rem;
+}
+.hero p {
+  color: rgb(151, 150, 150);
+}
+.hero .tablet {
+  display: none;
+}
+.hero .text-wrap {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero .text-wrap .hero-bg {
+  position: absolute;
+}
+.hero .text-wrap .hero-left {
+  left: 0;
+}
+.hero .text-wrap .hero-right {
+  right: 0;
+}
+.hero .button-wrap {
+  display: flex;
+  gap: 2rem;
+}
+
+.arrow {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20rem;
+  align-items: center;
+}
+.arrow .line {
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 80px;
+  bottom: 0;
+  border: 1px solid rgb(223, 223, 223);
+}
+.arrow .circle {
+  position: absolute;
+  top: 0;
+  padding: 1.35rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4rem;
+  border: 1px solid rgb(223, 223, 223);
+}
+.arrow .circle h3 {
+  color: rgb(151, 150, 150) !important;
+  font-weight: bold;
+}
+
+.bg-arrow .circle {
+  background: white !important;
+}
+
+.gallery {
+  padding-top: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .container {
+  display: grid;
+  gap: 2rem;
+  grid-template-areas: "gallery1 gallery2 gallery3 gallery4";
+}
+.gallery .container img {
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+.gallery .gallery1 {
+  grid-area: gallery1;
+}
+.gallery .gallery2 {
+  grid-area: gallery2;
+}
+.gallery .gallery3 {
+  grid-area: gallery3;
+}
+.gallery .gallery4 {
+  grid-area: gallery4;
+}
+
+.meeting {
+  margin-top: 10rem;
+  text-align: center;
+}
+.meeting .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.meeting h3 {
+  color: #4C96A8;
+  font-weight: 500;
+}
+.meeting h1 {
+  font-weight: bold;
+}
+.meeting p {
+  max-width: 50rem;
+  color: rgb(151, 150, 150);
+}
+
+@media only screen and (max-width: 1250px) {
+  .hero-bg {
+    display: none;
+  }
+  .tablet {
+    display: block !important;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+  .text-wrap {
+    order: 2;
+  }
+  .tablet {
+    order: 1;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .hero .button-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero img {
+    min-height: 20rem;
+    min-width: 130%;
+    object-fit: cover;
+  }
+  .gallery .container {
+    grid-template-areas: "gallery1 gallery2" "gallery3 gallery4";
+  }
+}
+@media only screen and (max-width: 1250px) {
+  footer h1 {
+    text-align: center;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

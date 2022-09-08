@@ -1,0 +1,43 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+button{
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 2rem;
+    p{
+        font-weight: bold;
+        span{
+            opacity: 0.5;
+        }
+    }
+  
+}
+
+.hero{
+    h1{
+        font-weight: bold;
+    }
+    button:first-of-type{
+        background-color:#4C96A8 !important;
+        p{
+            color: white !important;
+        }
+    }
+    button:last-of-type{
+        background-color: #845FB2 !important;
+        p{
+            color: white !important;
+        }
+
+    }
+}
+
+
+footer button{
+    background-color: #845FB2;
+    p{
+        color: white;
+    }
+}

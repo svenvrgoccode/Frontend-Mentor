@@ -1,0 +1,24 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+footer{
+    margin-top: 3rem;
+    background-image: linear-gradient(to bottom,#336c7ad8,#336c7ad8),url(../assets/desktop/image-footer.jpg);
+    @include background;
+    position: relative;
+    .container{
+        display: flex;
+    min-height: 40rem;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+    h3,h1,p{
+        color: white !important;
+    }
+    h1{
+        font-weight: bold;
+    }
+    
+}

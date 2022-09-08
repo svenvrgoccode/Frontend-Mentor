@@ -1,0 +1,135 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+
+.hero{
+    p{
+        color: rgb(151, 150, 150);
+    }
+    .tablet{
+        display: none;
+    }
+    .text-wrap{
+        position: relative;
+    text-align: center;
+@include flex(center,center,column);
+gap: 2rem;
+.hero-bg{
+    position: absolute;
+}
+.hero-left{
+    left: 0;
+}
+.hero-right{
+    right: 0;
+}
+    }
+    margin-top: 10rem;
+    .button-wrap{
+        display: flex;
+        gap: 2rem;
+    }
+
+
+}
+
+.arrow{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem;
+    align-items: center;
+
+        .line{
+            position: absolute;
+            display: block;
+            width: 2px;
+            height: 80px;
+            bottom: 0;
+            border: 1px solid rgb(223, 223, 223);
+
+        }
+        .circle{
+            position: absolute;
+            top: 0;
+            padding: 1.35rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4rem;
+            border: 1px solid rgb(223, 223, 223);
+            h3{
+        color: rgb(151, 150, 150) !important;
+        font-weight: bold;
+            }
+
+
+
+        }
+
+}
+
+.bg-arrow{
+    .circle{
+    background: white !important;
+
+    }
+}
+
+
+
+.gallery{
+    padding-top: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        img{
+            border-radius: 0.5rem;
+            object-fit: cover;
+
+        }
+        display: grid;
+        gap: 2rem;
+    grid-template-areas: "gallery1 gallery2 gallery3 gallery4"
+
+    }
+    .gallery1{
+        grid-area: gallery1;
+    }
+    .gallery2{
+        grid-area: gallery2;
+    }
+    .gallery3{
+        grid-area: gallery3;
+    }
+    .gallery4{
+        grid-area: gallery4;
+    }
+}
+
+
+.meeting{
+    margin-top: 10rem;
+    text-align: center;
+    .container{
+    @include flex(center,center,column);
+    gap: 2rem;
+
+    }
+    h3{
+        color: #4C96A8;
+        font-weight: 500;
+    }
+    h1{
+        font-weight: bold;
+    }
+    p{
+        max-width: 50rem;
+        color: rgb(151, 150, 150);
+
+    }
+}
