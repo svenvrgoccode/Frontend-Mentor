@@ -1,0 +1,12 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+.question:hover p{
+    color: #C27C6C;
+}
+
+.question.focus p{
+    color: black !important;
+    font-weight: bold;
+}
