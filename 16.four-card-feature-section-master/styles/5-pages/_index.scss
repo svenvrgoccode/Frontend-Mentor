@@ -1,0 +1,77 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+body{
+    padding: 1rem;
+    background-color: #FAFAFA;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header{
+    margin: 4rem 0rem;
+    text-align: center;
+    @include flex(center,center,column);
+    display: flex;
+    gap: 1rem;
+    span{
+        color: grey;
+    } 
+}
+
+
+
+.cards{
+    display: grid;
+    grid-template-areas: 
+    "card1 card2 card3"
+    ". card4 ."
+    ;
+    gap: 3rem;
+    .card{
+        min-height: 20rem;
+        background-color: white;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        img{
+            position: absolute;
+            right: 0;
+            bottom: 2rem;
+            right: 2rem;
+        }
+    }
+ 
+}
+
+.card1{
+    grid-area: card1;
+    border-top: 3px solid #E63950;
+    transform: translateY(50%);
+}
+.card2{
+    grid-area: card2;
+    border-top: 3px solid #FDBF00;
+
+}
+.card3{
+    grid-area: card3;
+    border-top: 3px solid #549EF2;
+    transform: translateY(50%);
+
+
+}
+.card4{
+    grid-area: card4;
+    border-top: 3px solid #00C8C8;
+
+}
