@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+.container-fluid {
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.col-lg {
+  padding: 0rem !important;
+}
+
+.col-md {
+  padding: 0rem !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  max-width: 45rem;
+  color: black;
+}
+
+i {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+}
+
+h1 {
+  font-size: clamp(4.7rem, 5vw + 1rem, 5.5rem);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+  max-width: 40rem;
+  color: black;
+}
+
+h2 {
+  font-size: clamp(2.4rem, 4vw + 1rem, 3.2rem);
+}
+
+h3 {
+  font-size: clamp(1.8rem, 3vw + 1rem, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  max-width: 2000px;
+  position: relative;
+  margin: auto;
+}
+
+.bg {
+  position: absolute;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+  right: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero {
+  padding-top: 10rem;
+}
+
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+}
+.hero .container h1 {
+  font-weight: 700;
+  color: hsl(300deg, 43%, 22%) !important;
+}
+.hero .container p {
+  color: hsl(300deg, 43%, 22%) !important;
+}
+.hero .container .review-wrap {
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
+  background-color: hsl(300deg, 24%, 96%);
+}
+.hero .container .review-wrap .star-wrap {
+  display: flex;
+  gap: 2rem;
+}
+.hero .container .review-wrap .star-wrap i {
+  color: #F0913F;
+}
+.hero .container .review-wrap p {
+  color: hsl(300deg, 43%, 22%) !important;
+  font-weight: bold;
+}
+.hero .container .review-wrap:nth-of-type(2) {
+  transform: translateX(4rem);
+}
+.hero .container .review-wrap:nth-of-type(3) {
+  transform: translateX(8rem);
+}
+.hero .container .col {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.hero .container .col:last-of-type {
+  transform: translateX(-8rem);
+  width: 50%;
+  margin-top: 6rem;
+}
+
+.cards .container {
+  padding-top: 10rem;
+  display: flex;
+  gap: 2rem;
+}
+.cards .container .card {
+  border-radius: 1rem;
+  background-color: hsl(300deg, 43%, 22%);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.cards .container .card2 {
+  transform: translateY(2rem);
+}
+.cards .container .card3 {
+  transform: translateY(4rem);
+}
+.cards .container img {
+  border-radius: 10rem;
+  height: 5rem;
+}
+.cards .container p {
+  color: hsl(0deg, 0%, 100%) !important;
+}
+.cards .container .user-wrap {
+  display: flex;
+  gap: 2rem;
+}
+.cards .container .user-wrap p {
+  font-weight: bold;
+}
+.cards .container .user-wrap span {
+  color: hsl(333deg, 80%, 67%);
+}
+
+@media only screen and (max-width: 1300px) {
+  main {
+    padding: 2rem !important;
+  }
+  .container {
+    max-width: 450px;
+  }
+  .bg {
+    display: none;
+  }
+  .review-wrap {
+    transform: translate(0) !important;
+    max-width: 450px;
+    width: 100%;
+    display: inline-flex !important;
+    flex-direction: column;
+    gap: 1rem !important;
+  }
+  .review-wrap .star-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    transform: translate(0) !important;
+  }
+  .hero {
+    padding-top: 0rem;
+  }
+  .hero .container {
+    flex-direction: column;
+  }
+  .hero .container .col {
+    width: 100% !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .col:last-of-type {
+    transform: translate(0) !important;
+  }
+  .cards .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

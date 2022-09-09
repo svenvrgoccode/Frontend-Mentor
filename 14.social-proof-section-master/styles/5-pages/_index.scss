@@ -1,0 +1,128 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+main{
+    max-width:2000px;
+    position: relative;
+
+    margin: auto;
+}
+
+.bg{
+    position: absolute;
+}
+.top{
+    top: 0;
+}
+
+.bottom{
+    bottom: 0 ;
+    right: 0;
+}
+
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero{
+    padding-top: 10rem;
+}
+
+.hero .container{
+    display: flex;
+    justify-content: space-between;
+
+    h1{
+        font-weight: 700;
+        color: hsl(300, 43%, 22%) !important;
+        
+    }
+    p{
+        color: hsl(300, 43%, 22%) !important;
+    }
+    .review-wrap{
+        padding: 1.5rem 2rem;
+        border-radius: 1rem;
+
+
+        
+        .star-wrap{
+            display: flex;
+            gap: 2rem;
+            i{
+                color: #F0913F;
+            }
+        }
+        p{
+            color: hsl(300, 43%, 22%) !important;
+            font-weight: bold;
+        }
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 4rem;
+        background-color: hsl(300, 24%, 96%);
+    }
+    .review-wrap:nth-of-type(2){
+        transform: translateX(4rem);
+    }
+    .review-wrap:nth-of-type(3){
+        transform: translateX(8rem);
+    }
+    .col{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .col:last-of-type{
+        transform: translateX(-8rem);
+        width: 50%;
+        margin-top: 6rem;
+
+      
+    }
+}
+
+.cards .container{
+    padding-top: 10rem;
+
+    display: flex;
+    gap: 2rem;
+    .card{
+        border-radius: 1rem;
+
+        background-color: hsl(300, 43%, 22%);
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .card2{
+        transform: translateY(2rem);
+    }
+    .card3{
+        transform: translateY(4rem);
+    }
+    img{
+        border-radius: 10rem ;
+        height: 5rem;
+    }
+    p{
+        color: hsl(0, 0%, 100%) !important;
+    }
+    .user-wrap{
+        display: flex;
+        gap: 2rem;
+        p{
+            font-weight: bold;
+        }
+        span{
+            color: hsl(333, 80%, 67%);
+        }
+       
+    }
+}
