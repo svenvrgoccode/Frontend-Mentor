@@ -1,0 +1,124 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+body{
+    margin: 1rem;
+    background-color: #EDF2F8;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.share{
+    left: 50%;
+    transform: translateX(-50%);
+    top: -150%;
+    position: absolute;
+    border-radius: 1rem;
+
+    background-color: #4A556B;
+    display: flex;
+    min-width: 23rem;
+    justify-content: space-evenly;
+    padding: 1.3rem 0;
+    align-items: center;
+    p{
+        color: #8E9DB2;
+        letter-spacing: 0.5rem;
+    }
+    opacity: 0;
+    transform-origin: left;
+    @include transition;
+
+}
+
+.share.show{
+    opacity: 1;
+}
+
+.share::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #4A556B;
+    position: absolute;
+    bottom: -10px;
+
+}
+
+
+.share-wrap{
+    cursor: pointer;
+    position: relative;
+}
+
+.card{
+    h4{
+        color: #4B5161 !important;
+        font-weight: bold;
+    }
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    border-radius: 1rem;
+    .bold{
+        color: #4B5161 !important;
+        font-weight: bold;
+
+    }
+    .user-wrap{
+        img{
+            height: 6rem;
+            border-radius: 10rem;
+        }
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    .user-share{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.text{
+    color: #6F7985;
+
+}
+span{
+    color: #6F7985;
+}
+
+.img-wrap{
+    width: 40%;
+
+    img{
+        height: 100%;
+        object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+    }
+}
+.img-wrap-share{
+    background-color:#dee4eb ;
+    padding: 1.5rem;
+    border-radius: 10rem;
+}
+.text-wrap{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    width: 60%;
+}
+
