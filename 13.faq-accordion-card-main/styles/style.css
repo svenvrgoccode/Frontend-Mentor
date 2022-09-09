@@ -150,6 +150,7 @@ body {
 .container .question {
   cursor: pointer;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .container .question i {
@@ -189,6 +190,10 @@ h2 {
   font-weight: bold;
 }
 
+.mobile-hero {
+  display: none;
+}
+
 .question:hover p {
   color: #C27C6C;
 }
@@ -196,6 +201,53 @@ h2 {
 .question.focus p {
   color: black !important;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 1102px) {
+  .box {
+    display: none;
+  }
+  .illustration {
+    display: none;
+  }
+  .pattern {
+    display: none;
+  }
+  .even-column:first-of-type {
+    display: none;
+  }
+  .even-column {
+    width: 100% !important;
+  }
+  .container {
+    min-width: auto;
+    overflow: visible;
+  }
+  h2 {
+    text-align: center;
+    margin: 4rem 0rem;
+  }
+  .mobile-hero {
+    display: block;
+    position: absolute;
+    top: -23vh;
+    scale: 0.8;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+  .container {
+    margin: 1rem;
+    padding: 0rem;
+  }
+  .mobile-hero {
+    display: block;
+    position: absolute;
+    top: -21rem;
+    scale: 0.8;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

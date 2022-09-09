@@ -12,3 +12,56 @@
 // @media only screen and (max-width: 1200px) {
    
 //   }
+
+
+
+@media only screen and (max-width: 1102px) {
+    .box{
+        display: none;
+    }
+   .illustration{
+    display: none;
+   }
+   .pattern{
+    display: none;
+   }
+   .even-column:first-of-type{
+    display: none;
+   }
+   .even-column{
+    width: 100% !important;
+   }
+   .container{
+    min-width: auto;
+    overflow: visible;
+
+   }
+   h2{
+    text-align: center;
+    margin: 4rem 0rem;
+   }
+   .mobile-hero{
+    display: block;
+    position: absolute;
+    top: -23vh;
+    scale: 0.8;
+   }
+  
+  }
+
+
+@media(max-width:500px){
+    html{
+        font-size: 55%;
+    }
+    .container{
+        margin: 1rem;
+        padding: 0rem;
+    }
+    .mobile-hero{
+        display: block;
+        position: absolute;
+        top: -21rem;
+        scale: 0.8;
+       }
+}

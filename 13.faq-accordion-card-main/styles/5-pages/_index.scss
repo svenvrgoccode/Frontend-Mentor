@@ -82,6 +82,7 @@ body{
     .question{
         cursor: pointer;
         display: flex;
+        align-items: center;
         justify-content: space-between;
         i{
             color:#C17C6C ;
@@ -127,3 +128,6 @@ h2{
     font-weight: bold;
 }
 
+.mobile-hero{
+    display: none ;
+}
