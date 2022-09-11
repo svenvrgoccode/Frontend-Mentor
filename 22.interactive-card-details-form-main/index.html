@@ -21,19 +21,21 @@
             </div>
            <div class="bottom">
             <div class="numberwrap">
-              <p class="number">0000 0000 0000 0000</p>
+              <p class="number"><span class="numberCard">0000 0000 0000 0000</span></p>
             </div>
             <div class="nameYear">
-              <div class="name">JANE APPLESSED</div>
-              <div class="year">00/00</div>
+              <div class="name"><span class="nameCard">JANE APPLESSED</span></div>
+              <div class="year"><span class="mmCard">00</span>/<span class="yyCard">00</span></div>
             </div>
            </div>
           </div>
-          <div class="card2"></div>
+          <div class="card2">
+            <p class="cvc">2424</p>
+          </div>
         </div>
       </div>
       <div class="col">
-        <div class="formContainer">
+        <form class="formContainer" novalidate>
           <div class="cardName">
             <p>CARDHOLDER NAME</p>
             <input type="text" class="input" id="name" placeholder="e.g Jane Appleseed">
@@ -41,15 +43,15 @@
           </div>
           <div class="cardNumber">
             <p>CARD NUMBER</p>
-            <input type="number" class="input" id="number" placeholder="e.g. 1234 5678 9123 0000">
+            <input type="text" class="input" id="number" placeholder="e.g. 1234 5678 9123 0000" >
             <p class="errText"></p>
           </div>
           <div class="dateCvc">
             <div class="date">
               <p>EXP.DATE (MM/YY)</p>
               <div class="inputs">
-                <input type="number" class="input" id="mm" placeholder="MM">
-                <input type="number" class="input" id="yy" placeholder="YY">
+                <input type="text" class="input" id="mm" placeholder="MM">
+                <input type="text" class="input" id="yy" placeholder="YY">
               </div>
             </div>
             <div class="cvc">
@@ -58,7 +60,7 @@
             </div>
           </div>
           <input type="submit" class="submitBtn" value="Confirm">
-        </div>
+        </form>
       </div>
       <img class="deskBg" src="images/bg-main-desktop.png" alt="">
     </div>
