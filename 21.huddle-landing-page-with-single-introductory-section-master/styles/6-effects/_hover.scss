@@ -1,0 +1,16 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+button:hover{
+    background-color:  #E980E7 !important;
+    a{
+        color: white !important;
+    }
+}
+
+.img-wrap:hover{
+    border: 2px solid #E980E7;
+    i{
+        color: #E980E7 ;
+    }
+}

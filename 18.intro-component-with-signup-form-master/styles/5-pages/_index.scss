@@ -1,0 +1,128 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+body{
+    background-image:linear-gradient(to bottom,#702222c4,#660f0fa9) ,url('../images/bg-intro-desktop.png');
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    h1{
+        color: white;
+        font-weight: bold;
+    }
+    p{
+        color: white;
+    }
+    .col:first-of-type p{
+        opacity: 0.5;
+    }
+    .col{
+        min-width: 50rem;
+        
+    }
+    .try{
+        background-color: #5D54A4;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        span{
+            color: rgb(145, 141, 141);
+        }
+
+    }
+    .sign--up--wrap{
+        padding-top: 2rem;
+        border-radius: 1rem;
+
+        background-color: white ;
+        .try{
+            display: flex;
+            justify-content: center;
+        }
+        .wrap{
+            min-width: 100%;
+            position: relative;
+        }
+        .activeError{
+            opacity: 1 !important;
+        }
+        .error{
+            opacity: 0;
+            i{
+                color: #FD7A78;
+                right: 2rem;
+            position: absolute;
+            z-index: 5;
+            top: 0%;
+            transform: translateY(100%);
+
+            }
+            p{
+                color: #FD7A78;
+
+                position: absolute;
+                right: -50%;
+                top: 115%;
+                transform: translateX(-25%);
+            }
+    
+        }
+        
+        form{
+        border-radius: 1rem;
+
+            display: flex;
+            align-items: center;
+            input{
+                min-width: 100%;
+        padding: 1rem;
+        border-radius: 1rem;
+
+        border: 1px solid rgba(145, 141, 141, 0.185);
+;
+
+            }
+        }
+p{
+    min-width: 100%;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    color: grey;
+    span{
+        color: #be6263;
+        margin-left: 0.4rem;
+
+    }
+    padding-bottom: 4rem;
+}
+
+    }
+    .sign--up--form{
+        padding: 2rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+    input[type="submit"]{
+        background-color: #3c8b68 !important;
+        color: white;
+        border: none !important;
+    }
+    input:focus{
+        outline: 1px solid black;
+    }
+}
+

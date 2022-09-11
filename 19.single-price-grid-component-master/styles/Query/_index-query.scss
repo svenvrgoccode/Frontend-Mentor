@@ -1,0 +1,41 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+// @media only screen and (max-width: 768px) {
+   
+//   }
+// @media only screen and (max-width: 992px) {
+   
+//   }
+// @media only screen and (max-width: 1200px) {
+   
+//   }
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    .container{
+        width: 40rem;
+    }
+
+    .price-benefits{
+        display: flex;
+        flex-direction: column;
+    }
+    .col{
+        width: 100% !important;
+    }
+    .price{
+        border-bottom-left-radius: 0rem !important;
+    }
+    .benefits{
+        border-bottom-left-radius: 1rem !important;
+
+    }
+
+   
+  }

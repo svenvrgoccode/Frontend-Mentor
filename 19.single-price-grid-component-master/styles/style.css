@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+.col-lg {
+  padding: 0rem !important;
+}
+
+.col-md {
+  padding: 0rem !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  max-width: 45rem;
+  color: black;
+}
+
+i {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+}
+
+h1 {
+  font-size: clamp(3.7rem, 5vw + 1rem, 4.5rem);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+  max-width: 35rem;
+  color: black;
+}
+
+h2 {
+  font-size: clamp(2.4rem, 4vw + 1rem, 3.2rem);
+}
+
+h3 {
+  font-size: clamp(1.8rem, 3vw + 1rem, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #E6EFF6;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: 0rem 1rem;
+  width: 75rem;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 1rem;
+}
+.container .community {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.container .community h3 {
+  color: #45ADAC;
+  font-weight: 700;
+}
+.container .community h4 {
+  color: #BFDF32;
+  font-weight: 500;
+}
+.container .community p {
+  max-width: 60rem;
+  color: #A8ACB5;
+}
+.container .price-benefits {
+  display: flex;
+}
+.container .price {
+  background-color: #2BB3B1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container .price h4 {
+  color: white;
+  font-weight: 700;
+}
+.container .price p {
+  color: white;
+}
+.container .price-dollars {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.container .price-dollars h3 {
+  color: white;
+  font-weight: bold;
+}
+.container .price-dollars p {
+  color: white;
+  opacity: 0.5;
+}
+.container .benefits {
+  background-color: #4ABEBD;
+}
+.container .col {
+  width: 50%;
+  padding: 3rem;
+}
+.container button {
+  background-color: #b0ca3a;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.container button a {
+  color: white;
+}
+.container .benefits h4 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+.container .benefits ul li {
+  color: white;
+  opacity: 0.5;
+}
+.container .benefits ul {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 40rem;
+  }
+  .price-benefits {
+    display: flex;
+    flex-direction: column;
+  }
+  .col {
+    width: 100% !important;
+  }
+  .price {
+    border-bottom-left-radius: 0rem !important;
+  }
+  .benefits {
+    border-bottom-left-radius: 1rem !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

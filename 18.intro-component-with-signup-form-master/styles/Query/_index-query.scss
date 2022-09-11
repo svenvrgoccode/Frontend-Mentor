@@ -1,0 +1,54 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+// @media only screen and (max-width: 768px) {
+   
+//   }
+// @media only screen and (max-width: 992px) {
+   
+//   }
+
+
+
+@media(max-width: 1200px){
+
+
+    h1{
+        max-width: 40rem;
+    }
+
+ .container{
+    margin: 1rem;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    .col:first-of-type{
+        text-align: center;
+        @include flex(center,center,column);
+    }
+ }
+
+
+
+ .col{
+    min-width: 100% !important;
+ }
+
+ .col:last-of-type{
+    width: 80vw;
+    max-width: 100%;
+ }
+
+.terms{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.try p{
+    width: 30rem;
+    text-align: center;
+}
+
+} 

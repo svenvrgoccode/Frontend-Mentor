@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+.col-lg {
+  padding: 0rem !important;
+}
+
+.col-md {
+  padding: 0rem !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  max-width: 55rem;
+  color: black;
+}
+
+i {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+}
+
+h1 {
+  font-size: clamp(3.7rem, 5vw + 1rem, 4.5rem);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+  max-width: 35rem;
+  color: black;
+}
+
+h2 {
+  font-size: clamp(2.4rem, 4vw + 1rem, 3.2rem);
+}
+
+h3 {
+  font-size: clamp(1.8rem, 3vw + 1rem, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-image: linear-gradient(to bottom, rgba(112, 34, 34, 0.768627451), rgba(102, 15, 15, 0.662745098)), url("../images/bg-intro-desktop.png");
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.container h1 {
+  color: white;
+  font-weight: bold;
+}
+.container p {
+  color: white;
+}
+.container .col:first-of-type p {
+  opacity: 0.5;
+}
+.container .col {
+  min-width: 50rem;
+}
+.container .try {
+  background-color: #5D54A4;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.container .try span {
+  color: rgb(145, 141, 141);
+}
+.container .sign--up--wrap {
+  padding-top: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+.container .sign--up--wrap .try {
+  display: flex;
+  justify-content: center;
+}
+.container .sign--up--wrap .wrap {
+  min-width: 100%;
+  position: relative;
+}
+.container .sign--up--wrap .activeError {
+  opacity: 1 !important;
+}
+.container .sign--up--wrap .error {
+  opacity: 0;
+}
+.container .sign--up--wrap .error i {
+  color: #FD7A78;
+  right: 2rem;
+  position: absolute;
+  z-index: 5;
+  top: 0%;
+  transform: translateY(100%);
+}
+.container .sign--up--wrap .error p {
+  color: #FD7A78;
+  position: absolute;
+  right: -50%;
+  top: 115%;
+  transform: translateX(-25%);
+}
+.container .sign--up--wrap form {
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+.container .sign--up--wrap form input {
+  min-width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(145, 141, 141, 0.185);
+}
+.container .sign--up--wrap p {
+  min-width: 100%;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  color: grey;
+  padding-bottom: 4rem;
+}
+.container .sign--up--wrap p span {
+  color: #be6263;
+  margin-left: 0.4rem;
+}
+.container .sign--up--form {
+  padding: 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+.container input[type=submit] {
+  background-color: #3c8b68 !important;
+  color: white;
+  border: none !important;
+}
+.container input:focus {
+  outline: 1px solid black;
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    max-width: 40rem;
+  }
+  .container {
+    margin: 1rem;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .col:first-of-type {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .col {
+    min-width: 100% !important;
+  }
+  .col:last-of-type {
+    width: 80vw;
+    max-width: 100%;
+  }
+  .terms {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .try p {
+    width: 30rem;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,56 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+// @media only screen and (max-width: 768px) {
+   
+//   }
+// @media only screen and (max-width: 992px) {
+   
+//   }
+
+
+
+
+@media only screen and (max-width: 1300px) {
+    body{
+        background-image: url(../images/bg-mobile.svg);
+    }
+    .container{
+        max-width: 800px !important;
+
+    }
+
+    
+    
+    .hero{
+        padding-top: 10rem;
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .col{
+            height: auto;
+            width: 100% !important;
+        }
+        .textWrap{
+            @include flex(center,center,column);
+            text-align: center;
+        }
+        h1,p{
+            max-width: 50rem !important;
+        }
+    }
+
+    .social-wrap{
+        height: 10vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center !important;
+    }
+    
+   
+  }
+
+

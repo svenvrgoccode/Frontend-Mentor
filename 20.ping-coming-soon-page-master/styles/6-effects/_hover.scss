@@ -1,0 +1,11 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+.submitBtn{
+    @include transition;
+}
+
+.submitBtn:hover{
+    background-color: #688ae2;
+}
