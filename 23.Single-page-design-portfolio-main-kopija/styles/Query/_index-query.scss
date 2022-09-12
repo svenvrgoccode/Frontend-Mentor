@@ -1,0 +1,108 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+// @media only screen and (max-width: 768px) {
+   
+//   }
+// @media only screen and (max-width: 992px) {
+   
+//   }
+// @media only screen and (max-width: 1200px) {
+   
+//   }
+
+
+@media only screen and (max-width: 1200px) {
+    .container{
+        max-width: 700px;
+    }
+   .cards{
+    grid-template-areas: 
+    'card1 card1 card2 card3' 
+    'card1 card1 card4 card4' 
+    'card5 card5 card6 card6' 
+    !important;
+   }
+   .project{
+    margin-top: 0rem;
+   }
+   .amy{
+    transform: translateX(-10rem);
+    object-fit: contain;
+   }
+   .call{
+    .container{
+        .col{
+            width: 100% !important;
+            p{
+                margin: auto;
+            }
+        }
+        flex-direction: column !important;
+        text-align: center;
+        gap: 2rem;
+        button{
+            margin: auto !important;
+        }
+    }
+   }
+   .workHeading{
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+   }
+  }
+
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width: 500px;
+    }
+    body{
+        padding: 0rem 1rem;
+    }
+    h1,p{
+        max-width: 45rem;
+    }
+    .card1{
+        min-height: 30rem;
+    }
+    .card2,.card2,.card3,.card4,.card5,.card6{
+        min-height: 15rem;
+    }
+    .card{
+        padding: 0rem !important;
+    }
+    .cards{
+        grid-template-areas: 
+        'card1 card1' 
+        'card2 card3' 
+        'card4 card4' 
+        'card5 card5' 
+        'card6 card6' 
+        !important;
+       }
+    .project{
+        margin-top: 5rem;
+        .container{
+            flex-direction: column;
+        }
+        .col{
+            width: 100%;
+        }
+        .amy{
+            max-height: 35rem;
+    transform: translateX(0rem);
+    margin-bottom: 2rem;
+    object-fit: fill;
+        }
+        .col:first-of-type{
+            @include flex(center,center,column);
+        }
+        .col:last-of-type{
+            @include flex(center,center,column);
+            text-align: center;
+            gap: 2rem;
+        }
+    }
+  }

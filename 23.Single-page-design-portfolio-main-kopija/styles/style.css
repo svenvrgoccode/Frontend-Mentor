@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap");
+.col-lg {
+  padding: 0rem !important;
+}
+
+.col-md {
+  padding: 0rem !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.logo {
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  max-width: 75rem;
+  color: black;
+}
+
+i {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+}
+
+h1 {
+  font-size: clamp(4.3rem, 4vw + 1rem, 5.5rem);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+  max-width: 55rem;
+  color: black;
+}
+
+h2 {
+  font-size: clamp(2.4rem, 4vw + 1rem, 3.2rem);
+}
+
+h3 {
+  font-size: clamp(1.8rem, 3vw + 1rem, 2rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  padding: 0rem 2rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+button {
+  padding: 1rem 4rem;
+  border-radius: 20rem;
+  border: none;
+}
+button a {
+  color: white;
+}
+
+header {
+  padding: 2rem 0rem;
+}
+header button {
+  background-color: #030303;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero .heroText {
+  margin: 5rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+.hero .heroText h1 {
+  color: #030303;
+  font-weight: 700;
+}
+.hero .heroText p {
+  color: #7A746E;
+}
+.hero .cards {
+  display: grid;
+  gap: 2rem;
+  grid-template-areas: "card1 card1 card2 card3 card4 card4" "card1 card1 card5 card5 card6 card6";
+}
+.hero .card {
+  border-radius: 0.5rem;
+  padding: 8rem;
+  position: relative;
+}
+.hero .card img {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.hero .card h3 {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+}
+.hero .card1 {
+  grid-area: card1;
+  background-color: #755CDE;
+}
+.hero .card2 {
+  grid-area: card2;
+  background-color: #F6A560;
+}
+.hero .card3 {
+  grid-area: card3;
+  background-color: #F39E9E;
+}
+.hero .card4 {
+  grid-area: card4;
+  background-color: #61C4B7;
+}
+.hero .card5 {
+  grid-area: card5;
+  background-color: #EB7565;
+}
+.hero .card6 {
+  grid-area: card6;
+  background-color: #552049;
+}
+
+.project {
+  margin-top: 10rem;
+}
+.project .container {
+  display: flex;
+  align-items: center;
+}
+.project .col {
+  width: 50%;
+}
+.project .col:first-of-type img {
+  height: 50rem;
+}
+.project .col:last-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.project h2 {
+  font-weight: 700;
+  color: #030303;
+}
+.project p {
+  color: #7A746E;
+}
+.project button {
+  background-color: #EB7565;
+}
+
+.splide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.splide__arrows {
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  order: 2;
+  display: flex;
+  gap: 3rem;
+}
+
+.splide__pagination {
+  display: none !important;
+}
+
+.splide__slide {
+  border-radius: 0.5rem !important;
+}
+.splide__slide img {
+  border-radius: 0.5rem !important;
+}
+
+.splide__arrow {
+  scale: 1.3;
+  margin-top: 5rem;
+  position: static !important;
+  top: 110% !important;
+  background-color: #030303 !important;
+}
+.splide__arrow svg {
+  filter: invert(100%) sepia(4%) saturate(0%) hue-rotate(265deg) brightness(105%) contrast(106%);
+}
+
+.workHeading {
+  margin: auto;
+  text-align: center;
+  padding: 5rem 0rem;
+  font-weight: 700;
+  color: #030303 !important;
+}
+
+.call h2, .call p {
+  color: white;
+}
+.call p {
+  opacity: 0.5;
+}
+.call .container {
+  border-radius: 0.5rem !important;
+  padding: 5rem;
+  background: #030303;
+  display: flex;
+  align-items: center;
+}
+.call button {
+  background-color: #EB7565;
+}
+.call .col:first-of-type {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.call .col:last-of-type {
+  width: 30%;
+}
+
+footer {
+  margin-top: 5rem;
+  padding: 2rem 0rem;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container button {
+  background-color: #030303;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 700px;
+  }
+  .cards {
+    grid-template-areas: "card1 card1 card2 card3" "card1 card1 card4 card4" "card5 card5 card6 card6" !important;
+  }
+  .project {
+    margin-top: 0rem;
+  }
+  .amy {
+    transform: translateX(-10rem);
+    object-fit: contain;
+  }
+  .call .container {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 2rem;
+  }
+  .call .container .col {
+    width: 100% !important;
+  }
+  .call .container .col p {
+    margin: auto;
+  }
+  .call .container button {
+    margin: auto !important;
+  }
+  .workHeading {
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 500px;
+  }
+  body {
+    padding: 0rem 1rem;
+  }
+  h1, p {
+    max-width: 45rem;
+  }
+  .card1 {
+    min-height: 30rem;
+  }
+  .card2, .card2, .card3, .card4, .card5, .card6 {
+    min-height: 15rem;
+  }
+  .card {
+    padding: 0rem !important;
+  }
+  .cards {
+    grid-template-areas: "card1 card1" "card2 card3" "card4 card4" "card5 card5" "card6 card6" !important;
+  }
+  .project {
+    margin-top: 5rem;
+  }
+  .project .container {
+    flex-direction: column;
+  }
+  .project .col {
+    width: 100%;
+  }
+  .project .amy {
+    max-height: 35rem;
+    transform: translateX(0rem);
+    margin-bottom: 2rem;
+    object-fit: fill;
+  }
+  .project .col:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .project .col:last-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
