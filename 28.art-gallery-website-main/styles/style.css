@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;700&family=Outfit:wght@400;500;700&display=swap");
+.col-lg {
+  padding: 0rem !important;
+}
+
+.col-md {
+  padding: 0rem !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.logo {
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  max-width: 45rem;
+  color: black;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+i {
+  font-size: clamp(1.8rem, 2vw + 1rem, 1.9rem);
+}
+
+h1 {
+  font-size: clamp(6.7rem, 9vw + 1rem, 10.5rem);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: clamp(1.8rem, 2vw + 1rem, 1.9rem);
+  max-width: 35rem;
+  color: black;
+}
+
+h2 {
+  font-size: clamp(5.4rem, 4vw + 1rem, 6.2rem);
+}
+
+h3 {
+  font-size: clamp(1.8rem, 3vw + 1rem, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.hero .container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+}
+.hero .col {
+  width: 33.3%;
+}
+.hero .col:first-of-type {
+  background-color: black;
+}
+.hero .hero-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.hero .hero-text {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  padding: 0rem 25rem;
+  justify-content: space-between;
+  top: 30%;
+}
+.hero h1 {
+  color: white;
+  mix-blend-mode: difference;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1;
+}
+.hero .text2 p {
+  margin-bottom: 2rem;
+}
+.hero .text2 button {
+  cursor: pointer;
+  padding: 1.5rem 0rem;
+  border: none;
+  background-color: black;
+  color: white;
+  padding-left: 2rem;
+}
+.hero .text2 button span {
+  background-color: #D5966B;
+  padding: 1.7rem 2rem;
+  margin-left: 2rem;
+}
+
+.gallery {
+  margin-top: 20rem;
+  padding-bottom: 10rem;
+}
+.gallery h2 {
+  font-weight: bold;
+}
+.gallery .card:nth-of-type(2) {
+  min-height: 50%;
+  background-color: black;
+  padding: 4rem;
+}
+.gallery .card:nth-of-type(2) h2, .gallery .card:nth-of-type(2) p {
+  color: white;
+}
+.gallery .container {
+  padding: 0rem 25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.gallery h2 {
+  text-transform: uppercase;
+  max-width: 25rem;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+.gallery .grid1 {
+  display: flex;
+}
+.gallery .grid1 .card1 {
+  width: 40%;
+  padding-right: 4rem;
+}
+.gallery .grid1 .card2 {
+  width: 60%;
+}
+.gallery .grid1 .card2 img {
+  width: 100%;
+}
+.gallery .grid2 {
+  display: flex;
+  gap: 2rem;
+}
+.gallery .grid2 .card3 {
+  width: 60%;
+}
+.gallery .grid2 .card3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery .grid2 .card-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 40%;
+}
+.gallery .grid2 .card-wrap .card4 {
+  width: 100%;
+  height: 50%;
+}
+.gallery .grid2 .card-wrap .card4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery .card5 {
+  padding-bottom: 8rem !important;
+}
+
+.location-info {
+  padding: 4rem 0rem;
+  background-color: black;
+}
+.location-info h2 {
+  color: white;
+  line-height: 1;
+}
+.location-info h3 {
+  color: #D5966B;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.location-info p {
+  color: white;
+}
+.location-info ul {
+  margin-bottom: 2rem;
+}
+.location-info li {
+  color: white;
+}
+.location-info .container {
+  display: flex;
+  padding: 0rem 25rem;
+}
+.location-info .col {
+  width: 50%;
+}
+
+.block {
+  height: 20vh;
+  width: 100%;
+}
+
+.location-footer {
+  background-color: #D5966B;
+}
+
+.location {
+  height: 100%;
+  min-height: 30rem;
+  position: relative;
+  z-index: -1;
+}
+
+.location-button {
+  position: absolute;
+  margin: 0rem 25rem;
+  cursor: pointer;
+  padding: 1.5rem 0rem;
+  border: none;
+  background-color: black;
+  color: white;
+  padding-right: 2rem;
+}
+.location-button span {
+  background-color: #D5966B;
+  padding: 1.8rem 2rem;
+  margin-right: 2rem;
+}
+.location-button span i {
+  transform: rotate(270deg);
+}
+
+.location-info {
+  min-height: 50vh;
+}
+
+#map {
+  min-height: 30rem;
+}
+
+footer {
+  padding: 4rem 0rem;
+  background-color: black;
+}
+footer a, footer p, footer i {
+  color: white;
+}
+footer a {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: bold;
+}
+footer .container {
+  padding: 0rem 25rem;
+  display: flex;
+  justify-content: space-between;
+}
+footer .social-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.leaflet-marker-icon {
+  content: url(../images/desktop/location.png);
+}
+
+@media (max-width: 1500px) {
+  .hero .col:first-of-type {
+    display: none;
+  }
+  .hero-img {
+    width: 50% !important;
+  }
+  .hero-text {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem !important;
+    position: absolute;
+    left: 45%;
+  }
+  h1 {
+    mix-blend-mode: initial !important;
+    color: black !important;
+  }
+  .gallery .container {
+    padding: 0rem 10rem;
+  }
+  footer .container {
+    padding: 0rem 10rem !important;
+  }
+  .location-info .container {
+    padding: 0rem 10rem !important;
+  }
+  .location-button {
+    margin: 0rem 10rem;
+  }
+}
+@media (max-width: 900px) {
+  h1 {
+    margin-top: 4rem;
+  }
+  .hero-text {
+    position: static !important;
+    justify-content: initial !important;
+    padding: 0rem 2rem !important;
+  }
+  .empty {
+    display: none !important;
+  }
+  .hero .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .container img {
+    height: 30rem !important;
+    width: 100%;
+  }
+  .col {
+    width: 100% !important;
+  }
+  .gallery {
+    margin-top: 0rem !important;
+    padding-top: 6rem;
+  }
+  .gallery .container {
+    padding: 0rem 2rem !important;
+  }
+  .hero .container {
+    min-height: auto;
+  }
+  .grid1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .card1 {
+    order: 2;
+    width: 100% !important;
+    padding-right: 0rem !important;
+  }
+  .container {
+    padding: 0rem !important;
+  }
+  .card2 {
+    width: 100% !important;
+  }
+  .card2 img {
+    width: 100% !important;
+  }
+  .grid2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid2 > div {
+    width: 100% !important;
+  }
+  footer .container {
+    padding: 0rem 2rem !important;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .location-info .container {
+    flex-direction: column;
+    padding: 0rem 2rem !important;
+  }
+  .location-info h2 {
+    margin-bottom: 4rem;
+  }
+  .location-button {
+    margin: 0rem 2rem;
+  }
+}
+button {
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+span {
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+button:hover {
+  background-color: #D5966B;
+}
+button:hover span {
+  background-color: black;
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

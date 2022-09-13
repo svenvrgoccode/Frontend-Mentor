@@ -1,0 +1,389 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+.hero{
+    .container{
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+    }
+    .col{
+        width: 33.3%;
+    }
+    .col:first-of-type{
+        background-color: black;
+    }
+    .hero-img{
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .hero-text{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        padding: 0rem 25rem;
+        
+        justify-content: space-between;
+        top: 30%;
+    }
+    h1{
+        color: white;
+        mix-blend-mode: difference;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 1;
+    }
+    .text2{
+        p{
+            margin-bottom: 2rem;
+        }
+        button{
+            cursor: pointer;
+            padding: 1.5rem 0rem;
+            border: none;
+            background-color: black;
+            color: white;
+            padding-left: 2rem;
+            span{
+                background-color:#D5966B ;
+                padding: 1.7rem 2rem;
+                margin-left: 2rem;
+            }
+        }
+    }
+
+
+   
+}
+
+.gallery{
+    margin-top: 20rem;
+    h2{
+        font-weight: bold;
+    }
+    .card:nth-of-type(2){
+        min-height: 50%;
+        background-color: black;
+        padding: 4rem;
+        h2,p{
+            color: white;
+        }
+
+    }
+    .container{
+        padding: 0rem 25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    h2{
+        text-transform: uppercase;
+        max-width: 25rem;
+        line-height: 1;
+        margin-bottom: 2rem;
+    }
+    .grid1{
+        display: flex;
+        .card1{
+            width: 40%;
+            padding-right: 4rem;
+        }
+        .card2{
+            width: 60%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .grid2{
+        display: flex;
+        gap: 2rem;
+        .card3{
+            width: 60%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .card-wrap{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 40%;
+            .card4{
+                width: 100%;
+                height: 50%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+       
+    }
+    .card5{
+        padding-bottom: 8rem !important;
+    }
+    padding-bottom: 10rem;
+}
+
+.location-info{
+    padding: 4rem 0rem;
+    background-color: black;
+    h2{
+        color: white;
+        line-height: 1;
+    }
+    h3{
+        color: #D5966B;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    p{
+        color: white;
+    }
+    ul{
+        margin-bottom: 2rem;
+    }
+    li{
+        color: white ;
+    }
+    .container{
+        display: flex;
+        padding: 0rem 25rem;
+    }
+    .col{
+        width: 50%;
+    }
+}
+
+
+.block{
+    height: 20vh;
+    width: 100%;
+}
+
+.location-footer{
+    background-color: #D5966B;
+}
+
+.location{
+    height: 100%;
+    min-height: 30rem;
+    position: relative;
+    z-index: -1;
+}
+
+.location-button{
+    position: absolute;
+    margin: 0rem 25rem;
+    cursor: pointer;
+    padding: 1.5rem 0rem;
+    border: none;
+    background-color: black;
+    color: white;
+    padding-right: 2rem;
+    span{
+        background-color:#D5966B ;
+        padding: 1.8rem 2rem;
+        margin-right: 2rem;
+        i{
+            transform: rotate(270deg);
+        }
+    }
+}
+
+
+.location-info{
+    min-height: 50vh;
+}
+
+#map { 
+    min-height: 30rem;
+ }
+
+footer{
+    padding: 4rem 0rem;
+    background-color: black;
+    a,p,i{
+        color: white ;
+    }
+    a{
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: bold;
+        
+    }
+    .container{
+        padding: 0rem  25rem ;
+        display: flex;
+        justify-content: space-between;
+    }
+    .social-links{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.leaflet-marker-icon{
+    content: url(../images/desktop/location.png);
+}
+
+
+
+@media (max-width:1500px){
+    .hero{
+        .col:first-of-type{
+        display: none;
+    }
+    }
+    
+    .hero-img{
+        width: 50% !important;
+    }
+    .hero-text{
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0rem !important;
+        position: absolute;
+        left: 45%;
+    }
+    h1{
+        mix-blend-mode: initial !important;
+        color: black !important;
+    }
+    .gallery{
+        .container{
+            padding: 0rem 10rem;
+        }
+    }
+    footer{
+        .container{
+        padding: 0rem 10rem !important  ;
+
+        }
+
+    }
+    .location-info{
+        .container{
+            padding: 0rem 10rem !important;
+        }
+    }
+    .location-button{
+        margin: 0rem 10rem;
+    }
+}
+
+
+
+@media(max-width:900px){
+    h1{
+        margin-top: 4rem;
+    }
+    .hero-text{
+        position: static !important;
+        justify-content: initial !important;
+        padding: 0rem 2rem !important;
+    }
+    .empty{
+        display: none !important;
+    }
+    .hero{
+        .container{
+            display: flex;
+            flex-direction: column;
+            img{
+                height: 30rem !important;
+                width: 100%;
+            }
+        }
+    
+    }
+    .col{
+        width: 100% !important;
+    }
+    .gallery{
+        margin-top: 0rem !important;
+        padding-top: 6rem;
+        .container{
+            padding: 0rem 2rem !important;
+        }
+    }
+
+    .hero{
+        .container{
+            min-height: auto;
+        }
+    }
+    .grid1{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .card1{
+        order: 2;
+        width: 100% !important;
+        padding-right: 0rem !important;
+    }
+    .container{
+        padding: 0rem !important;
+    }
+    .card2{
+        width: 100% !important;
+        img{
+            width: 100% !important;
+        }
+    }
+    .grid2{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid2 > div{
+        width: 100% !important;
+    }
+    footer{
+        .container{
+        padding: 0rem 2rem !important  ;
+        flex-direction: column;
+        gap: 4rem;
+
+        }
+
+    }
+    .location-info{
+        .container{
+            flex-direction: column;
+            padding: 0rem 2rem !important;
+            
+        }
+        h2{
+            margin-bottom: 4rem
+        }
+    }
+    .location-button{
+        margin: 0rem 2rem;
+    }
+
+    
+}
+
+
+button{
+    @include transition;
+}
+span{
+    @include transition;
+
+}
+
+button:hover{
+    span{
+        background-color: black;
+
+    }
+    background-color: #D5966B;
+}
