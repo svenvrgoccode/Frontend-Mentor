@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+.col-lg {
+  padding: 0rem !important;
+}
+
+.col-md {
+  padding: 0rem !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  max-width: 45rem;
+  color: black;
+}
+
+i {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+}
+
+h1 {
+  font-size: clamp(3.7rem, 5vw + 1rem, 4.5rem);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+  max-width: 35rem;
+  color: black;
+}
+
+h2 {
+  font-size: clamp(2.4rem, 4vw + 1rem, 3.2rem);
+}
+
+h3 {
+  font-size: clamp(1.8rem, 3vw + 1rem, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.mobHead {
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.mobHead.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.mobile-header {
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background-color: white;
+  padding: 2rem;
+}
+.mobile-header .fa-xmark {
+  font-size: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.mobile-header ul {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mobile-header .user {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.mobile-header .user button {
+  min-width: 100%;
+  padding: 0.5rem;
+  background: none;
+  border: 1px solid black;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.mobile-header .mob-dropdown {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mobile-header .mob-dropdown span {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.mobile-header .mob-dropdown {
+  display: none;
+}
+.mobile-header .mob-dropdown-active {
+  display: flex;
+}
+.mobile-header .mobile-angle.active {
+  transform: rotate(-90deg);
+}
+.mobile-header .mobile-angle {
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-left: 0.5rem;
+}
+
+.mobile-overlay {
+  position: absolute;
+  background-color: rgba(17, 17, 17, 0.596);
+  width: 100vw;
+  height: 100%;
+}
+
+.mob-dropdown {
+  display: none;
+}
+
+.fa-bars {
+  display: none !important;
+  cursor: pointer;
+}
+
+.heroImgMob {
+  display: none;
+}
+
+.hero button:hover {
+  background: none;
+  color: black;
+}
+
+.mob-link {
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  cursor: pointer;
+}
+
+.mob-link:hover {
+  color: black;
+}
+
+button:hover {
+  color: black !important;
+}
+
+a:hover {
+  color: black !important;
+}
+
+.link:hover {
+  color: black !important;
+}
+
+a, .link {
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.dropdown-2 {
+  display: none;
+}
+
+.dropdownWrap {
+  position: relative;
+}
+
+.dropdownWrap2 {
+  position: relative;
+}
+
+.drop1 {
+  top: 4rem;
+  left: -5rem;
+}
+
+.drop2 {
+  top: 4rem;
+  min-width: 12rem !important;
+}
+
+.dropdownActive {
+  opacity: 1 !important;
+  max-height: 20rem !important;
+}
+
+.dropdown {
+  background-color: white;
+  z-index: 100;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  max-height: 0rem;
+  overflow: hidden;
+  min-width: 16rem;
+  position: absolute;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.dropdown span {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.grey {
+  color: hsl(0deg, 0%, 41%);
+}
+
+header {
+  min-height: 10vh;
+}
+header .container {
+  padding: 1.5rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+}
+header .container ul {
+  display: flex;
+  margin-left: 3rem;
+  gap: 3rem;
+}
+header .container ul li {
+  cursor: pointer;
+}
+header .container .user {
+  margin-left: auto;
+}
+header .container .fa-angle-right {
+  margin-left: 1rem;
+  transform: rotate(90deg);
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  color: hsl(0deg, 0%, 41%);
+}
+header .container .fa-angle-right.angleActive {
+  transform: rotate(-90deg);
+}
+header .container .user {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+header .container .user button {
+  padding: 0.5rem 2rem;
+  background: none;
+  border: none;
+  border: 2px solid black;
+  border-radius: 1rem;
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+}
+.hero h1 {
+  color: hsl(0deg, 0%, 8%);
+  max-width: 30rem;
+  font-weight: bold;
+}
+.hero p {
+  color: hsl(0deg, 0%, 8%);
+}
+.hero .container {
+  max-width: 1000px;
+  padding: 0rem 2rem;
+  margin: auto;
+  display: flex;
+}
+.hero .container .col {
+  width: 50%;
+  max-height: 50rem;
+}
+.hero .container .col:last-of-type {
+  display: flex;
+  justify-content: flex-end;
+}
+.hero .container .col:last-of-type img {
+  height: 100%;
+}
+.hero .container .col:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero .container .text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  padding-top: 5rem;
+}
+.hero .clients {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.hero button {
+  padding: 0.5rem 2rem;
+  color: white;
+  background: hsl(0deg, 0%, 8%);
+  border: none;
+  border: 2px solid black;
+  border-radius: 1rem;
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  header nav, header .user {
+    display: none !important;
+  }
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .container .fa-bars {
+    display: block !important;
+    font-size: 3rem;
+    transform: translateY(-0.3rem);
+  }
+  .container {
+    max-width: 500px !important;
+    margin: auto;
+  }
+  .heroImgDesk {
+    display: none;
+  }
+  .heroImgMob {
+    display: block;
+  }
+  .hero .container {
+    margin-top: 0rem;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero .col:first-of-type {
+    order: 2;
+  }
+  .hero .col {
+    width: 100% !important;
+  }
+  .hero .col:first-of-type {
+    text-align: center;
+  }
+  .hero .col:first-of-type h1 {
+    max-width: 180rem !important;
+  }
+  .hero .col:first-of-type .text-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero .col:first-of-type .clients {
+    margin-top: 3rem;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  .hero .col:first-of-type .clients img {
+    width: 6rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

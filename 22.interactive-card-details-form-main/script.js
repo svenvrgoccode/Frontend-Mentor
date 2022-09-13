@@ -12,7 +12,6 @@ const nameCard = document.querySelector('.nameCard')
 const mmCard = document.querySelector('.mmCard')
 const yyCard = document.querySelector('.yyCard')
 
-let success = 0
 
 
 
@@ -25,9 +24,11 @@ addListener(yyForm,yyCard)
 cardForm.addEventListener('submit',(e)=>{
     e.preventDefault()
 
-    numberCheck()
     nameCheck()
 })
+
+
+// FUNCTIONS
 
 function addListener(form,card){
     form.addEventListener('input',(e)=>{
@@ -42,25 +43,12 @@ function nameCheck(){
     if(nameValue === ''){
         errors[0].innerText = `Full name can't be blank`
         nameForm.style.border = '2px solid #C55C60'
-        return false
 
 
     }else if(!nameValue.match((regex))){
         errors[0].innerText = `This is not a full name`
         nameForm.style.border = '2px solid #C55C60'
-        return false
     }
-
-
-    // if(nameValue.match((regex))){
-    //     errors[0].innerText = ``
-    //     nameForm.style.border = '2px solid #4FE4A1'
-    //     success++
-    // }
-   
-   
 }
 
-
-    // const regex = /^([\d]{4,})+\s+([\d]{4,})+\s+([\d]{4,})+\s+([\d]{4,})+$/
 
