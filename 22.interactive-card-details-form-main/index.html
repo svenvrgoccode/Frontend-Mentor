@@ -30,12 +30,12 @@
            </div>
           </div>
           <div class="card2">
-            <p class="cvc">2424</p>
+            <p class="cvc"></p>
           </div>
         </div>
       </div>
-      <div class="col">
-        <form class="formContainer" novalidate>
+      <div class="col fill">
+        <form  class="formContainer" novalidate>
           <div class="cardName">
             <p>CARDHOLDER NAME</p>
             <input type="text" class="input" id="name" placeholder="e.g Jane Appleseed">
@@ -43,27 +43,42 @@
           </div>
           <div class="cardNumber">
             <p>CARD NUMBER</p>
-            <input type="text" class="input" id="number" placeholder="e.g. 1234 5678 9123 0000" >
+            <input maxlength="20" type="text" class="input" id="number" placeholder="e.g. 1234 5678 9123 0000" >
             <p class="errText"></p>
           </div>
           <div class="dateCvc">
             <div class="date">
               <p>EXP.DATE (MM/YY)</p>
               <div class="inputs">
-                <input type="text" class="input" id="mm" placeholder="MM">
-                <input type="text" class="input" id="yy" placeholder="YY">
+                <div class="date-wrap">
+                  <input type="text" class="input" id="mm" placeholder="MM">
+                  <p class="errText"></p>
+                </div>
+                <div class="date-wrap">
+                  <input type="text" class="input" id="yy" placeholder="YY">
+                  <p class="errText"></p>
+                </div>
               </div>
             </div>
             <div class="cvc">
               <p>CVC</p>
-              <input type="text" class="input" id="cvc" placeholder="e.g. 123">
+              <input maxlength="3" type="text" class="input" id="cvc" placeholder="e.g. 123">
+              <p class="errText"></p>
+
             </div>
           </div>
           <input type="submit" class="submitBtn" value="Confirm">
         </form>
       </div>
+      <div class="col thanks">
+        <img src="images/icon-complete.svg" alt="">
+        <h2>THANK YOU!</h2>
+        <p>We've added your card details</p>
+        <button>Continiue</button>
+      </div>
       <img class="deskBg" src="images/bg-main-desktop.png" alt="">
     </div>
+
 
     
     

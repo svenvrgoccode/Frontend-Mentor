@@ -110,6 +110,7 @@ input[type=number] {
 .container .card1, .container .card2 {
   border-radius: 1rem;
   min-width: 40rem;
+  max-width: 40rem;
 }
 .container .card1 {
   transform: translateX(-5rem);
@@ -120,9 +121,12 @@ input[type=number] {
 }
 .container .card2 .cvc {
   position: absolute;
-  top: 50%;
+  max-width: 5.5rem;
+  top: 49%;
   left: 80%;
-  transform: translateY(-50%) translateX(-0.5rem);
+  transform: translateY(-50%) translateX(1rem);
+  text-orientation: upright;
+  overflow: hidden;
 }
 .container .card1 {
   background-image: url(../images/bg-card-front.png);
@@ -182,6 +186,11 @@ input[type=number] {
   height: 22rem;
 }
 
+.date-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
 .formContainer {
   display: flex;
   flex-direction: column;
@@ -218,7 +227,7 @@ input[type=number] {
   gap: 2rem;
 }
 .formContainer .dateCvc .date p {
-  color: #220930 !important;
+  color: #220930;
   font-weight: 500;
 }
 .formContainer .dateCvc .date .inputs {
@@ -230,8 +239,9 @@ input[type=number] {
   text-indent: 10px;
 }
 .formContainer .dateCvc .cvc p {
+  text-orientation: sideways;
   font-weight: 500;
-  color: #220930 !important;
+  color: #220930;
 }
 .formContainer .dateCvc .cvc input {
   width: 19rem;
@@ -246,6 +256,32 @@ input[type=number] {
 
 .errText {
   color: #C55C60 !important;
+}
+
+.warning {
+  color: #C55C60 !important;
+}
+
+.pass {
+  color: #C55C60 !important;
+}
+
+.thanks {
+  display: none !important;
+  flex-direction: column;
+  gap: 2rem;
+}
+.thanks button {
+  min-width: 40rem;
+  padding: 1rem 0rem;
+  border-radius: 0.5rem;
+  background-color: #220930;
+  color: white;
+  border: none;
+}
+
+.activeThanks {
+  display: flex !important;
 }
 
 @media only screen and (max-width: 400px) {

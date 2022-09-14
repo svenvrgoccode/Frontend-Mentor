@@ -41,6 +41,9 @@
             margin-bottom: 2rem;
         }
         button{
+            a{
+                color: white !important;
+            }
             cursor: pointer;
             padding: 1.5rem 0rem;
             border: none;
@@ -49,12 +52,20 @@
             padding-left: 2rem;
             span{
                 background-color:#D5966B ;
-                padding: 1.7rem 2rem;
+                padding: 1.8rem 2rem;
                 margin-left: 2rem;
+            }
+            i{
+                transform: rotate(90deg);
+            }
+        }
+        button:hover{
+            background-color: #D5966B;
+            span{
+                background-color: black;
             }
         }
     }
-
 
    
 }

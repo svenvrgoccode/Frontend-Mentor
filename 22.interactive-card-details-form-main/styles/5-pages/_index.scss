@@ -42,6 +42,7 @@ input[type=number] {
     .card1,.card2{
         border-radius: 1rem;
         min-width: 40rem;
+        max-width: 40rem;
     }
     .card1{
         transform: translateX(-5rem);
@@ -51,9 +52,12 @@ input[type=number] {
         transform: translateX(5rem);
         .cvc{
             position: absolute;
-            top: 50%;
+            max-width: 5.5rem;
+            top: 49%;
             left: 80%;
-            transform: translateY(-50%) translateX(-0.5rem);
+            transform: translateY(-50%) translateX(1rem);
+            text-orientation: upright;
+            overflow: hidden;
         }
     }
     .card1{
@@ -112,6 +116,13 @@ input[type=number] {
 
 }
 
+.date-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 
 .formContainer{
     display: flex;
@@ -152,7 +163,7 @@ input[type=number] {
         gap: 2rem;
         .date{
             p{
-                color: #220930 !important;
+                color: #220930 ;
                 font-weight: 500;
             }
             .inputs{
@@ -166,8 +177,9 @@ input[type=number] {
         }
         .cvc{
             p{
+                text-orientation: sideways;
                 font-weight: 500;
-                color: #220930 !important;
+                color: #220930 ;
 
             }
             input{
@@ -188,4 +200,31 @@ input[type=number] {
 
 .errText{
     color: #C55C60 !important;
+}
+.warning{
+    color: #C55C60 !important;
+
+}
+.pass{
+    color: #C55C60 !important;
+
+}
+
+.thanks{
+    display: none  !important;
+
+    flex-direction: column;
+    gap: 2rem;
+    button{
+        min-width: 40rem;
+        padding: 1rem 0rem;
+        border-radius: 0.5rem;
+        background-color: #220930;
+        color: white;
+        border: none;
+    }
+}
+
+.activeThanks{
+    display: flex !important;
 }

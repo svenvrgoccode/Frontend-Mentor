@@ -115,10 +115,22 @@ a {
   color: white;
   padding-left: 2rem;
 }
+.hero .text2 button a {
+  color: white !important;
+}
 .hero .text2 button span {
   background-color: #D5966B;
-  padding: 1.7rem 2rem;
+  padding: 1.8rem 2rem;
   margin-left: 2rem;
+}
+.hero .text2 button i {
+  transform: rotate(90deg);
+}
+.hero .text2 button:hover {
+  background-color: #D5966B;
+}
+.hero .text2 button:hover span {
+  background-color: black;
 }
 
 .gallery {
