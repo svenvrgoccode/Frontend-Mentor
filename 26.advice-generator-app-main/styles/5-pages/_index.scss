@@ -1,0 +1,46 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+body{
+    padding: 2rem;
+    background-color: #202632;
+    min-height: 100vh;
+    @include flex(center,center,column); 
+
+}
+
+
+.container{
+    background-color: #313A49;
+    h3{
+        color: #53FFAB;
+    }
+    p{
+        color: white;
+    }
+    padding: 2rem;
+    max-width: 50rem;
+    border-radius: 0.5rem;
+    @include flex(center,center,column);
+    text-align: center;
+    gap: 2rem;
+    position: relative;
+    padding-bottom: 6rem;
+    .dice-wrap:hover{
+        box-shadow: #53FFAB 0px 0px 30px ;
+    }
+    
+    .dice-wrap{
+        cursor: pointer;
+        @include transition;
+        background-color: #53FFAB;
+        padding: 2rem;
+        border-radius: 10rem;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(50%);
+        
+        
+    }
+}

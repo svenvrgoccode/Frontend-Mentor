@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+.col-lg {
+  padding: 0rem !important;
+}
+
+.col-md {
+  padding: 0rem !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  max-width: 45rem;
+  color: black;
+}
+
+i {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+}
+
+h1 {
+  font-size: clamp(3.7rem, 5vw + 1rem, 4.5rem);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+  max-width: 35rem;
+  color: black;
+}
+
+h2 {
+  font-size: clamp(2.4rem, 4vw + 1rem, 3.2rem);
+}
+
+h3 {
+  font-size: clamp(1.8rem, 3vw + 1rem, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F7E9DC;
+}
+
+.balance {
+  background-color: #EC755D;
+  min-width: 50rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+.balance p {
+  color: white;
+}
+.balance h3 {
+  color: white;
+  font-weight: bold;
+}
+
+.chart-container {
+  width: 50rem;
+  min-height: 50rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+.chart-container .date-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.chart-container .bar-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0rem 2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+.chart-container .chart {
+  height: 30rem;
+  position: relative;
+}
+.chart-container .chart .date-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0rem 2rem;
+}
+.chart-container .day {
+  width: 5rem;
+  text-align: center;
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+  padding-bottom: 1rem;
+}
+.chart-container .day p {
+  color: #838383;
+}
+.chart-container .bar {
+  display: block;
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-color: #EC755D;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  width: 5rem;
+  margin-bottom: 5rem;
+  position: relative;
+  cursor: pointer;
+}
+.chart-container .bar .valueSHow {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+  position: absolute;
+  top: -5rem;
+  background-color: #3E2B1E;
+  border-radius: 0.5rem;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.chart-container .bar:hover .valueSHow {
+  opacity: 1;
+  pointer-events: all;
+}
+.chart-container .bar:hover {
+  background-color: #FF9B87;
+}
+.chart-container .current:hover {
+  background-color: #B4DFE5 !important;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.total h3 {
+  font-weight: bold;
+}
+.total h4 {
+  color: #838383;
+}
+.total p:last-of-type {
+  color: #838383;
+}
+.total span {
+  font-weight: bold;
+}
+.total .last-month {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+hr {
+  scale: 0.95;
+  opacity: 0.2;
+}
+
+h2 {
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
