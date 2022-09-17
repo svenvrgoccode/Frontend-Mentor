@@ -1,2 +1,163 @@
 @use '../1-helpers-colors/mixins' as *;
 @use '../1-helpers-colors/variables' as *;
+
+body{
+    min-height: 100vh;
+    @include flex(center,center,column);
+}
+
+.container{
+display: flex;
+gap: 2rem;
+
+
+.col:not(.user-col){
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.user-wrap{
+    background-color: #5746EA;
+    max-width: 40rem;
+    min-width: 30rem;
+    min-height: 40rem;
+    padding: 4rem;
+    p{
+        margin-top: 5rem;
+        color: #787AB5;
+    }
+    h1{
+        color: white;
+    }
+    img{
+        height: 10rem;
+        border: 2px solid white;
+        border-radius: 10rem;
+    }
+    border-radius: 2rem;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+
+.date-wrap{
+    border-radius: 2rem;
+    border-top-left-radius: 0rem ;
+    border-top-right-radius: 0rem;
+    background-color: #1D204B;
+    max-width: 40rem;
+    min-height: 20rem;
+    padding-top: 6rem;
+    padding-left: 2rem;
+
+    p{
+        color:#787AB5 ;
+        margin: 1rem 0rem;
+    }
+
+}
+
+
+.card{
+   
+    background-color: #1D204B !important;
+    min-height: 29rem;
+    min-width: 30rem;
+    border-radius: 2rem;
+    p{
+        color: white;
+    }
+    .wrap,.hours{
+        padding: 2rem;
+    }
+    P:last-of-type{
+        padding: 2rem;
+    }
+    .wrap{
+        padding: 0rem !important;
+        img{
+            padding: 0rem 2rem;
+        }
+    }
+
+}
+.color{
+    position: relative;
+    min-height: 6rem;
+    border-radius: 2rem;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    overflow: hidden;
+
+    img{
+        height: 5rem;
+        position: absolute;
+        right: 1rem;
+        width: 6rem;
+        object-fit: contain;
+        scale: 1.3;
+
+
+    }
+}
+
+.hours{
+    font-size: $header1;
+    padding-bottom: 0rem !important;
+}
+
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.work{
+    .color{
+        background-color: #FF8B64;
+    }
+}
+.exercise{
+    .color{
+        background-color: #4BCF83;
+    }
+}
+.play{
+    .color{
+        background-color: #56C2E6;
+    }
+}
+.social{
+    .color{
+        background-color: #7235D1;
+    }
+}
+
+.study{
+    .color{
+        background-color: #FF5E7D;
+    }
+}
+
+.self-care{
+    .color{
+    background-color: #F1C75B;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100rem;
+}
+
+
+
+}
+.btn{
+    cursor: pointer;
+}
+
+.active{
+    color: white !important;
+}
