@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+.col-lg {
+  padding: 0rem !important;
+}
+
+.col-md {
+  padding: 0rem !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  max-width: 45rem;
+  color: black;
+}
+
+i {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+}
+
+h1 {
+  font-size: clamp(3.7rem, 5vw + 1rem, 4.5rem);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+  max-width: 35rem;
+  color: black;
+}
+
+h2 {
+  font-size: clamp(2.4rem, 4vw + 1rem, 3.2rem);
+}
+
+h3 {
+  font-size: clamp(1.8rem, 3vw + 1rem, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input::placeholder {
+  text-align: right;
+}
+
+body {
+  background-color: #C5E4E7;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: white;
+  max-width: 80rem;
+  display: flex;
+}
+.container .input-bil-wrap {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.container .input-bil-wrap input {
+  padding: 0.5rem 2rem;
+  background-color: #F3F8FB;
+  border: none;
+  border-radius: 0.5rem;
+}
+.container .input-bil-wrap i {
+  margin-left: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.container .tip-wrap {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.container .tip-wrap button {
+  background-color: #00474B;
+  color: white;
+  padding: 0.5rem 2rem;
+  min-width: 10rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.container .tip-wrap input {
+  background-color: #F3F8FB;
+  color: white;
+  padding: 0.5rem 2rem;
+  max-width: 10rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: black;
+}
+.container .col {
+  width: 50%;
+}
+.container .col:last-of-type {
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: #00474B;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .col:last-of-type button {
+  min-width: 100%;
+  background-color: #0D686D;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.container .col:last-of-type p, .container .col:last-of-type h5, .container .col:last-of-type h2 {
+  color: white;
+}
+.container .col:last-of-type p {
+  opacity: 0.5;
+}
+.container .col:last-of-type h2 {
+  color: #26C3AC;
+}
+.container .input-people-wrap {
+  position: relative;
+}
+.container .input-people-wrap input {
+  padding: 0.5rem 2rem;
+  background-color: #F3F8FB;
+  border: none;
+  border-radius: 0.5rem;
+}
+.container .input-people-wrap i {
+  margin-left: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.container .tip-amount {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.container .amount-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

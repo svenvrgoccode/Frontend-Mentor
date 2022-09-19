@@ -1,0 +1,23 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+header{
+    .navBtn:hover{
+        background-color: #6FCFFF !important;
+        color: white !important;
+    }
+}
+
+footer a,i{
+    @include transition;
+    cursor: pointer;
+}
+
+footer a:hover{
+    color: white;
+}
+footer i:hover{
+    color: white;
+
+}

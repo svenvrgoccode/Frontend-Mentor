@@ -1,0 +1,38 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+// @media only screen and (max-width: 768px) {
+   
+//   }
+// @media only screen and (max-width: 992px) {
+   
+//   }
+// @media only screen and (max-width: 1200px) {
+   
+
+    @media only screen and (max-width: 1000px) {
+        .fa-bars{
+            display: block !important;
+            font-size: 4rem;
+            color: white;
+        }
+        .desk-nav{
+            display: none;
+        }
+        header{
+            .container{
+                display: flex;
+                align-items: center;
+            }
+        }
+
+    }
+
+    @media only screen and (min-width: 1000px) {
+        .mobile-container{
+            display: none;
+        }
+    }
+   

@@ -1,0 +1,295 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+.mobile-container{
+    position: relative;
+    width: 92vw;
+    opacity: 0;
+    pointer-events: none;
+    @include transition;
+
+}
+
+.mobile-containerActive{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.triangle {
+    position: absolute;
+    height: 0;
+    border-bottom: 100px solid white;
+    border-left: 100px solid transparent;
+    right: 0;
+    top: 5rem;
+  }
+
+
+.mobile-nav{
+    position: absolute;
+    background-color: white;
+    height: 40rem;
+    top: 10rem;
+    left: 0;
+    width: 92vw;
+    left: 50%;
+    transform: translateX(-50%);
+    @include flex(center,center,column);
+    text-align: center;
+    z-index: 100;
+
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        li{
+            margin: 2rem 0rem;
+            a{
+                color: black !important;
+            }
+        }
+
+    }
+    .navBtn{
+        background-color: #FBD601 !important;
+        padding: 1rem 2.5rem;
+                border-radius: 2rem;
+                color: black;
+    }
+}
+
+
+
+.fa-bars{
+    display: none !important;
+}
+
+
+.hero{
+    min-height: 100vh;
+    background-image: url(../images/desktop/image-header.jpg);
+    @include background;
+    text-align: center;
+    .container{
+        max-width: 100rem;
+        margin: auto;
+        padding-top: 20rem;
+        h1,img{
+            margin: auto;
+        }
+        h1{
+        letter-spacing: 0.8rem;
+            color: var(--white) !important;
+        }
+        img{
+            margin-top: 5rem;
+            scale: 1.5;
+        }
+    }
+}
+
+.cards{
+    .col{
+        width: 50%;
+        height: 80rem;
+
+    }
+    .text-wrap{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .row1,.row2{
+        .text-wrap{
+            width: 35rem;
+        }
+    }
+    .row1{
+        display: flex;
+        
+        .col:first-of-type{
+            h2{
+                font-weight: 900 ;
+            }
+            p{
+                opacity: 0.5 ;
+            }
+            h4{
+                position: relative;
+                width: 15rem;
+                cursor: pointer;
+            }
+            h4::after{
+                content: '';
+                width: 100%;
+                height: 1rem;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                z-index: -1;
+                background-color: #FCF6C0;
+            border-radius: 20rem;
+
+                @include transition;
+
+            }
+            h4:hover::after{
+                background-color: #F8D404 !important;
+                z-index: -1;
+
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+        .col:last-of-type{
+            background-image: url(../images/desktop/image-transform.jpg);
+            @include background;
+        }
+    }
+    .row2{
+        display: flex;
+       .col:first-of-type{
+        background-image: url(../images/desktop/image-stand-out.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+       .col:last-of-type{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            font-weight: 900 ;
+        }
+        p{
+            opacity: 0.5 ;
+        }
+        h4{
+            position: relative;
+            width: 15rem;
+            cursor: pointer;
+        }
+        h4::after{
+            content: '';
+            width: 100%;
+            height: 1rem;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+            background-color: #FEDAD6;
+            @include transition;
+            border-radius: 20rem;
+
+        }
+        h4:hover::after{
+            background-color: #F87467 !important;
+            z-index: -1;
+
+        }
+       }
+    }
+    .row3{
+        display: flex;
+        .col:first-of-type{
+            background-image: url(../images/desktop/image-graphic-design.jpg);
+            @include background;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: center;
+            .text-wrap{
+                margin-bottom: 5rem;
+                h3,p{
+                    color: #225649
+                }
+                p{
+                    opacity: 0.7;
+                }
+            }
+        }
+        .col:last-of-type{
+            background-image: url(../images/desktop/image-photography.jpg);
+            @include background;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: center;
+            .text-wrap{
+                margin-bottom: 5rem;
+                h3,p{
+                    color: #155170
+                }
+                p{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+.testimonial{
+    .testi-heading{
+        margin-bottom: 10rem;
+        text-transform: uppercase;
+        opacity: 0.5;
+        letter-spacing: 0.8rem;
+
+
+    }
+
+    img{
+        border-radius: 10rem;
+        height: 8rem;
+    }
+    
+    
+    min-height: 70rem;
+    @include flex (center,center,column);
+
+    .container{
+        padding: 0rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem
+    }
+    .col{
+    @include flex (center,center,column);
+    text-align: center;
+    gap: 3rem
+    ;
+
+    }
+    p{
+        opacity: 0.5;
+    }
+}
+
+.gallery{
+    .container{
+        display: flex;
+    }
+    .col{
+        height: 60rem;
+        width: 25%;
+        @include background;
+    }
+    .col1{
+        background-image: url(../images/desktop/image-gallery-cone.jpg);
+    }
+    .col2{
+        background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+    }
+    .col3{
+        background-image: url(../images/desktop/image-gallery-orange.jpg);
+    }
+    .col4{
+        background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+    }
+}

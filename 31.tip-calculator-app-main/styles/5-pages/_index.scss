@@ -1,0 +1,116 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+input::placeholder{
+    text-align: right;
+}
+body{
+    background-color: #C5E4E7;
+    min-height: 100vh;
+    @include flex(center,center,column);
+}
+
+.container{
+    border-radius: 1rem;
+
+    .input-bil-wrap{
+        margin-bottom: 2rem;
+        input{
+            padding: 0.5rem 2rem;
+            background-color: #F3F8FB;
+            border: none;
+            border-radius: 0.5rem;
+        }
+        position: relative;
+        i{
+            margin-left: 2rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .tip-wrap{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        button{
+            background-color: #00474B;
+            color: white;
+            padding: 0.5rem 2rem;
+            min-width: 10rem;
+            border-radius: 0.5rem;
+            border: none;
+
+        }
+        input{
+            background-color: #F3F8FB;
+            color: white;
+            padding: 0.5rem 2rem;
+            max-width: 10rem;
+            border-radius: 0.5rem;
+            border: none;
+            color: black;
+        }
+      
+    }
+    padding: 2rem;
+    background-color: white;
+    max-width: 80rem;
+    display: flex;
+    .col{
+        width: 50%;
+    }
+    .col:last-of-type{
+        border-radius: 1rem;
+        padding: 2rem;
+        background-color: #00474B;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        button{
+            min-width: 100%;
+            background-color: #0D686D;
+            border: none;
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+        p,h5,h2{
+            color: white;
+        }
+        p{
+            opacity: 0.5;
+        }
+        h2{
+            color: #26C3AC;
+        }
+    }
+    .input-people-wrap{
+        position: relative;
+        input{
+            padding: 0.5rem 2rem;
+            background-color: #F3F8FB;
+            border: none;
+            border-radius: 0.5rem;
+        }
+        i{
+            margin-left: 2rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .tip-amount{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    .amount-wrap{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+}
