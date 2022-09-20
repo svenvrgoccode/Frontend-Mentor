@@ -493,7 +493,7 @@ footer li:hover {
     text-align: center;
   }
   .future img {
-    content: url("/images/illustration-editor-mobile.svg");
+    content: url("../images/illustration-editor-mobile.svg");
   }
   .future .containerM {
     flex-direction: column;
@@ -551,7 +551,7 @@ footer li:hover {
     transform: translateX(0) !important;
     scale: 1 !important;
     margin-bottom: 2rem;
-    content: url("/images/illustration-laptop-mobile.svg");
+    content: url("../images/illustration-laptop-mobile.svg");
   }
   .outro .containerM {
     flex-direction: column;

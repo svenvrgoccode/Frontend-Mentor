@@ -59,7 +59,7 @@
   }
   .future{
     img{
-      content: url("/images/illustration-editor-mobile.svg");
+      content: url("../images/illustration-editor-mobile.svg");
     }
     .containerM{
       flex-direction: column;
@@ -112,7 +112,7 @@
       transform: translateX(0) !important;
       scale: 1 !important;
       margin-bottom: 2rem;
-      content: url("/images/illustration-laptop-mobile.svg");
+      content: url("../images/illustration-laptop-mobile.svg");
     }
     .containerM{
       flex-direction: column;
