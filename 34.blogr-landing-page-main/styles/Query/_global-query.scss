@@ -44,11 +44,7 @@
         display: none !important;
       }
    }
-    .fa-bars{
-      display: block !important;
-      font-size: 4rem;
-      color: white;
-  }
+ 
   .hero{
     h1{
         max-width: 60rem;
@@ -138,6 +134,9 @@
         margin-bottom: 0rem;
       }
     }
+  }
+  .bars{
+    display: block;
   }
   }
 

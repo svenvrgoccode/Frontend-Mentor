@@ -15,6 +15,7 @@ header{
         display: flex;
         justify-content: space-between;
       .dropdowns{
+        margin: 0rem !important;
         display: flex;
         gap: 2rem;
       }
@@ -41,15 +42,18 @@ header{
 }
 
 .mobile-wrap{
+    @include transition;
+    opacity: 0;
+    pointer-events: none;
     left: 50%;
     top: 10rem;
     transform: translateX(-50%);
     position: absolute;
     z-index: 100;
     background-color: white;
-    min-height: 40rem;
+    min-height: 60rem;
     padding: 5rem;
-    width: 50%;
+    min-width: 90%;
     @include flex(center,center,column);
     .dropdown-menu{
         position: static !important;
@@ -80,7 +84,12 @@ header{
         border: none;
 
     }
-    button:hover{
+    button:not(.button-wrap button:last-of-type):hover{
+        background: none !important;
+        text-decoration: underline;
+        color: black !important;
+    }
+    button:focus{
         background: none !important;
         text-decoration: underline;
         color: black !important;
@@ -89,5 +98,33 @@ header{
         display: flex;
         flex-direction: column;
         align-items: center;
+        button:last-of-type{
+            background-image: linear-gradient(to right,#FE866E,#FF4A59);
+            border-radius: 10rem;
+            margin-top: 2rem;
+            color: white;
+        }
     }
+    .dropdown-menu{
+        text-align: center;
+        border: none;
+        background-color: #EFEFF1;
+    }
+}
+
+
+.mobile-wrapActive{
+opacity: 1;
+pointer-events: all;
+}
+
+.bars{
+    scale: 1.5;
+    transform: scaleX(0.9);
+    object-fit: contain;
+    height: 3rem !important;
+    width: 3rem !important;
+    display: none;
+    cursor: pointer;
+    
 }
