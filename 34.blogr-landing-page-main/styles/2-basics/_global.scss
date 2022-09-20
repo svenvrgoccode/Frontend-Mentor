@@ -1,0 +1,18 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+.containerM{
+  padding: 0rem 20rem;
+}
+  
+.col-lg{
+  padding: 0rem !important;
+}
+.col-md{
+  padding: 0rem !important;
+}
+
+
+

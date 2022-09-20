@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
+button {
+  font-weight: bold;
+}
+
+body {
+  max-width: 2300px;
+  margin: auto;
+}
+
+.col-lg {
+  padding: 0rem !important;
+}
+
+.col-md {
+  padding: 0rem !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+.logo {
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  max-width: 45rem;
+  color: black;
+}
+
+i {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+}
+
+h1 {
+  font-size: clamp(3.7rem, 5vw + 1rem, 4.5rem);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+  max-width: 35rem;
+  color: black;
+}
+
+h2 {
+  font-size: clamp(2.4rem, 4vw + 1rem, 3.2rem);
+}
+
+h3 {
+  font-size: clamp(1.8rem, 3vw + 1rem, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  padding: 2rem 20rem;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+header button {
+  padding: 1.2rem 2rem;
+  font: bold;
+  border-radius: 1rem;
+  color: black;
+  background-color: #E7EFF2;
+  border: none;
+}
+
+.hero {
+  min-height: 50rem;
+  margin-top: 7rem;
+}
+.hero h1 {
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.hero .container {
+  display: flex;
+}
+.hero .container .white {
+  height: 50rem;
+  width: 20rem;
+}
+.hero .container .grey {
+  height: 20rem;
+  border-radius: 1rem;
+  transform: translateX(2rem);
+  width: 20rem;
+  background-color: #E7EFF2;
+}
+.hero .inner-container {
+  width: calc(100% - 40rem);
+  display: flex;
+  justify-content: space-between;
+}
+.hero .inner-container img {
+  height: 40rem;
+  width: 60rem;
+  border-radius: 1rem;
+}
+.hero .inner-container .text-wrap {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero .inner-container .text-wrap .button-wrap {
+  display: flex;
+  gap: 2rem;
+}
+.hero .inner-container .text-wrap button {
+  padding: 1.2rem 2rem;
+  font: bold;
+  color: white;
+}
+.hero .inner-container .text-wrap button:first-of-type {
+  background-color: #F36617;
+  border: none;
+  border-radius: 1rem;
+}
+.hero .inner-container .text-wrap button:last-of-type {
+  background: none;
+  border: none;
+  color: black;
+}
+
+.mechanical {
+  min-height: 65rem;
+}
+.mechanical .container {
+  max-height: 70rem;
+  overflow: hidden;
+  display: flex;
+}
+.mechanical .container .col {
+  height: 50rem;
+}
+.mechanical .container .grey {
+  bottom: 0;
+  transform: translateY(30rem) translateX(-2rem);
+  width: 20rem;
+  height: 20rem;
+  background-color: #E7EFF2;
+  border-radius: 1rem;
+}
+.mechanical .inner-container {
+  width: calc(100% - 40rem);
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.mechanical .inner-container .white {
+  height: 50rem;
+  width: 20rem;
+}
+.mechanical .inner-container img {
+  height: 70rem;
+}
+.mechanical .inner-container .img1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(228, 98, 23, 0.662745098);
+  border-radius: 1rem;
+}
+.mechanical .inner-container .img1 {
+  width: 40%;
+  position: relative;
+}
+.mechanical .inner-container .img1 img {
+  width: 100%;
+  object-fit: cover;
+}
+.mechanical .inner-container .img2 {
+  width: 70%;
+}
+.mechanical .inner-container .img2 img {
+  width: 100%;
+  object-fit: cover;
+}
+.mechanical .inner-container .text {
+  position: relative;
+  margin-left: 0rem;
+  width: 30%;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mechanical .inner-container .text .text-wrap {
+  position: absolute;
+  right: 0;
+  margin-left: 4rem;
+}
+.mechanical .inner-container .text h2 {
+  text-transform: uppercase;
+  max-width: 20rem;
+  line-height: 1;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.mechanical .inner-container .text p {
+  max-width: 25rem;
+}
+
+.benefits {
+  margin-bottom: 15rem;
+}
+.benefits .container {
+  padding: 0rem 20rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+}
+.benefits .container .img-wrap {
+  background-color: #EF6615;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+.benefits .container .text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.benefits .container .text-wrap h3 {
+  font-weight: bold;
+  max-width: 20rem;
+  line-height: 1;
+}
+
+@media only screen and (max-width: 1350px) {
+  header {
+    padding: 2rem 5rem;
+  }
+  .hero {
+    min-height: 45rem !important;
+    padding: 0rem 5rem;
+  }
+  .hero .inner-container {
+    width: 100% !important;
+    min-height: 40vh !important;
+  }
+  .hero .grey, .hero .white {
+    display: none;
+  }
+  .hero img {
+    position: absolute;
+    top: 14rem;
+    right: -10rem;
+    height: 40rem !important;
+  }
+  .mechanical .container {
+    overflow: visible;
+  }
+  .mechanical .grey, .mechanical .white {
+    display: none;
+  }
+  .mechanical .inner-container {
+    width: 100% !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .mechanical .inner-container .img1, .mechanical .inner-container .img2 {
+    height: 40rem !important;
+  }
+  .mechanical .inner-container .img1 img, .mechanical .inner-container .img2 img {
+    height: 40rem !important;
+    border-radius: 1rem;
+  }
+  .mechanical .inner-container .img1 {
+    width: calc(37% - 5rem) !important;
+    margin-left: 5rem;
+  }
+  .mechanical .inner-container .img2 {
+    width: calc(60% - 5rem) !important;
+    margin-right: 5rem;
+  }
+  .mechanical .text {
+    width: 100% !important;
+    height: 5rem !important;
+    margin-top: 5rem;
+  }
+  .mechanical .text-wrap {
+    margin-left: 0rem !important;
+    position: static !important;
+    display: flex;
+    gap: 15rem;
+  }
+  .mechanical .text-wrap p {
+    max-width: 100rem !important;
+  }
+  .benefits .container {
+    padding: 0rem 5rem;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hero {
+    min-height: 80rem !important;
+  }
+  .hero .text-wrap {
+    min-height: 30rem;
+  }
+  .hero .inner-container {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .hero .inner-container .img-wrap {
+    position: relative;
+    height: 20rem;
+  }
+  .hero .inner-container img {
+    margin-top: 5rem;
+    transform: translateY(5rem);
+    top: -10rem;
+    position: absolute;
+    object-fit: cover;
+    min-width: calc(100% + 10rem);
+  }
+  .mechanical .content {
+    gap: 0rem !important;
+  }
+  .mechanical .img1 {
+    margin-left: 0rem !important;
+    transform: translateX(-10rem);
+    min-width: 25rem !important;
+    position: absolute !important;
+    max-width: 25rem !important;
+  }
+  .mechanical .img2 {
+    margin-left: 20rem;
+    margin-right: 0rem !important;
+    min-width: calc(100% - 25rem);
+  }
+  .mechanical .img2 img {
+    width: 100%;
+  }
+  .mechanical .text .text-wrap {
+    margin-top: 20rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .mechanical .text .text-wrap p {
+    max-width: 30rem !important;
+  }
+  .benefits {
+    margin-top: 20rem;
+  }
+  .benefits .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .benefits .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .benefits .col h3 {
+    margin: auto;
+  }
+}
+@media (max-width: 400px) {
+  .hero .img-wrap {
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 454px) {
+  .hero .button-wrap {
+    flex-wrap: wrap;
+  }
+  .hero .button-wrap button {
+    min-width: 18rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

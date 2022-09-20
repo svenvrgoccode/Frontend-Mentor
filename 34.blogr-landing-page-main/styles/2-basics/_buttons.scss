@@ -1,0 +1,27 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+button{
+    font-size: $text !important; 
+
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+    border: none;
+    background: white;
+    border: 1px solid white;
+}
+
+header{
+    button{
+        border-radius: 4rem;
+    }
+}
+
+.hero{
+    button{
+        border-radius: 4rem;
+
+    }
+}

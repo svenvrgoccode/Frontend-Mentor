@@ -1,0 +1,20 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+header{
+    padding: 2rem 20rem;
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    button{
+        padding: 1.2rem 2rem;
+        font: bold;
+        border-radius: 1rem;
+        color: black;
+        background-color: #E7EFF2;
+        border: none;
+    }
+}

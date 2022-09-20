@@ -1,0 +1,44 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+.dropdown-toggle:hover{
+    text-decoration: underline;
+}
+
+button{
+    @include transition;
+}
+
+header{
+    button:first-of-type:hover{
+        text-decoration: underline;
+    }
+    button:last-of-type:hover{
+        background-color: #FF7B86;
+        border: 1px solid transparent;
+        color: white;
+    }
+}
+
+.hero{
+    button:first-of-type:hover{
+        background-color: #FF7B86;
+        border: 1px solid transparent;
+        color: white;
+
+    }
+    button:last-of-type:hover{
+        background-color: white !important;
+        border: 1px solid transparent;
+        color: black !important;
+
+    }
+}
+
+footer li{
+    cursor: pointer;
+}
+
+footer li:hover{
+    text-decoration: underline;
+}

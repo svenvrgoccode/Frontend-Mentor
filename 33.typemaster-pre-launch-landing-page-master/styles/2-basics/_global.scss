@@ -1,0 +1,16 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+body{
+  max-width: 2300px;
+  margin: auto;
+}
+
+
+  
+.col-lg{
+  padding: 0rem !important;
+}
+.col-md{
+  padding: 0rem !important;
+}

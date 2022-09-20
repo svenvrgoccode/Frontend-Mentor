@@ -1,0 +1,196 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+// @media only screen and (max-width: 768px) {
+   
+//   }
+// @media only screen and (max-width: 992px) {
+   
+//   }
+// @media only screen and (max-width: 1200px) {
+   
+//   }
+
+
+@media only screen and (max-width: 1350px) {
+header{
+    padding: 2rem 5rem;
+}
+    .hero{
+        min-height: 45rem !important;
+        padding: 0rem 5rem;
+        .inner-container{
+            width: 100% !important;
+            min-height: 40vh !important;
+        }
+        .grey,.white{
+            display: none;
+        }
+        img{
+            position: absolute;
+            top: 14rem;
+            right: -10rem;
+            height: 40rem !important;
+        }
+    
+    }
+    
+    .mechanical{
+        .container{
+            overflow: visible;
+        }
+
+        .grey,.white{
+            display: none;
+        }
+        .inner-container{
+            width: 100% !important;
+            flex-direction: row;
+            flex-wrap: wrap;
+    
+            .img1,.img2{
+                img{
+                    height: 40rem !important;
+                    border-radius: 1rem;
+                }
+                height: 40rem !important;
+            }
+            .img1{
+                width: calc(37% - 5rem) !important;
+                margin-left: 5rem;
+            }
+            .img2{
+                width: calc(60% - 5rem) !important;
+                margin-right: 5rem;
+
+            }
+           
+           
+        }
+        .text{
+            width: 100% !important;
+            height: 5rem !important;
+            margin-top: 5rem;
+        }
+        .text-wrap{
+            margin-left: 0rem !important ;
+            position: static !important;
+            display: flex;
+            gap: 15rem;
+            p{
+                max-width: 100rem !important;
+            }
+
+        }
+    }
+    
+    .benefits{
+        .container{
+            padding: 0rem 5rem;
+            flex-wrap: wrap;
+        }
+    }
+    
+  }
+
+@media only screen and (max-width: 992px) {
+    .hero{
+        .text-wrap{
+            min-height: 30rem;
+        }
+        min-height: 80rem !important;
+        .inner-container{
+            display: flex;
+            flex-direction: column !important;
+            .img-wrap{
+                position: relative;
+                height: 20rem;
+
+
+            }
+            img{
+                margin-top: 5rem;
+                transform: translateY(5rem);
+                top: -10rem;
+                position: absolute;
+                object-fit: cover;
+                min-width: calc(100% + 10rem);
+
+            }
+        }
+    }
+    .mechanical{
+        .content {
+            gap: 0rem !important;
+            // margin-top: 5rem;
+        }
+        .img1{
+            margin-left: 0rem !important;
+            transform: translateX(-10rem);
+            min-width: 25rem !important;
+            position: absolute !important;
+            max-width: 25rem !important;
+        }
+        .img2{
+            margin-left: 20rem;
+            margin-right: 0rem !important;
+            min-width: calc(100% - 25rem);
+
+            img{
+                
+                width: 100%;
+            }
+        }
+        .text{
+            .text-wrap{
+            margin-top: 20rem !important;
+
+                @include flex(center,center,column);
+                text-align: center;
+                flex-direction: column;
+                gap: 2rem;
+                p{
+                    max-width: 30rem !important;
+                }
+            }
+        }
+    }
+    .benefits{
+            
+        margin-top: 20rem;
+        .container{
+            @include flex(center,center,column);
+        }
+        .col{
+            @include flex(center,center,column);
+            text-align: center;
+            h3{
+                margin: auto;
+            }
+
+        }
+
+        
+    }
+
+  }
+
+@media (max-width: 400px){
+    .hero{
+        .img-wrap{
+            margin-bottom: 5rem;
+        }
+    }
+}
+@media (max-width: 454px){
+    .hero{
+        .button-wrap{
+            flex-wrap: wrap;
+            button{
+                min-width: 18rem;
+            }
+        }
+    }
+}

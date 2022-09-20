@@ -1,0 +1,149 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+// @media only screen and (max-width: 768px) {
+   
+//   }
+// @media only screen and (max-width: 992px) {
+   
+//   }
+// @media only screen and (max-width: 1200px) {
+   
+//   }
+
+
+@media only screen and (max-width: 400px) {
+    html{
+        font-size: 58%;
+    }
+    .hero{
+      padding: 0rem 1rem;
+    }
+    button{
+      padding: 1rem 1.5rem;
+    }
+   
+  }
+
+  @media (max-width:1400px){
+    .containerM{
+      padding: 0rem 10rem;
+    }
+  }
+  @media (max-width:1200px){
+    .containerM{
+      padding: 0rem 5rem;
+    }
+  }
+  
+  
+  @media(max-width: 992px){
+   header{
+    .dropdowns,.button-wrap{
+        display: none !important;
+      }
+   }
+    .fa-bars{
+      display: block !important;
+      font-size: 4rem;
+      color: white;
+  }
+  .hero{
+    h1{
+        max-width: 60rem;
+        padding: 0rem 1rem;
+        text-align: center;
+    }
+    p{
+      max-width: 30rem;
+      text-align: center;
+    }
+    background-position: center;
+  }
+  .future{
+    img{
+      content: url("/images/illustration-editor-mobile.svg");
+    }
+    .containerM{
+      flex-direction: column;
+      .colM{
+        width: 100%;
+        @include flex(center,center,column);
+        text-align: center;
+      }
+      .colM:last-of-type{
+        order: 1;
+        min-height: 30rem;
+        margin-bottom: 7rem;
+
+      }
+      .colM:first-of-type{
+        order: 2;
+      }
+    }
+    .futureImg{
+      transform: translateX(0) !important;
+      scale: 1;
+    }
+  }
+  .art{
+    background-position: top -300px right 50% !important;
+
+    min-height: 80rem;
+    .containerM{
+      flex-direction: column;
+      align-items: center;
+      .colM{
+        @include flex(center,center,column);
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .art::after{
+    min-height: 80rem;
+
+  }
+  .outro{
+    padding: 5rem 0rem;
+    .colM{
+    width: 100% !important;
+    @include flex(center,center,column);
+    }
+   
+    img{
+      transform: translateX(0) !important;
+      scale: 1 !important;
+      margin-bottom: 2rem;
+      content: url("/images/illustration-laptop-mobile.svg");
+    }
+    .containerM{
+      flex-direction: column;
+      @include flex(center,center,column);
+      text-align: center;
+
+    }
+  }
+  footer{
+  
+    .containerM{
+      flex-direction: column;
+      .colM{
+        @include flex(center,center,column);
+        text-align: center;
+        margin-bottom: 5rem;
+      }
+      .colM:last-of-type{
+        margin-bottom: 0rem;
+      }
+    }
+  }
+  }
+
+
+  @media(min-width: 992px){
+    .mobile-wrap{
+      display: none;
+    }
+  }
