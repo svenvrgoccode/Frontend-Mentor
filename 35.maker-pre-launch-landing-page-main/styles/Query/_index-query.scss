@@ -1,0 +1,132 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+// @media only screen and (max-width: 768px) {
+   
+//   }
+// @media only screen and (max-width: 992px) {
+   
+//   }
+@media only screen and (max-width: 1300px) {
+ 
+   .hero{
+     
+      .left{
+          left: -21rem;
+          top: 0;
+      }
+      .right{
+          right: -21rem;
+          top: 0;
+      }
+  
+
+  }
+  .cards{
+   height: 80rem;
+   .containerM{
+      flex-direction: column;
+   }
+   .cardM{
+      flex-direction: row;
+      .img-wrap{
+         margin-right: 4rem;
+      }
+   }
+   .cardM:nth-child(odd){
+      margin-left: 5rem;
+  }
+  }
+  .cardM:nth-child(even){
+   margin-top: 0rem !important;
+}
+.pricing-cards{
+   flex-direction: column;
+   .card1{
+      margin-bottom: 5rem;
+   }
+}
+  }
+
+
+
+
+@media only screen and (max-width: 992px) {
+   header{
+      .containerM{
+         display: flex;
+         justify-content: center;
+      }
+   }
+  
+    
+     .hero{
+      height: 80rem;
+      margin-top: 0rem;
+      @include flex(center,center,column);
+      gap: 5rem;
+      .left,.right{
+         display: none;
+        }
+        .text-wrap::after{
+         display: none;
+        }
+        .mob-hero{
+         height: 30rem;
+         content: url(/images/illustration-hero-mobile.png);
+         object-fit: contain;
+         scale: 1.1;
+        }
+        .text-wrap{
+         padding: 0rem 4rem;
+        }
+     }
+     .cards{
+      margin-top: 10rem;
+     height: 120rem;
+      .cardM{
+         @include flex(center,center,column);
+         text-align: center;
+         flex-direction: column;
+         .img-wrap{
+            margin-right: 0rem !important;
+         }
+      }
+      .cardM:nth-child(odd){
+         margin-left: 0rem !important;
+     }
+
+     }
+     form{
+      flex-direction: column;
+      input{
+
+         width: (95%) !important;
+         padding: 1rem 2rem !important;
+      }
+     }
+.pricing-cards{
+   padding: 0rem 1.5rem;
+   .card2{
+      min-height: 45rem ;
+   }
+}
+.mail{
+   margin: 0rem 1.5rem;
+   h2{
+      text-align: center;
+   }
+}
+.pricing-heading{
+   p{
+      padding: 0rem 2rem;
+   }
+}
+.notice{
+   min-width: 30rem !important;
+}
+  
+  }
+
