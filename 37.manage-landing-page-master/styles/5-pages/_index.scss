@@ -1,0 +1,169 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+.hero{
+    .container{
+        padding-top: 10rem;
+        display: flex;
+        .col{
+            width: 50%;
+        }
+        .txt{
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            align-items: flex-start;
+            h1{
+                font-weight: bold;
+            }
+        }
+        .img{
+            position: relative;
+            img{
+                pointer-events: none;
+            }
+        }
+        .img::after{
+            content: url('../images/bg-tablet-pattern.svg');
+            position: absolute;
+            top: -50rem;
+            scale: 1.2;
+            right: -30rem;
+            z-index: -1;
+
+        }
+    }
+}
+
+.different{
+    .container{
+        padding-top: 10rem;
+         display: flex;
+        justify-content: space-between;
+        .col{
+            width: 50%;
+            h2{
+                margin-bottom: 3rem;
+                font-weight: 700;
+            }
+        }
+        .col:last-of-type{
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            .number{
+                display: flex;
+                align-items: center;
+                margin-bottom: 2rem;
+                div:first-of-type{
+                    margin-right: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    width: 6rem;
+                    border-radius: 20rem;
+                    background-color: $Bright-Red;
+                    padding: 1rem 0rem;
+                    p{
+                    color: $text-color-white !important;
+                    }
+                }
+                div:last-of-type{
+                    p{
+                        color: $Very-Dark-Blue;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .text{
+                transform: translateX(8rem);
+                p{
+                    max-width: calc(100% - 8rem);
+                }
+            }
+        }
+        .col-pattern{
+            position: relative;
+        }
+        .col-pattern::after{
+            content: url('../images/bg-tablet-pattern.svg');
+            scale: 1.2;
+
+            position: absolute;
+            left: -70rem;
+            top: 40rem;
+            z-index: -1;
+        }
+
+    }
+}
+
+.splide{
+
+    padding-top: 10rem;
+    h2{
+        text-align: center;
+        margin: auto;
+        padding-bottom: 12rem;
+        font-weight: bold;
+
+    }
+    .splide__list{
+        min-width: 100%;
+        display: flex;
+        gap: 8rem;
+
+    }
+    .splide__slide{
+        text-align: center;
+        cursor: pointer;
+        background-color: #FAFAFA;
+        min-width: 30.3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        padding: 3rem 2rem;
+        img{
+            height: 8rem;
+            width: 8rem;
+        }
+    }
+    .splide__arrow{
+        display: none;
+    }
+    .splide__pagination{
+        display: none;
+    }
+}
+
+
+.newsletter{
+    min-height: 10vh;
+
+    margin-top: 10rem;
+    background-color: $Bright-Red;
+    background-image: url(../images/bg-simplify-section-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2{
+        color: $text-color-white;
+    }
+    .container{
+      
+        padding: 8rem 0rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button{
+            background-color: white;
+            color: $Bright-Red !important;
+        }
+    }
+   
+
+
+}
+

@@ -1,0 +1,206 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+button{
+    background-image: linear-gradient(to right,#4EC6D4,#40AED1);
+    padding: 1rem 7rem;
+    border: none;
+    border-radius: 10rem;
+    color: white;
+}
+
+
+.hero{
+    padding-top: 5rem;
+    position: relative;
+    background-color: #1C2230;
+    min-height: 105vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h1,p{
+        color: white;
+        max-width: 70rem;
+    }
+    p{
+        opacity: 0.5;
+    }
+    .hero-wrap{
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+  
+}
+
+
+.curvy{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+
+.benefits{
+    position: relative;
+    .cardM{
+        @include flex(center,center,column);
+        text-align: center;
+        gap: 2rem;
+        h4,p{
+            color: white;
+        }
+        p{
+            opacity: 0.5;
+        }
+    }
+    display: grid;
+    justify-content: center;
+    gap: 8rem;
+    grid-template-areas: 
+    "card1 card2"
+    "card3 card4"
+    ;
+    .card1{
+        grid-area: card1;
+    }
+    .card2{
+        grid-area: card2;
+    }
+    .card3{
+        grid-area: card3;
+    }
+    .card4{
+        grid-area: card4;
+    }
+}
+
+.productive{
+    padding: 10rem 0rem;
+    .containerM{
+        display: flex;
+        gap: 8rem;
+        align-items: center;
+        .colM{
+            width: 50%;
+        }
+    }
+    h2{
+        max-width: 30rem;
+        color: white;
+    }
+    p{
+        max-width: 90rem;
+        color: white;
+        opacity: 0.5;
+    }
+    a{
+        color: #4DC4D4;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+    }
+    .textCol{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.testimonials{
+    padding: 10rem 0rem;
+    .containerM{
+    position: relative;
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+        .cardM{
+            border-radius: 0.5rem;
+            padding: 3rem 5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            background-color: #21293C;
+            p{
+                color: white;
+                opacity: 0.5;
+            }
+
+            img{
+                height: 5rem;
+                border-radius: 20rem;
+            }
+            .user{
+                display: flex;
+                gap: 2rem;
+                h5{
+                    margin-bottom: 0.5rem;
+                }
+                h5,h6{
+                    color: white;
+                }
+                h6{
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+.testimonials .containerM::before{
+    content: url(../images/bg-quotes.png);
+    position: absolute;
+    top: -3rem;
+    scale: 1.2;
+    z-index: -2;
+    left: -1rem;
+}
+
+
+
+.newsletter div{
+    transform: translateY(50%);
+    border-radius: 0.5rem;
+    p{
+        max-width: 80rem;
+    }
+    padding: 4rem ;
+    background-color: #1C2431;
+    max-width: 90rem;
+    margin: auto;
+    @include flex(center,center,column);
+    gap: 2rem;
+    text-align: center;
+    h2{
+        color: white;
+    }
+
+  
+    
+    p{
+        color: white;
+        opacity: 0.5;
+    }
+    input{
+        padding: 1rem 2rem;
+        border-radius: 20rem;
+    }
+    form{
+        display: flex;
+        gap: 2rem;
+    }
+    .submitBtn{
+        background-image: linear-gradient(to right,#4EC6D4,#40AED1);
+        border: none;
+        color: white;
+    }
+}
+

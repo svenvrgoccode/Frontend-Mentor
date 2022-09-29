@@ -1,0 +1,90 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+// @media only screen and (max-width: 768px) {
+   
+//   }
+// @media only screen and (max-width: 992px) {
+   
+//   }
+@media only screen and (max-width: 1070px) {
+
+    header{
+        img{
+            height: 3rem;
+        }
+        ul{
+            margin-bottom: 0rem !important;
+        }
+    }
+
+    .containerM{
+        padding: 0rem 1rem;
+        max-width: 700px;
+        .colM{
+            width: 100% !important;
+        }
+    }
+    .hero{
+        padding: 0rem 2rem;
+        padding-top: 5rem;
+        min-height: 30vh;
+    }
+    
+    
+    .benefits{
+        margin-top: 15rem;
+        grid-template-areas: 
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        !important ;
+    }
+    .productive{
+        .containerM{
+            flex-direction: column;
+        }
+    }
+    .testimonials{
+        padding-bottom: 0rem;
+        .containerM{
+            flex-direction: column;
+        }
+        .containerM::before{
+            left: 2rem;
+        }
+    }
+    .newsletter{
+        padding: 0rem 2rem;
+        form{
+            flex-direction: column;
+        }
+    }
+    footer{
+        margin-top: 10rem;
+        .rowM:last-of-type{
+            flex-direction: column;
+        }
+        .social-icons{
+            justify-content: center;
+        }
+        ul{
+            padding-left: 0rem;
+        }
+        .colM:not(.colM:first-of-type){
+            margin-bottom: 4rem;
+        }
+        .colM:first-of-type{
+            margin-bottom: 2rem;
+        }
+        .colM:nth-of-type(2){
+            p{
+                margin-bottom: 2rem;
+            }
+        }
+      
+    }
+  }

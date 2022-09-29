@@ -1,0 +1,113 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+// @media only screen and (max-width: 768px) {
+   
+//   }
+// @media only screen and (max-width: 992px) {
+   
+//   }
+@media only screen and (max-width: 1500px) {
+    .container{
+        max-width: 1000px;
+        margin: auto;
+      }
+   .hero{
+    .img::after{
+        scale: 1 !important;
+        right: -35rem !important;
+
+    }
+   }
+   .different{
+    .col-pattern::after{
+        scale: 1 !important;
+    }
+   }
+   .splide__slide{
+    min-width: 50% !important;
+   }
+
+  }
+@media only screen and (max-width: 1102px) {
+    .container{
+        margin: 0rem 3rem  !important;
+    }
+    .hero{
+        .container{
+            flex-direction: column;
+            gap: 3rem;
+            .col{
+                @include flex(center,center,column);
+                width: 100%;
+                text-align: center;
+            }
+            .txt{
+                order: 2;
+            }
+        }
+       }
+       .different{
+        .col:first-of-type{
+            @include flex(center,center,column);
+            text-align: center;
+        }
+        .container{
+            flex-direction: column;
+            gap: 6rem;
+            .col{
+                width: 100%;
+            }
+        }
+        .text{
+            transform: translateX(0) !important;
+            p{
+                max-width: 100% !important;
+            }
+        }
+
+        .number {
+            div:last-of-type{
+                background-color:#FFF0E9 ;
+                width: 100%;
+                padding: 1rem 2rem;
+                border-radius: 20rem;
+
+
+            }
+        }
+       }
+       .splide__slide{
+        min-width: 100% !important;
+       }
+       .newsletter{
+        .container{
+            flex-direction: column;
+            gap: 6rem;
+                text-align: center !important;
+        }
+       }
+       .newsletter{
+        background-image: none;
+       }
+       .hero{
+        .img::after{
+            scale: 0.7 !important;
+            top: -40rem !important;
+
+        }
+       }
+  }
+
+  
+
+@media only screen and (max-width: 400px) {
+    html{
+        font-size: 58%;
+    }
+    .input-email{
+        width: 22rem;
+    }
+   
+  }

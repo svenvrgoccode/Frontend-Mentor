@@ -1,0 +1,32 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+header{
+    li:hover{
+        opacity: 0.5;
+    }
+    
+}
+
+button:hover{
+    background-color: #F89073 !important;
+}
+
+.newsletter button:hover{
+    color: #E7C5C0 !important;
+    background-color: white !important;
+}
+
+
+.input-button:hover{
+    background-color: #F89073 !important;
+}
+
+
+footer li:hover{
+    color: #F25F3A;
+}
+
+footer i:hover{
+    filter: invert(54%) sepia(27%) saturate(6620%) hue-rotate(338deg) brightness(97%) contrast(95%);
+}

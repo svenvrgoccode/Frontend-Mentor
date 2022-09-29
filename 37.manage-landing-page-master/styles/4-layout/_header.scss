@@ -1,0 +1,28 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+header{
+    padding: 2rem 0rem;
+    img{
+        height: 2.5rem;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    ul{
+        display: flex;
+        gap: 4rem;
+    }
+    li{
+        cursor: pointer;
+    }
+}
+
+.fa-bars{
+    font-size: 3rem;
+    display: none !important;
+    cursor: pointer;
+}

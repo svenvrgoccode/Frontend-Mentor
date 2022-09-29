@@ -1,0 +1,80 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+footer{
+    height: 30vh ;
+    padding: 4rem 0rem;
+
+    .foot-logo{
+        height: 2.5rem;
+
+    }
+    background-color:  #1E1E26;
+    .container{
+        display: flex;
+        justify-content: space-between;
+    .col:first-of-type{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .social-wrap{
+            display: flex;
+            gap: 2rem;
+            color: $text-color-white;
+        }
+    }
+    .col{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    li{
+        color: $text-color-white;
+    }
+
+    }
+    .input-email{
+        padding: 1.2rem 3rem;
+        color: $text-color-white !important;
+        border-radius: 10rem;
+        border: none;
+    }
+    .input-button{
+        padding: 1.2rem 3rem;
+    background-color: $Bright-Red;
+        color: $text-color-white !important;
+        border-radius: 10rem;
+        border: none;
+    font-weight: 500;
+    box-shadow: 0px 0px 10px #f25f3a9c;
+    cursor: pointer;
+
+    }
+    form{
+        display: flex;
+        gap: 1rem;
+    }
+    .col:last-of-type{
+        display: flex;
+        align-items: flex-end;
+    }
+    i{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .input-email::placeholder{
+        color: black !important;
+    }
+    .input-email:focus{
+        color: black !important;
+    }
+    li{
+        cursor: pointer;
+    }
+}
