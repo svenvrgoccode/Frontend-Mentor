@@ -13,6 +13,7 @@ header{
         align-items: baseline;
         ul{
             display: flex;
+            flex-wrap: wrap;
             gap: 3rem;
             margin-left: 4rem;
             li{
@@ -29,6 +30,7 @@ header{
             }
         }
         .button-wrap{
+            padding-left: 4rem;
             margin-left: auto;
             display: flex;
             gap: 2rem;
@@ -41,19 +43,21 @@ header{
 
     .dropdown{
         position: absolute;
-        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         background-color: white;
+        box-shadow: 0 .25rem .5rem 0 rgba(74,45,197,.1);
+
     }
     // DROPDOWN 1 ++++++++
 
     .dropdown1{
+        pointer-events: none;
         @include transition;
         opacity: 0;
         transform: translateY(5rem);
         width: 86rem;
-        box-shadow: 0 .25rem .5rem 0 rgba(74,45,197,.1);
         border-radius: 0.5rem;
         padding: 2rem;
+        top: 5rem;
         h3{
         font-weight: 600;
         margin-bottom: 1rem;
@@ -65,7 +69,6 @@ header{
         span{
             color: $purple-main;
         }
-        top: 5rem;
         .row{
             display: flex;
             width: 100%;
@@ -135,6 +138,7 @@ header{
 
     }
     .dropdown1.active{
+        pointer-events: all;
         opacity: 1;
         transform: translateY(0);
     }
@@ -146,4 +150,147 @@ header{
         transform: rotate(180deg) !important;
     }
 
+    // DROPDOWN 2 ++++++++
+
+    .dropdown2{
+        pointer-events: none;
+        top: 5rem;
+        @include transition;
+        opacity: 0;
+        transform: translateY(5rem);
+        border-radius: 0.5rem;
+        width: 86rem;
+        display: flex;
+        min-width: 100%;
+        .col{
+        padding: 3rem;
+            width: 50%;
+        
+        }
+        .col:last-of-type{
+            background-color: $dropdown-grey;
+
+        }
+        .tab{
+            display: flex;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            @include transition;
+        }
+        .guide{
+            .icon-wrap{
+                background-color: $icon-purple;
+                width: 8rem;
+                height: 5.5rem;
+                border-radius: 20rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            display: flex;
+            gap: 2rem;
+        }
+        h4{
+            font-weight: 600;
+            margin-right: auto;
+            @include transition;
+        }
+        p{
+            
+            font-size:  $text-small;
+        }
+        .tab-link{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .careers{
+            h4::after{
+                content: "WE'RE HIRING";
+                right: 2rem;
+                font-size: $text-small;
+                margin-left: 2rem;
+                background-color: $icon-purple;
+                padding: 0.2rem 2rem;
+                border-radius: 20rem;
+                color: $purple-main;
+        }
+
+
+        }
+    }
+    
+    .dropdown2-link.active{
+        color: $purple-main !important;
+
+    }
+    .dropdown2.active{
+        pointer-events: all;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    // DROPDOWN 3 ++++++++
+
+    .dropdown3{
+        padding: 0rem 10rem;
+        top: 5rem;
+        pointer-events: none;
+        @include transition;
+        opacity: 0;
+        width: 100vw;
+        display: flex;
+        left: 0;
+        top: 8rem;
+        .col{
+            padding: 5rem;
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+        .tab{
+            padding: 2rem;
+            transform: translateX(-2rem);
+            border-radius: 0.5rem;
+            @include transition;
+        }
+        .col:last-of-type{
+            background-color: $dropdown-grey;
+
+        }
+        h4{
+            font-weight: 600;
+            @include transition;
+        }
+        h3::after{
+            margin-top: 1rem;
+            content: '';
+            display: block;
+            width: 6rem;
+            background-color: $purple-main;
+            height: 0.8rem;
+            border-radius: 20rem;
+        }
+        p{
+            max-width: 60rem;
+        }
+        .tab-link{
+            display: flex;
+            flex-direction: column;
+            h4,p{
+                margin-right: auto;
+            }
+        }
+    }
+    .dropdown3-link.active{
+        color: $purple-main !important;
+
+    }
+    .dropdown3.active{
+        pointer-events: all;
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

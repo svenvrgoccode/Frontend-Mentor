@@ -19,7 +19,7 @@ header{
 
     
     
-    //DROPDOWN
+    //DROPDOWN1
     .dropdown1{
         .tab:hover{
             background-color: $purple-gray;
@@ -36,4 +36,23 @@ header{
         }
 
     }
+    //DROPDOWN2{
+        .dropdown2{
+
+            .tab:hover:not(.guide){
+                background-color: $purple-gray;
+                h4{
+                    color: $purple-main;
+                }
+            }
+        }
+        .dropdown3{
+            .tab:hover{
+                background-color: $purple-gray;
+                h4{
+                    color: $purple-main;
+                }
+            }
+        }
+
 }
