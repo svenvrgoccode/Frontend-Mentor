@@ -3,7 +3,6 @@
 
 
 header{
-    border-bottom: 1px solid #E2DBFF ;
     padding: 2rem 0rem;
     .logo{
         height: 2.5rem;
@@ -17,11 +16,15 @@ header{
             gap: 3rem;
             margin-left: 4rem;
             li{
+               a{
+                font-weight: 500;
                 display: flex;
                 align-items: center;
                 gap: 0.5rem;
+               }
                 img{
-                    height: 1rem;
+                    height: 0.8rem;
+                    margin-left: 0.5rem;
                 }
             }
         }
@@ -44,20 +47,103 @@ header{
     // DROPDOWN 1 ++++++++
 
     .dropdown1{
-        width: 60rem;
+        @include transition;
+        opacity: 0;
+        transform: translateY(5rem);
+        width: 86rem;
+        box-shadow: 0 .25rem .5rem 0 rgba(74,45,197,.1);
+        border-radius: 0.5rem;
+        padding: 2rem;
+        h3{
+        font-weight: 600;
+        margin-bottom: 1rem;
+        }
+        p{
+            font-size: $text-small;
+            width: 30rem;
+        }
+        span{
+            color: $purple-main;
+        }
         top: 5rem;
         .row{
             display: flex;
+            width: 100%;
         }
         .row:last-of-type{
+            margin-top: 3rem;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
             background-color: $purple-gray;
+            width: 100%;
+            @include transition;
+            a{
+                min-width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+         
+            .business-icon{
+              
+                height: 4rem;
+            }
+            p{
+                width: 80rem !important;
+                margin-top: 0.5rem;
+                max-width: 56rem;
+            }
+            .angle{
+                transform: rotate(-90deg) translateY(-0.1rem);
+            }
+            .icon-wrap{
+                img{
+                    height:1.1rem;
+                }
+                width: 5rem;
+                height: 5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5rem;
+            @include transition;
+            }
         }
-    }
-    .tab{
-        display: flex;
-        gap: 2rem;
-        img{
-            min-height: 5rem;
+        .tab{
+            width: 50%;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            @include transition;
         }
+        .tab-link{
+            img{
+                min-height: 5rem;
+                margin-right: 7rem;
+            }
+            .img-wrap{
+                margin-bottom: 3rem;
+                filter: drop-shadow(22.7119px 23.941px 80px rgba(74,45,197,.11)) drop-shadow(8.74828px 9.22171px 25.4815px rgba(74,45,197,.0668148)) drop-shadow(1.8506px 1.95075px 6.51852px rgba(74,45,197,.0431852));
+            }
+        }
+
+   
     }
+    .dropdown1-link.active{
+        color: $purple-main !important;
+
+    }
+    .dropdown1.active{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .link-angle{
+        transition: transform 0.1s ease-in;
+
+    }
+    .link-angle.active{
+        transform: rotate(180deg) !important;
+    }
+
 }

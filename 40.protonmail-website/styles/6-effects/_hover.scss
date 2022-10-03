@@ -1,2 +1,39 @@
 @use '../1-helpers-colors/mixins' as *;
 @use '../1-helpers-colors/variables' as *;
+
+
+header{
+    //HEADER links
+    nav{
+        li:hover{
+            a{
+            color: $purple-main;
+
+            }
+            .link-angle{
+                filter: invert(31%) sepia(94%) saturate(3179%) hue-rotate(240deg) brightness(98%) contrast(106%);
+            }
+        }
+    
+    }
+
+    
+    
+    //DROPDOWN
+    .dropdown1{
+        .tab:hover{
+            background-color: $purple-gray;
+        }
+
+        .row:last-of-type:hover{
+            background-color: $purple-gray2;
+            .icon-wrap{
+                background-color: $purple-main;
+               img{
+                filter: invert(100%) sepia(0%) saturate(02%) hue-rotate(87deg) brightness(104%) contrast(101%);
+               }
+            }
+        }
+
+    }
+}
