@@ -1,0 +1,59 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+// @media only screen and (max-width: 768px) {
+   
+//   }
+// @media only screen and (max-width: 992px) {
+   
+//   }
+// @media only screen and (max-width: 1200px) {
+   
+
+
+
+@media only screen and (max-width: 1200px){
+    .container{
+        padding: 0rem 2rem;
+    }
+    header{
+        padding: 2rem 0rem;
+        nav,button{
+            display: none;
+        }
+        .fa-bars{
+            display: block !important;
+        }
+    }
+    footer{
+        .container{
+            ul{
+                margin: auto;
+                li{
+                    text-align: center;
+                    margin-bottom: 2rem;
+                }
+            }
+            .last{
+                justify-content: initial;
+            }
+            min-height: 80rem;
+            justify-content: initial ;
+            .first-col{
+                flex-direction: column;
+                gap: 0rem;
+            }
+            flex-direction: column;
+            .social-wrap{
+                justify-content: center;
+            }
+            .col:last-of-type{
+                @include flex(center,center,column);
+                gap: 3rem;
+            }
+        }
+    }
+} 
+

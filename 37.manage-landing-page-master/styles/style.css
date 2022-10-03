@@ -120,6 +120,63 @@ header li {
   cursor: pointer;
 }
 
+.fa-bars.close {
+  display: none !important;
+}
+
+.fa-xmark {
+  font-size: 3rem;
+  cursor: pointer;
+  display: none !important;
+  z-index: 105;
+}
+
+.fa-xmark.active {
+  display: block !important;
+}
+
+.mobile-nav-bg.active {
+  opacity: 1;
+}
+
+.mobile-nav {
+  border-radius: 0.5rem;
+  padding: 6rem 0rem;
+  position: absolute;
+  top: 0 !important;
+  background-color: white;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  z-index: 100;
+  display: none;
+}
+.mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.mobile-nav ul li {
+  text-align: center;
+  cursor: pointer;
+  margin: auto;
+}
+
+.mobile-nav.active {
+  display: block;
+}
+
+.mobile-nav-bg {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.575));
+  display: block;
+  z-index: 99;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+}
+
 footer {
   height: 30vh;
   padding: 4rem 0rem;
@@ -276,7 +333,7 @@ footer li {
   scale: 1.2;
   position: absolute;
   left: -70rem;
-  top: 40rem;
+  top: 60rem;
   z-index: -1;
 }
 

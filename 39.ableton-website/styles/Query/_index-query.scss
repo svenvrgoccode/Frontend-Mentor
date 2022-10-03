@@ -1,0 +1,96 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+
+// @media only screen and (max-width: 768px) {
+   
+//   }
+// @media only screen and (max-width: 992px) {
+   
+//   }
+// @media only screen and (max-width: 1200px) {
+   
+//   }
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+   .intro{
+    .text{
+    padding: 3.5rem !important;
+    }
+   }
+   .post{
+      ul{
+         gap: 2rem !important;
+      }
+      .containerM{
+         padding-left: 3rem;
+         padding-right: 3rem;
+       }
+   
+   }
+
+  }
+
+
+  @media only screen and (max-width: 1050px) {
+   .intro{
+      .col{
+         position: relative !important;
+         height: auto !important;
+         min-height: 30rem !important;
+         min-width: 100%;
+      }
+      .colM1{
+         margin-bottom: 5rem;
+      }
+      .colM2{
+         right: 0 !important;
+         transform: translateX(5rem) !important;
+
+      }
+      .colM3{
+         bottom: 0 !important;
+         transform: translateX(-5rem) !important;
+         .text{
+         transform: translateX(5rem) !important;
+         }
+      }
+      .containerM{
+         flex-direction: column;
+      min-height: 90rem;
+      }
+   }
+   
+   .post{
+      ul{
+         display: none !important;
+      }
+      .rowM{
+         flex-wrap: wrap;
+         gap: 2rem;
+      }
+    
+      .colM{
+         width: calc(50% - 2rem) !important;
+      }
+   }
+  
+  }
+
+
+  @media only screen and (max-width: 900px) {
+   .post{
+      .colM{
+         width: 100% !important;
+         img{
+            height: clamp(27rem,45vw,40rem);
+         }
+      }
+   }
+  }

@@ -1,0 +1,19 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+body{
+  background-color: #F3F3F3;
+}
+
+.containerM{
+  max-width: 1600px;
+  margin: auto;
+}
+  
+.col-lg{
+  padding: 0rem !important;
+}
+.col-md{
+  padding: 0rem !important;
+}

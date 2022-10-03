@@ -1,0 +1,43 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+.menu-link{
+    display: none !important;
+}
+
+header{
+    img{
+        height: 3rem;
+    }
+    .logo{
+        margin-right: 2rem;
+    }
+    .containerM{
+        padding: 2rem 4rem;
+        display: flex;
+        align-items: center;
+        background-color: white;
+    }
+   
+    ul{
+        display: flex;
+        gap: 4rem;
+    }
+    .user{
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 4rem;
+        a:first-of-type{
+            font-weight: bold;
+            color: $blue;
+        }
+        a:last-of-type{
+            font-size: $header6;
+        }
+    }
+    li{
+        font-weight: 700;
+    }
+}

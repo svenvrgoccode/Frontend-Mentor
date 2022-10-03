@@ -1,0 +1,32 @@
+// FONT SIZES
+
+$header1: clamp(2.7rem,2vw + 1rem,5.5rem); 
+$header2: clamp(2.6rem,1vw + 1rem,3.2rem);
+$header3: clamp(1.8rem,3vw + 1rem,2.6rem); 
+$header4: clamp(1.4rem,2vw + 1rem,2rem);
+$header5: clamp(1.5rem,2vw + 1rem,2rem);
+$header6: clamp(1rem,1vw + 1rem,1.4rem);
+$text: clamp(1.3rem,2vw + 1rem,1.6rem);
+$logo: clamp(1.8rem,2vw + 1rem,2.4rem);
+
+
+
+//TEXT COLORS
+
+$text-color-black: black;
+$text-color-white: white;
+
+// BLACK AND WHTIE
+$black:black;
+$white:white;
+
+// COLOR PALLETE
+
+$color-main:#005E4B;
+
+$blue: #0000FF;
+$yellow: #F5F407;
+$light-blue: #0AF9F7;
+$pink: #FD53DA;
+$light-blue2: #9DB1FC;
+

@@ -1,0 +1,12 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+button{
+    background-image: linear-gradient(to right,#30D16A,#2CB9CA);
+    padding: 1rem 3rem;
+    border-radius: 10rem;
+    border: none;
+color: $text-color-white !important;
+cursor: pointer;
+}

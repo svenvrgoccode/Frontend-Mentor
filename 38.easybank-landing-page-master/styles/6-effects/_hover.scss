@@ -1,0 +1,45 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+header{
+    ul{
+        li::after{
+            content: '';
+            position: absolute;
+            display: block;
+            bottom: 0;
+    background-image: linear-gradient(to right,#30D16A,#2CB9CA);
+
+            height: 10px;
+            width: 0rem;
+        }
+        
+    }
+    li:hover:after{
+        width: 6rem;
+    }
+    li:hover{
+        color: $Dark-Blue !important;
+    }
+}
+
+
+
+button:hover{
+    background-image: linear-gradient(to right,#30d16b75,#2cbaca7a);
+}
+
+.articles{
+    h5:hover{
+        color: #50A588;
+        cursor: pointer;
+    }
+}
+
+footer{
+    i:hover,li:hover{
+        color: #50A588 !important;
+        cursor: pointer !important;
+    }
+}

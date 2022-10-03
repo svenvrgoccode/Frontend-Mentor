@@ -1,0 +1,553 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+body {
+  background-color: #F3F3F3;
+}
+
+.containerM {
+  max-width: 1600px;
+  margin: auto;
+}
+
+.col-lg {
+  padding: 0rem !important;
+}
+
+.col-md {
+  padding: 0rem !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  max-width: 65rem;
+  color: black;
+}
+
+i {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+}
+
+h1 {
+  font-size: clamp(2.7rem, 2vw + 1rem, 5.5rem);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+  max-width: 35rem;
+  color: black;
+}
+
+h2 {
+  font-size: clamp(2.6rem, 1vw + 1rem, 3.2rem);
+}
+
+h3 {
+  font-size: clamp(1.8rem, 3vw + 1rem, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1vw + 1rem, 1.4rem);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-link {
+  display: none !important;
+}
+
+header img {
+  height: 3rem;
+}
+header .logo {
+  margin-right: 2rem;
+}
+header .containerM {
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+header ul {
+  display: flex;
+  gap: 4rem;
+}
+header .user {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 4rem;
+}
+header .user a:first-of-type {
+  font-weight: bold;
+  color: #0000FF;
+}
+header .user a:last-of-type {
+  font-size: clamp(1rem, 1vw + 1rem, 1.4rem);
+}
+header li {
+  font-weight: 700;
+}
+
+footer .containerM {
+  background-color: white;
+  padding: 5rem 15rem;
+}
+footer .containerM .colM {
+  width: 33%;
+}
+footer .containerM .foot-logo {
+  font-weight: 500;
+}
+footer .containerM .rowM {
+  padding: 2rem 0rem;
+  display: flex;
+}
+footer .containerM .rowM h4 {
+  margin-bottom: 1rem;
+}
+footer .containerM .rowM .colM1 {
+  display: flex;
+  flex-direction: column;
+}
+footer .containerM .rowM .colM1 .social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+footer .containerM .rowM .colM1 .social i {
+  font-size: 4rem;
+}
+footer .containerM .rowM .colM2 {
+  display: flex;
+  flex-direction: column;
+}
+footer .containerM .rowM .colM3 input {
+  margin-top: 2rem;
+  background-color: #F3F3F3;
+  border: none;
+  padding: 1rem 2rem;
+}
+footer .containerM .rowM .colM3 input[type=email] {
+  width: 60%;
+}
+footer .containerM .rowM .colM3 input[type=submit] {
+  background-color: #0000FF;
+  color: white;
+}
+footer select {
+  padding: 0.5rem 2rem;
+  border: none;
+  font-size: clamp(1.3rem, 2vw + 1rem, 1.6rem);
+}
+footer select:last-of-type {
+  width: 20rem;
+}
+footer .rowM:last-of-type {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+footer .rowM:last-of-type ul {
+  display: flex;
+  gap: 2rem;
+}
+footer .rowM:last-of-type .copy {
+  display: flex;
+  gap: 2rem;
+}
+footer .rowM:last-of-type .copy img {
+  height: 3rem;
+}
+
+.intro .containerM {
+  background-color: white;
+  display: flex;
+  position: relative;
+  height: clamp(40rem, 55vw, 90rem);
+}
+.intro .containerM .img-wrap {
+  width: 100%;
+  height: 100%;
+}
+.intro .containerM img {
+  height: 100%;
+  width: 100%;
+}
+.intro .containerM .col {
+  position: relative;
+}
+.intro .containerM .col a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.intro .containerM .colM1::after, .intro .containerM .colM2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  z-index: 2;
+  top: 0;
+}
+.intro .containerM .colM1 {
+  left: 0;
+  height: clamp(35rem, 40vw, 60rem);
+  position: absolute;
+  width: 60%;
+}
+.intro .containerM .colM1 h1 {
+  color: #F5F407;
+}
+.intro .containerM .colM1 a {
+  color: #F5F407;
+}
+.intro .containerM .colM2 {
+  position: absolute;
+  right: -5%;
+  width: 30%;
+  bottom: 0rem;
+  height: 33rem;
+  transform: translateX(-100%);
+  z-index: 20;
+}
+.intro .containerM .colM2 h2 {
+  color: #0AF9F7;
+}
+.intro .containerM .colM2 a {
+  color: #0AF9F7;
+}
+.intro .containerM .colM3 {
+  position: absolute;
+  width: 30%;
+  right: 0;
+  height: 33rem;
+  bottom: 30%;
+}
+.intro .containerM .colM2, .intro .containerM .colM3 {
+  height: clamp(18rem, 22vw, 35rem);
+}
+.intro .containerM .text {
+  padding: 5rem;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+}
+.intro .containerM .text h1, .intro .containerM .text h2 {
+  font-weight: bold;
+}
+
+.youtube-post {
+  cursor: pointer;
+}
+.youtube-post .img-wrap {
+  position: relative;
+}
+.youtube-post i {
+  color: #0000FF;
+  font-size: 5rem;
+}
+
+.fa-circle-play {
+  position: absolute;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.modal-wrap {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-bg {
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.showModal {
+  display: block !important;
+}
+
+.modal {
+  position: relative;
+  width: clamp(20rem, 80vw, 100rem);
+  height: 50rem;
+}
+.modal iframe {
+  z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-click {
+  z-index: 20;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+
+.video-close {
+  color: white;
+  font-size: 10rem;
+  position: absolute;
+  top: -10rem;
+  right: -10rem;
+  cursor: pointer;
+}
+
+.post h4 {
+  font-weight: 500;
+}
+.post .post-wrap {
+  min-width: 100%;
+}
+.post .heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.post .heading h2, .post .heading li, .post .heading a {
+  padding-bottom: 5rem;
+  font-weight: 500;
+}
+.post .heading a {
+  color: #0000FF;
+}
+.post .heading ul {
+  display: flex;
+  gap: 3rem;
+}
+.post .containerM {
+  padding: 0rem 15rem;
+}
+.post .rowM {
+  display: flex;
+  gap: 4rem;
+}
+.post .rowM .colM {
+  position: relative;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.post .rowM img {
+  width: 100%;
+  height: 20rem;
+}
+.post h6 {
+  margin-top: 2rem;
+}
+
+.post1 .containerM {
+  padding-top: 10rem;
+  background-color: white;
+}
+.post1 .colM:nth-of-type(1) h6 {
+  color: #F5F407;
+}
+.post1 .colM:nth-of-type(2) h6 {
+  color: #0AF9F7;
+}
+.post1 .colM:nth-of-type(3) h6 {
+  color: #0AF9F7;
+}
+
+.post2 .containerM {
+  padding-top: 5rem;
+  background-color: white;
+}
+.post2 .colM:nth-of-type(1) h6 {
+  color: #FD53DA;
+}
+.post2 .colM:nth-of-type(2) h6 {
+  color: #9DB1FC;
+}
+.post2 .colM:nth-of-type(3) h6 {
+  color: #F5F407;
+}
+
+.post3 .containerM {
+  padding-top: 5rem;
+  background-color: white;
+}
+
+.videos h4 {
+  margin-top: 2rem;
+}
+
+.post4 .containerM {
+  padding-top: 5rem;
+  background-color: white;
+}
+.post4 h4 {
+  margin-top: 2rem;
+}
+
+.links-section {
+  padding: 8rem 0rem;
+}
+.links-section .link-wrap {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+.links-section p {
+  font-weight: bold;
+}
+.links-section ul {
+  display: flex;
+  gap: 3rem;
+}
+.links-section a {
+  color: #0000FF;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1200px) {
+  .intro .text {
+    padding: 3.5rem !important;
+  }
+  .post ul {
+    gap: 2rem !important;
+  }
+  .post .containerM {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .intro .col {
+    position: relative !important;
+    height: auto !important;
+    min-height: 30rem !important;
+    min-width: 100%;
+  }
+  .intro .colM1 {
+    margin-bottom: 5rem;
+  }
+  .intro .colM2 {
+    right: 0 !important;
+    transform: translateX(5rem) !important;
+  }
+  .intro .colM3 {
+    bottom: 0 !important;
+    transform: translateX(-5rem) !important;
+  }
+  .intro .colM3 .text {
+    transform: translateX(5rem) !important;
+  }
+  .intro .containerM {
+    flex-direction: column;
+    min-height: 90rem;
+  }
+  .post ul {
+    display: none !important;
+  }
+  .post .rowM {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .post .colM {
+    width: calc(50% - 2rem) !important;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .post .colM {
+    width: 100% !important;
+  }
+  .post .colM img {
+    height: clamp(27rem, 45vw, 40rem);
+  }
+}
+@media only screen and (max-width: 1450px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 46%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  header ul {
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header nav, header .user {
+    display: none;
+  }
+  header .menu-link {
+    margin-left: 1rem;
+    display: block !important;
+    font-weight: bold;
+    transform: translateY(-0.5rem);
+  }
+  header .menu-link i {
+    transform: rotate(-90deg);
+    margin-left: 1rem;
+  }
+  header .containerM {
+    align-items: baseline;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  footer .containerM .rowM {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer .containerM .rowM .colM {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
