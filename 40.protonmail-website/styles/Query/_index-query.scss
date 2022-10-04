@@ -9,6 +9,136 @@
 // @media only screen and (max-width: 992px) {
    
 //   }
-// @media only screen and (max-width: 1200px) {
-   
-//   }
+@media only screen and (max-width: 1050px) {
+    .intro{
+        background-image: none;
+        min-height: auto;
+    }
+    .security{
+        .col{
+            min-width: 100%;
+        }
+        .col:first-of-type{
+            @include flex(center,center,column);
+            button,h2,p{
+                margin: auto;
+            }
+        }
+        img{
+            scale: 1 !important;
+        }
+        padding-top: 5rem;
+        text-align: center;
+        .container{
+            flex-direction: column;
+        }
+    }
+    .data{
+        .heading{
+            padding-top: 5rem;
+        }
+        .col:last-of-type{
+            display: none;
+        }
+        .col:first-of-type{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .reason{
+        display: flex;
+        h2{
+            order: 2;
+
+        }
+        .icon-wrap{
+            position: static;
+        }
+        .icons{
+            margin-bottom: 8rem;
+            display: flex;
+            gap: 2rem;
+            .icon1,.icon2{
+                display: none;
+            }
+        }
+    }
+    .testimonial{
+        .row{
+            transform: translateX(4rem);
+            gap: 10rem;
+        }
+        .col{
+            min-width: 40rem;
+        }
+
+    }
+    .slideRow.left{
+        transform: translateX(-66rem) !important;
+    
+        }
+    .story{
+        .container{
+            flex-direction: column ;
+            .col{
+                width: 100%;
+            }
+            .col:first-of-type{
+                margin-bottom: 30rem;
+            }
+            .text{
+                width: 80%;
+            }
+        }
+    }
+    .account{
+        padding-top: 10rem;
+    }
+    .business{
+        min-height: 140rem;
+        .container{
+            height: auto;
+
+            flex-direction: column;
+            .col{
+                width: 100%;
+            }
+            .col:first-of-type{
+                img{
+                    height: auto !important;
+                    width: auto;
+                    scale: 1 !important;
+                    transform: translateX(0);
+                    object-fit: contain;
+                }
+            }
+            .col:last-of-type{
+                @include flex(center,center,column);
+                text-align: center;
+                img{
+                    margin: auto;
+                    height: 5rem;
+                }
+            }
+        }
+    }
+    
+  }
+
+
+  @media (max-width: 800px){
+    .testimonial{
+        .row{
+            transform: translate(0);
+            .col{
+                min-width: 100%;
+            }
+        }
+        .slideRow.left{
+            transform: translateX(-112%) !important;
+        
+            }
+    }
+
+  }

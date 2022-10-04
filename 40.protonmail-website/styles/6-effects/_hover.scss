@@ -24,6 +24,13 @@ header{
         filter: invert(31%) sepia(94%) saturate(3179%) hue-rotate(240deg) brightness(98%) contrast(106%);
     }
     .mob-nav{
+        button:hover{
+            color: $purple-main !important;
+            .link-angle{
+                filter: invert(31%) sepia(94%) saturate(3179%) hue-rotate(240deg) brightness(98%) contrast(106%) !important;
+        
+                    }
+        }
         li:hover{
             color: $purple-main;
             .link-angle{
@@ -58,7 +65,7 @@ header{
 
             .tab:hover:not(.guide){
                 background-color: $purple-gray;
-                h4{
+                .md-txt{
                     color: $purple-main;
                 }
             }
@@ -68,7 +75,7 @@ header{
         .dropdown3{
             .tab:hover{
                 background-color: $purple-gray;
-                h4{
+                .md-txt{
                     color: $purple-main;
                 }
             }
@@ -94,7 +101,7 @@ header{
     .mobile-dropdown2{
         .tab:hover:not(.guide){
             background-color: $purple-gray;
-            h4{
+            .md-txt{
                 color: $purple-main;
             }
         }
@@ -102,7 +109,7 @@ header{
     .mobile-dropdown3{
         .tab:hover{
             background-color: $purple-gray;
-            h4{
+            .md-txt{
                 color: $purple-main;
             }
         }
@@ -124,13 +131,40 @@ header{
 .data-link:hover{
     border: 1px solid $purple-main;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    .discover::after{
-        width: 100%;
+    .link1::after{
+        width: 60%;
     }
+    .link2::after{
+        width: 60% ;
+    }
+    .link3::after{
+        width: 74% ;
+    }
+    .link4::after{
+        width: 60% ;
+    }
+
 }
+
 
 .info{
     a:hover::after{
         width: 20%;
     }
+}
+
+.testimonial{
+    .icon-wrap:hover{
+        background-color: $purple-main;
+
+    }
+}
+
+.story{
+    .link1:hover::after{
+        width: 30%;
+}
+    .link2:hover::after{
+        width: 50%;
+}
 }

@@ -22,8 +22,10 @@ header{
             gap: 3rem;
             margin-left: 4rem;
             li{
+                display: flex;
+                align-items: center;
                a{
-                font-weight: 500;
+                font-weight: 400;
                 display: flex;
                 align-items: center;
                 gap: 0.5rem;
@@ -48,6 +50,7 @@ header{
     // DROPDOWN ++++++++
 
     .dropdown{
+        z-index: 100;
         position: absolute;
         background-color: white;
         box-shadow: 0 .25rem .5rem 0 rgba(74,45,197,.1);
@@ -64,17 +67,19 @@ header{
         border-radius: 0.5rem;
         padding: 2rem;
         top: 5rem;
-        h3{
+        .lg-txt{
+            color: $text-purple-black;
         font-weight: 600;
         margin-bottom: 1rem;
+        span{
+            color: $purple-main;
+        }
         }
         p{
             font-size: $text-small;
             width: 30rem;
         }
-        span{
-            color: $purple-main;
-        }
+       
         .row{
             display: flex;
             width: 100%;
@@ -197,7 +202,8 @@ header{
             display: flex;
             gap: 2rem;
         }
-        h4{
+        .md-txt{
+            color: $text-purple-black;
             font-weight: 600;
             margin-right: auto;
             @include transition;
@@ -212,7 +218,7 @@ header{
 
         }
         .careers{
-            h4::after{
+            .md-txt::after{
                 content: "WE'RE HIRING";
                 right: 2rem;
                 font-size: $text-small;
@@ -266,11 +272,13 @@ header{
             background-color: $dropdown-grey;
 
         }
-        h4{
+        .md-txt{
+            color: $text-purple-black;
             font-weight: 600;
             @include transition;
         }
-        h3::after{
+      
+        .lg-txt::after{
             margin-top: 1rem;
             content: '';
             display: block;
@@ -285,7 +293,7 @@ header{
         .tab-link{
             display: flex;
             flex-direction: column;
-            h4,p{
+            .md-txt,p{
                 margin-right: auto;
             }
         }
@@ -345,7 +353,7 @@ header{
         li{
             cursor: pointer;
         }
-        li,a{
+        li,a,button{
             font-size: $header4;
             font-weight: 600;
             display: flex;
@@ -378,12 +386,18 @@ header{
 
 
 // MOBILE DROPDOWN
+.tab{
+    cursor: pointer;
+}
 
 .back{
     cursor: pointer;
 }
 
 .mobile-dropdown1{
+    .lg-txt{
+        font-weight: 600;
+    }
     display: none;
     .row{
         display: flex;
@@ -415,7 +429,7 @@ header{
         min-width: calc(100% + 8rem) !important;
         display: flex;
         gap: 2em;
-        h3{
+        .md-txt{
             font-weight: 600;
             }
             p{
@@ -505,15 +519,15 @@ header{
         transform: translateX(-2rem);
         border-radius: 0.5rem;
         padding: 2rem;
-        height: 10rem;
         @include transition;
     }
-    h4:not(.back h4){
+    .md-txt:not(.back .md-txt){
         margin-bottom: 1rem;
     }
-    h4{
+    .md-txt{
         font-weight: 600;
         @include transition;
+        color: $text-purple-black;
     }
     .col:last-of-type{
         border-top: 2px solid #E2DBFF;
@@ -521,7 +535,7 @@ header{
     }
     .careers{
         margin-bottom: 2rem;
-        h4::after{
+        .md-txt::after{
             content: "WE'RE HIRING";
             right: 2rem;
             font-size: $text-small;
@@ -554,7 +568,8 @@ header{
       
 
     }
-    h3{
+    .lg-txt{
+        color: $text-purple-black;
         margin-bottom: 2rem !important;
     }
     .col{
@@ -562,6 +577,7 @@ header{
 
     }
     .col:not(.col:last-of-type){
+        margin-bottom: 3rem;
         border-bottom: 2px solid #E2DBFF;
     }
     .tab{
@@ -572,7 +588,8 @@ header{
         min-width: calc(100% + 2rem);
         border-radius: 0.5rem;
     }
-    h4{
+    .md-txt{
+        color: $text-purple-black;
         font-weight: 600;
         @include transition;
 

@@ -131,16 +131,30 @@ dataLink.forEach((data)=>{
 const leftArrow = document.querySelector('.left-wrap')
 const rightArrow = document.querySelector('.right-wrap')
 const slideRow = document.querySelector('.slideRow')
+const lines = document.querySelectorAll('.line')
+const first = document.querySelector('.first')
+const last = document.querySelector('.last')
 
 leftArrow.addEventListener('click',(e)=>{
     slideRow.classList.add('left')
     rightArrow.classList.remove('hide')
     leftArrow.classList.add('hide')
+    lines[1].classList.add('color')
+    lines[0].classList.remove('color')
+    last.classList.remove('slideOpacity')
+    first.classList.add('slideOpacity')
 
 })
 rightArrow.addEventListener('click',(e)=>{
     slideRow.classList.remove('left')
     leftArrow.classList.remove('hide')
     rightArrow.classList.add('hide')
-
+    lines[0].classList.add('color')
+    lines[1].classList.remove('color')
+    last.classList.add('slideOpacity')
+    first.classList.remove('slideOpacity')
 })
+
+
+
+
