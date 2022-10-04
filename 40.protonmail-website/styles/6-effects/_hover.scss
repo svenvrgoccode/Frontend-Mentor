@@ -63,6 +63,8 @@ header{
                 }
             }
         }
+    //DROPDOWN3
+
         .dropdown3{
             .tab:hover{
                 background-color: $purple-gray;
@@ -71,5 +73,31 @@ header{
                 }
             }
         }
+
+    //MOBILE DROPDOWN
+
+    .mobile-dropdown1{
+        .tab:hover{
+            background-color: $purple-gray;
+        }
+
+        .row:last-of-type:hover{
+            background-color: $purple-gray2;
+            .icon-wrap{
+                background-color: $purple-main;
+               img{
+                filter: invert(100%) sepia(0%) saturate(02%) hue-rotate(87deg) brightness(104%) contrast(101%);
+               }
+            }
+        }
+    }
+    .mobile-dropdown2{
+        .tab:hover:not(.guide){
+            background-color: $purple-gray;
+            h4{
+                color: $purple-main;
+            }
+        }
+    }
 
 }
