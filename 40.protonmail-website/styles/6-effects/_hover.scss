@@ -99,5 +99,38 @@ header{
             }
         }
     }
+    .mobile-dropdown3{
+        .tab:hover{
+            background-color: $purple-gray;
+            h4{
+                color: $purple-main;
+            }
+        }
+    }
 
+}
+
+.intro{
+    .icon-wrap{
+        a:hover{
+            background-color: $icon-hover;
+            transform: translateY(-1rem);
+
+        }
+    }
+}
+
+
+.data-link:hover{
+    border: 1px solid $purple-main;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    .discover::after{
+        width: 100%;
+    }
+}
+
+.info{
+    a:hover::after{
+        width: 20%;
+    }
 }

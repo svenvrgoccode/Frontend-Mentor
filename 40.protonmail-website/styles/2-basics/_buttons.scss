@@ -9,16 +9,31 @@ button{
     border-radius: 20rem;
     font-weight: 700;
     white-space: nowrap;
+    background: $purple-main;
+    color: $text-color-white !important;
 }
 
 header{
     button:first-of-type{
         background: none;
         border: 2px solid $purple-main;
-        color: $purple-main;
+        color: $purple-main !important;
     }
     button:last-of-type{
         background: $purple-main;
+        color: $text-color-white;
+    }
+}
+
+main{
+    button{
+        padding: 2rem 4rem;
+    }
+}
+
+.intro{
+    button{
+        background-color: $purple-main;
         color: $text-color-white;
     }
 }
