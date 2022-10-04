@@ -13,9 +13,16 @@
 //   }
 
 
+@media only screen and (max-width: 1200px) {
+   html{
+    font-size: 50%;
+   }
+  }
+
+
 @media only screen and (max-width: 400px) {
     html{
-        font-size: 58%;
+        font-size: 50%;
     }
    
   }
