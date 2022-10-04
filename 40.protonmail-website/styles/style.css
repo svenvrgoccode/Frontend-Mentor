@@ -92,6 +92,12 @@ a {
   color: black;
 }
 
+.fa-bars {
+  font-size: 3rem;
+  display: none !important;
+  cursor: pointer;
+}
+
 header {
   padding: 2rem 0rem;
 }
@@ -122,6 +128,7 @@ header .container ul li img {
 header .container .button-wrap {
   padding-left: 4rem;
   margin-left: auto;
+  align-items: center;
   display: flex;
   gap: 2rem;
 }
@@ -351,10 +358,100 @@ header .dropdown3.active {
   transform: translateY(0);
 }
 
+.mobile-navigation {
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  pointer-events: none;
+  background-color: white;
+  position: fixed;
+  z-index: 100;
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: 80%;
+}
+.mobile-navigation .container-mob {
+  height: 100%;
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.mobile-navigation .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-navigation .top img {
+  height: 3rem;
+}
+.mobile-navigation .top .close {
+  height: 2rem;
+  cursor: pointer;
+}
+.mobile-navigation nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.mobile-navigation nav a {
+  color: #372580;
+}
+.mobile-navigation nav li {
+  cursor: pointer;
+}
+.mobile-navigation nav li, .mobile-navigation nav a {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.mobile-navigation nav li img, .mobile-navigation nav a img {
+  margin-left: 0.5rem;
+  height: 0.8rem;
+  transform: rotate(-90deg);
+}
+.mobile-navigation .bottom {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.mobile-navigation::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 10rem;
+  width: 100%;
+  height: 0.1rem;
+  background-color: #E2DBFF;
+}
+
+.mobile-navigation.active {
+  transform: translateX(0%);
+  pointer-events: all;
+}
+
+.mob-nav {
+  display: none;
+}
+
 header nav li:hover a {
   color: #6D4AFF;
 }
 header nav li:hover .link-angle {
+  filter: invert(31%) sepia(94%) saturate(3179%) hue-rotate(240deg) brightness(98%) contrast(106%);
+}
+header .fa-bars:hover {
+  filter: invert(31%) sepia(94%) saturate(3179%) hue-rotate(240deg) brightness(98%) contrast(106%);
+}
+header .closeIcon:hover {
+  filter: invert(31%) sepia(94%) saturate(3179%) hue-rotate(240deg) brightness(98%) contrast(106%);
+}
+header .mob-nav li:hover {
+  color: #6D4AFF;
+}
+header .mob-nav li:hover .link-angle {
   filter: invert(31%) sepia(94%) saturate(3179%) hue-rotate(240deg) brightness(98%) contrast(106%);
 }
 header .dropdown1 .tab:hover {
@@ -385,6 +482,14 @@ header .dropdown3 .tab:hover h4 {
 @media only screen and (max-width: 400px) {
   html {
     font-size: 58%;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  header .desk-nav {
+    display: none;
+  }
+  header .fa-bars {
+    display: block !important;
   }
 }
 

@@ -1,6 +1,11 @@
 @use '../1-helpers-colors/mixins' as *;
 @use '../1-helpers-colors/variables' as *;
 
+.fa-bars{
+    font-size: 3rem;
+    display: none !important;
+    cursor: pointer;
+}
 
 header{
     padding: 2rem 0rem;
@@ -32,6 +37,7 @@ header{
         .button-wrap{
             padding-left: 4rem;
             margin-left: auto;
+            align-items: center;
             display: flex;
             gap: 2rem;
         }
@@ -293,4 +299,94 @@ header{
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+.mobile-navigation{
+    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    // transform: translateX(100%);
+    pointer-events: none;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    height: 100%;
+    top: 0;
+    right: 0;
+    .container-mob{
+        height: 100%;
+        padding: 2rem 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            height: 3rem;
+        }
+        .close{
+            height: 2rem;
+            cursor: pointer;
+        }
+      
+    }
+    nav {
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+        a{
+            color: $text-purple-black ;
+        }
+        li{
+            cursor: pointer;
+        }
+        li,a{
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            img{
+                margin-left: 0.5rem;
+                height: 0.8rem;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+    .bottom{
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    width: 80%;
+}
+
+.mobile-navigation::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 10rem;
+    width: 100%;
+    height: 0.1rem;
+    background-color: #E2DBFF;
+}
+
+.mobile-navigation.active{
+    transform: translateX(0%);
+    pointer-events: all;
+}
+
+
+
+// MOBILE DROPDOWN
+.mob-nav{
+    display: none;
+}
+
+.mobile-dropdown1{
+    
 }

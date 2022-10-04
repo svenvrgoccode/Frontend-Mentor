@@ -5,6 +5,9 @@ const dropdown2Link = document.querySelector('.dropdown2-link')
 const dropdown3 = document.querySelector('.dropdown3')
 const dropdown3Link = document.querySelector('.dropdown3-link')
 const angles = document.querySelectorAll('.link-angle')
+const menuIcon = document.querySelector('.fa-bars')
+const closeIcon = document.querySelector('.closeIcon')
+const mobMenu = document.querySelector('.mobile-navigation')
 
 dropdown1Link.addEventListener('click',(e)=>{
     dropdown1.classList.toggle('active')
@@ -40,3 +43,11 @@ window.onclick = function(e){
         dropdown3Link.classList.remove('active')
     }
 }
+
+menuIcon.addEventListener('click',(e)=>{
+    mobMenu.classList.add('active')
+})
+
+closeIcon.addEventListener('click',(e)=>{
+    mobMenu.classList.remove('active')
+})

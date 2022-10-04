@@ -3,6 +3,7 @@
 
 
 header{
+    
     //HEADER links
     nav{
         li:hover{
@@ -15,6 +16,22 @@ header{
             }
         }
     
+    }
+    .fa-bars:hover{
+        filter: invert(31%) sepia(94%) saturate(3179%) hue-rotate(240deg) brightness(98%) contrast(106%);
+    }
+    .closeIcon:hover{
+        filter: invert(31%) sepia(94%) saturate(3179%) hue-rotate(240deg) brightness(98%) contrast(106%);
+    }
+    .mob-nav{
+        li:hover{
+            color: $purple-main;
+            .link-angle{
+        filter: invert(31%) sepia(94%) saturate(3179%) hue-rotate(240deg) brightness(98%) contrast(106%);
+
+            }
+
+        }
     }
 
     
