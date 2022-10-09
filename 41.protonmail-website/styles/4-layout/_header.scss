@@ -1,0 +1,490 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+.fa-bars{
+    font-size: 3rem;
+    display: none !important;
+}
+
+.close{
+    cursor: pointer;
+}
+
+
+header{
+    padding: 2rem 0rem;
+    .logo{
+        height: 3rem;
+    }
+    .container{
+        display: flex;
+        align-items: baseline;
+        nav{
+            margin-left: 4rem;
+            display: flex;
+            align-items: center;
+            ul{
+            gap: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            }
+            li{
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+            }
+            button{
+                cursor: pointer;
+                font-weight: 600;
+            }
+        }
+        .button-wrap{
+            padding-left: 4rem;
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            a{
+                button{
+                    font-weight: 600;
+                    cursor: pointer;
+                    @include transition;
+                }
+            }
+        }
+    }
+    // DROPDOWN
+
+    .dropdown{
+        background-color: white;
+        position: absolute;
+        box-shadow: 0 .25rem .5rem 0 rgba(74,45,197,.1);
+        @include transition;
+
+    }
+    .dropdownLink.active{
+        color: $purple-main;
+    }
+
+    .dropdown.active{
+        transform: translateY(0rem);
+        opacity: 1;
+        pointer-events: all
+    }
+
+    .dropdown-angle.active{
+        transform: rotate(180deg);
+        filter: invert(40%) sepia(82%) saturate(5607%) hue-rotate(242deg) brightness(99%) contrast(104%);
+        transition: transform 0.1s ease-in
+
+    }
+    
+    
+
+    //DROPDOWN 1
+
+    .dropdown1{
+        @include transition;
+        border-radius: 1rem;
+        .group{
+            height: 12rem;
+            display: flex;
+            .tab{
+                border-radius: 0.5rem;
+                @include transition;
+            }
+            border-radius: 0.5rem;
+        }
+        padding: 4rem;
+        top: 10rem;
+        width: 80rem;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        .group:not(.group:last-of-type){
+            img{
+            filter: drop-shadow(22.7119px 23.941px 80px rgba(74,45,197,.11)) drop-shadow(8.74828px 9.22171px 25.4815px rgba(74,45,197,.0668148)) drop-shadow(1.8506px 1.95075px 6.51852px rgba(74,45,197,.0431852));
+
+            }
+            display: flex;
+            a{
+                padding: 2rem 4rem;
+                min-width: 50%;
+                display: flex;
+                span{
+                    color: $purple-main;
+                }
+                p{
+                    font-size: $text-small;
+                }
+            }
+        }
+        .group:last-of-type{
+            background-color: $dropdown1;
+            .tab{
+                padding: 2rem;
+                min-width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p{
+                    max-width: 100rem;
+                    font-size: $text-small;
+                }
+                .icon-wrap{
+                    @include transition;
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 6rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            
+        }
+        .icon{
+            height: 6rem;
+            transform: translateX(-2rem);
+        }
+        .angle{
+            height: 2rem;
+        }
+        .business{
+            height: 4rem;
+        }
+        transform: translateY(2rem);
+        opacity: 0;
+        pointer-events: none
+
+    }
+ 
+    .dropdown2{
+        @include transition;
+        border-radius: 1rem;
+        top: 10rem;
+        width: 80rem;
+        z-index: 2;
+        display: flex;
+        .md-txt{
+            padding-bottom: 2rem;
+            @include transition;
+            
+        }
+        .tab{
+            display: block;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            min-width: 100%;
+            @include transition;
+            p{
+                font-size: $text-small;
+            }
+        }
+        .col{
+        padding: 4rem;
+
+            min-width: 50%;
+        }
+        .col:last-of-type{
+            background-color: $dropdown2;
+        }
+        .guide{
+            .icon-wrap{
+                min-width: 6rem;
+                i{
+                    font-size: 2rem;
+                }
+                min-height: 6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $icon-hover;
+                border-radius: 12rem;
+            }
+            display: flex;
+            padding: 2rem 0rem;
+            gap: 2rem;
+        }
+        .careers::after{
+            content: "WE'RE HIRING";
+            font-size: $text;
+            padding: 0.5rem 1.5rem;
+            margin-left: 2rem;
+            background-color: $icon-hover;
+            border-radius: 20rem;
+            font-weight: 600;
+            color: $purple-main;
+        }
+
+        transform: translateY(2rem);
+        opacity: 0;
+        pointer-events: none
+
+    }
+    .dropdown3{
+        @include transition;
+        top: 10rem;
+        width: 80rem;
+        z-index: 2;
+        display: flex;
+        left: 0;
+        width: 100%;
+        .md-txt{
+            padding-bottom: 1rem;
+            @include transition;
+        }
+        .col{
+            padding: 4rem 8rem;
+            flex: 1;
+        }
+        .lg-txt{
+            padding-bottom: 2rem;
+            position: relative;
+            font-weight: 400;
+        }
+        .lg-txt::after{
+            content: '';
+            display: block;
+            width: 12%;
+            border-radius: 20rem;
+            background-color: $purple-main;
+            height: 0.7rem;
+        }
+
+        .tab{
+            transform: translateX(-2rem);
+            padding: 2rem;
+            display: block;
+            border-radius: 0.5rem;
+            min-width: 100%;
+            @include transition;
+            p{
+                font-size: $text-small;
+            }
+        }
+        .col:last-of-type{
+            display: flex;
+            flex-direction: column;
+            background-color: $dropdown2;
+        }
+        transform: translateY(2rem);
+        opacity: 0;
+        pointer-events: none
+    }
+
+    
+  .mobile-header{
+
+    height: 100%;
+    .mob-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        z-index: 2;
+            .mobnav{
+                padding: 2rem 6rem 0rem 6rem;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4rem;
+
+                  .moblink{
+                    font-size: $mobLinks;
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    img{
+                        height: 1.5rem;
+                    }
+                  }
+                }
+            }
+        .top{
+            padding: 2rem 6rem;
+
+            margin-bottom: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .letter{
+                height: 3.5rem;
+            }
+            .close{
+                height: 2rem;
+            }
+        }
+        .bottom{
+            min-height: 7rem;
+
+            border-top: 2px solid #E2DBFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        .back{
+            .md-text{
+                font-size: $md-txt;
+            }
+            transform: translateX(3rem);
+            margin-bottom: 3rem;
+            span{
+                opacity: 0.5;
+            }
+            a{
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+            }
+        }
+        .mobdropdown1{
+
+            display: block;
+            .tab{
+                min-width: calc(100% + 2rem);
+
+                @include transition;
+                border-radius: 0.5rem;
+                padding: 2rem;
+                display: flex;
+                align-items: center;
+                gap: 3rem;
+                .lg-txt{
+                    font-weight: 600;
+                    span{
+                        color: $purple-main;
+                    }
+                }
+                p{
+                    font-size: $text-small;
+                    font-weight: lighter;
+                }
+            }
+            .icon{
+                height: 7rem;
+            filter: drop-shadow(22.7119px 23.941px 80px rgba(74,45,197,.11)) drop-shadow(8.74828px 9.22171px 25.4815px rgba(74,45,197,.0668148)) drop-shadow(1.8506px 1.95075px 6.51852px rgba(74,45,197,.0431852));
+
+            }
+            .business-tab{
+                padding: 2rem;
+                min-width: calc(100% + 2rem);
+
+                margin-top: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p{
+                    max-width: 50rem;
+                }
+                .icon-wrap{
+                    @include transition;
+                    width: 5rem;
+                    height: 5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 20rem;
+                }
+                .angle{
+                    height: 2rem;
+                }
+            }
+            .business{
+                height: 4rem;
+            }
+            display: none;
+          
+        }
+        .mobdropdown2{
+            .md-txt{
+                font-weight: 600;
+            }
+            display: block ;
+            .tab{
+                @include transition;
+                border-radius: 0.5rem;
+                display: block;
+                min-width: calc(100% + 2rem);
+
+                padding: 2rem;
+                margin-bottom: 1rem;
+
+                p{
+                    font-size: $text-small;
+                    font-weight: lighter;
+                    min-width: 570rem;
+                }
+            }
+            .guide{
+                padding: 2rem;
+                p{
+                    min-width: 90rem;
+                }
+            }
+         .border{
+            border-bottom: 1px solid #D1D5DB ; 
+         }
+           display: none;
+        }
+        .mobdropdown3{
+            .col:not(.col:last-of-type){
+                border-bottom: 1px solid #D1D5DB;
+                margin-bottom: 1rem;
+            }
+            .md-txt{
+                font-weight: 600
+            }
+            .lg-txt{
+                transform: translateX(2rem);
+            }
+            display: block ;
+            .tab{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                min-width: calc(100% + 2rem);
+
+                border-radius: 0.5rem ;
+                @include transition;
+                display: block;
+                padding: 2rem;
+                transform: translateX(0rem);
+                p{
+                    font-size: $text-small;
+                    min-width: 80rem;
+                }
+            }
+            display: none;
+        }
+     
+    }
+
+  }
+  .mobdropdown{
+    transform: translateX(-2rem);
+  }
+  .mobdropdown.active{
+    display: block !important
+}
+
+.mobul.active{
+    display: none !important;
+}
+    
+
+    
+
+
+}
+
+
+

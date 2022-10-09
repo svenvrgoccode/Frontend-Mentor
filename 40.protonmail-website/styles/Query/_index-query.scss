@@ -58,26 +58,32 @@
         .icons{
             margin-bottom: 8rem;
             display: flex;
-            gap: 2rem;
+            gap: 6rem;
             .icon1,.icon2{
                 display: none;
             }
         }
     }
+
     .testimonial{
+        max-width: auto !important;
         .row{
-            transform: translateX(4rem);
-            gap: 10rem;
+            transform: translate(0);
+        }
+        .lg-txt{
+            height: 48rem;
         }
         .col{
-            min-width: 40rem;
+            min-width: 50%;
+            overflow: hidden;
+            opacity: 1 !important;
+        }
+        .carousel.active{
+            transform: translateX(-65%) !important;
         }
 
     }
-    .slideRow.left{
-        transform: translateX(-66rem) !important;
-    
-        }
+
     .story{
         .container{
             flex-direction: column ;
@@ -127,18 +133,77 @@
   }
 
 
+
   @media (max-width: 800px){
-    .testimonial{
+    .info{
         .row{
-            transform: translate(0);
-            .col{
-                min-width: 100%;
+            flex-direction: column;
+            p{
+                max-width: 100rem !important;
             }
         }
-        .slideRow.left{
-            transform: translateX(-112%) !important;
-        
-            }
     }
+    .testimonial{
+        .carousel{
+            display: none;
+        }
+        .button-wrap{
+            display: none !important;
+        }
+        .mobile-carousel{
+        transition: 1s ease-in;
+
+        display: flex !important;
+        gap: 6rem;
+        .col{
+            min-width: 100%;
+        }
+        }
+        .mobile-buttons{
+            min-width: 100%;
+            display: flex !important;
+            justify-content: space-between;
+            transform: translateY(-40rem);
+            .icon-wrap{
+                cursor: pointer;
+                height: 5rem;
+                width: 5rem;
+                border-radius: 20rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #DED7FB;
+            }
+            .mob-left{
+                left: 0;
+                rotate: 90deg;
+            }
+            .mob-right{
+                right: 0;
+                rotate: -90deg;
+            }
+            img{
+                height: 1.5rem;
+            }
+        }
+        .mobile-lines{
+            display: flex !important;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            gap: 3rem;
+            .line{
+                height: 0.5rem;
+                width: 6rem;
+                background-color: #E2DBFF;
+            }
+            .line.active{
+                width: 10rem;
+                background-color:#6D4AFF;
+                
+            }
+        }
+    }
+
 
   }

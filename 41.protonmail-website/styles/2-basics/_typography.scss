@@ -2,7 +2,7 @@
 @use '../1-helpers-colors/variables' as *;
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 
 html {
@@ -13,27 +13,41 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
+
+.sm-txt{
+  font-size: $text-small;
+  color: $text-purple-black ;
+
+}
+.md-txt{
+  font-size: $md-txt;
+  color: $text-purple-black ;
+
+}
+
+.lg-txt{
+
+  font-size: $lg-txt;
+  color: $text-purple-black ;
+
+}
+
+.xl-txt{
+  font-size: $header2;
+  color: $text-purple-black ;
+
+}
+
 .logo{
   font-size: $logo;
 
 }
 
-.md-txt{
-  font-size: $header4;
-}
-.lg-txt{
-  font-size: $header3;
-}
-
-.xl-txt{
-  font-size: $header2;
-}
 
 h1,h2,h3,h4,h5,h6{
   max-width: 65rem;
-  color: $text-purple-black;
-  font-weight: normal;
-  line-height: 1.2;
+  color: $text-purple-black ;
+  line-height: 1.1;
 }
 
 i{
@@ -52,7 +66,7 @@ h1 {
   a,
   p {
     font-size: $text;
-    max-width: 50rem;
+    max-width: 35rem;
   color: $text-purple-black ;
 
 
@@ -78,7 +92,8 @@ h1 {
   }
   a {
     text-decoration: none;
-    color: $text-color-black ;
+    color: $text-purple-black ;
+
  
   }
   

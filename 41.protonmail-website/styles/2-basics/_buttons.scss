@@ -1,0 +1,78 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+button{
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+header{
+    nav{
+        button{
+            background: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            img{
+                height: 0.7rem;
+            }
+        }
+    }
+    .button-wrap{
+        button{
+            padding: 1rem 3rem;
+            border-radius: 20rem;
+            border: 2px solid transparent;
+        }
+        a:first-of-type{
+            button{
+                background: none;
+                border: 2px solid $purple-main;
+                color: $purple-main;
+            }
+        }
+        a:last-of-type{
+            button{
+                background: $purple-main;
+                color: $text-color-white;
+            }
+        }
+    }
+    .mobile-header{
+        .bottom{
+            button{
+                padding: 1rem 3rem;
+                border-radius: 20rem;
+                border: 2px solid transparent;
+                font-weight: 600;
+            }
+            a:first-of-type{
+                button{
+                    background: none;
+                    border: 2px solid $purple-main;
+                    color: $purple-main;
+                }
+            }
+            a:last-of-type{
+                button{
+                    background: $purple-main;
+                    color: $text-color-white;
+                }
+            }
+        }
+    }
+}
+
+main{
+    button{
+        cursor: pointer;
+        @include transition;
+        background: $purple-main;
+        padding: 1.5rem 3rem;
+        border-radius: 20rem;
+        color: $text-color-white;
+        border: 2px solid transparent;
+        font-size: $mainBtn;
+    }
+}

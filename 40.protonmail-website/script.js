@@ -25,6 +25,7 @@ dropdown3Link.addEventListener('click',(e)=>{
 })
 
 window.onclick = function(e){
+    console.log(e.target)
     if(!e.target.matches('.dropdown1') && !e.target.matches('.dropdown1-link') && dropdown1.classList.contains('active')){
         dropdown1.classList.remove('active')
         angles[0].classList.remove('active')
@@ -126,35 +127,56 @@ dataLink.forEach((data)=>{
 })
 
 
-// TESTIMONIAL
+const slider = document.querySelector('.carousel')
+const left = document.querySelector('.left-wrap')
+const right = document.querySelector('.right-wrap')
+const slideTest = document.querySelectorAll('.carousel .slide')
 
-const leftArrow = document.querySelector('.left-wrap')
-const rightArrow = document.querySelector('.right-wrap')
-const slideRow = document.querySelector('.slideRow')
-const lines = document.querySelectorAll('.line')
-const first = document.querySelector('.first')
-const last = document.querySelector('.last')
 
-leftArrow.addEventListener('click',(e)=>{
-    slideRow.classList.add('left')
-    rightArrow.classList.remove('hide')
-    leftArrow.classList.add('hide')
-    lines[1].classList.add('color')
-    lines[0].classList.remove('color')
-    last.classList.remove('slideOpacity')
-    first.classList.add('slideOpacity')
 
+left.addEventListener('click',(e)=>{
+    slider.classList.add('active')
+    left.classList.add('hide')
+    right.classList.remove('hide')
+    slideTest[0].classList.remove('opacity')
+    slideTest[2].classList.add('opacity')
 })
-rightArrow.addEventListener('click',(e)=>{
-    slideRow.classList.remove('left')
-    leftArrow.classList.remove('hide')
-    rightArrow.classList.add('hide')
-    lines[0].classList.add('color')
-    lines[1].classList.remove('color')
-    last.classList.add('slideOpacity')
-    first.classList.remove('slideOpacity')
+
+right.addEventListener('click',(e)=>{
+    slider.classList.remove('active')
+    right.classList.add('hide')
+    left.classList.remove('hide')
+    slideTest[2].classList.remove('opacity')
+    slideTest[0].classList.add('opacity')
 })
 
 
 
+const mobileSlide = document.querySelector('.mobile-carousel')
+const mobArrows = document.querySelectorAll('.mobile-buttons .icon-wrap')
+const mobileLines = document.querySelectorAll('.mobile-lines .line')
+let index = 0
+let transValue = 108
+
+
+
+mobArrows.forEach((arrow)=>{
+    arrow.addEventListener('click',(e)=>{
+        if(arrow.matches('.mob-right')){
+            index++
+            if(index > 2){
+                index = 0
+            }
+            mobileSlide.style.transform = `translateX(-${index * transValue}%)`
+
+        }
+        if(arrow.matches('.mob-left')){
+            index--
+            if(index < 0){
+                index = 2
+            }
+            mobileSlide.style.transform = `translateX(-${index * transValue}%)`
+        }
+    })
+})
 

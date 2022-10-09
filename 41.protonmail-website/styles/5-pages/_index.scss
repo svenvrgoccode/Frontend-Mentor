@@ -1,0 +1,38 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+.intro{
+    background-image: url(../images/index/intro-bg.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 90rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10rem;
+    h1{
+        font-weight: 300;
+        span{
+            font-weight: 600;
+        }
+    }
+    .icon-wrap{
+        padding: 4rem 0rem;
+        display: flex;
+        gap: 4rem;
+        img{
+            height: 10rem;
+            filter: drop-shadow(22.7119px 23.941px 80px rgba(74,45,197,.11)) drop-shadow(8.74828px 9.22171px 25.4815px rgba(74,45,197,.0668148)) drop-shadow(1.8506px 1.95075px 6.51852px rgba(74,45,197,.0431852));
+        }
+        a{
+            @include transition;
+            border-radius: 2rem;
+            padding: 2rem;
+            p{
+                margin-top: 2rem;
+            }
+        }
+    } 
+}
