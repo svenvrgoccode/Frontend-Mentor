@@ -12,3 +12,240 @@
 // @media only screen and (max-width: 1200px) {
    
 //   }
+
+@media only screen and (max-width: 1400px) {
+    .intro{
+    
+        .icon-wrap{
+            gap: 1rem !important;
+            a{
+                img{
+                    height: 7rem;
+                }
+                padding: 1rem !important;
+            }
+        }
+    }
+    .data{
+        .container{
+            display: flex;
+            gap: 4rem;
+        }
+    }
+ 
+   .rules{
+  
+    .col:last-of-type{
+        display: none;
+    }
+    .col:first-of-type{
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .tab{
+            p{
+                height: auto ;
+            }
+        }
+        .data1:after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 200%;
+            transform: rotate(90deg) translateY(-0.7rem) scaleX(0.4);
+            bottom: -4rem;
+            background-color: #D1D5DB;
+            height: 0.2rem;
+        }
+        .data2:after{
+            content: '';
+            display: block;
+            position: absolute;
+            background-color: #D1D5DB;
+            width: 200%;
+            top: 25rem;
+            height: 0.2rem;
+        }
+    }
+
+   }
+   .reason{
+    display: flex;
+    h2{
+        order: 2;
+    }
+    .icon-wrap{
+        order: 1;
+        margin-bottom: 10rem;
+        position: static !important;
+    }
+    .icon1,.icon2{
+        display: none;
+    }
+   }
+   .testimonial{
+ 
+    .testimonial-wrap{
+        transform: translate(-02rem);
+      
+        .card{
+            min-width: 50%;
+        }
+    }
+   }
+  }
+
+
+  @media (max-width: 1000px){
+   .intro{
+    height: auto;
+    margin-bottom: 10rem;
+    background: none;
+    h1{
+        max-width: 50rem;
+    }
+   }
+   .data{
+    .container{
+        flex-direction: column;
+        .col{
+            min-width: 100%;
+        }
+        .col:first-of-type{
+            @include flex(center,center,column);
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .col:last-of-type{
+            img{
+                scale: 1;
+            }
+        }
+    }
+   }
+   .reason{
+    height: 50rem;
+    margin-bottom: 15rem;
+   }
+
+   .rules{
+    .heading{
+        padding-top: 0rem;
+    }
+    .tab{
+        position: relative;
+    }
+
+    
+    h2{
+        margin-top: 6rem;
+    }
+    .container{
+        .tab{
+            min-width: 100%;
+            position: relative;
+        }
+        display: flex;
+        max-height: 100%;
+        flex-direction: column;
+        .group{
+            flex-direction: column;
+            min-width: 100% ;
+
+        }
+   
+        .tab::after{
+            content: '';
+            width: 90%;
+            background-color: #EDEDED;
+            height: 0.5rem;
+            position: absolute;
+            display: block;
+            position: absolute;
+
+        }
+        .tab::after{
+            content: '';
+            display: block !important;
+            width: 90%;
+            background-color: #EDEDED;
+            height: 0.3rem;
+            position: absolute;
+            top: -3.7rem;
+
+
+        }
+        .data2:after{
+            display: none !important;
+        }
+        .data2::before{
+            content: '';
+            display: block !important;
+            width: 90%;
+            background-color: #EDEDED;
+            height: 0.3rem;
+            position: absolute;
+            top: -3.7rem;
+        }
+     
+      
+    }
+   }
+   .info{
+    .container{
+       .group{
+        flex-direction: column;
+        p{
+            max-width: 100rem;
+        }
+       }
+    }
+
+   }
+   .story{
+    .container{
+        display: flex;
+        flex-direction: column;
+        .col{
+            min-width: 100%;
+        }
+        .txt{
+            max-width: 70% !important;
+            height: 60rem;
+        }
+    }
+   }
+   .free{
+    .icon-wrap{
+        display: flex;
+        justify-content: center;
+    }
+   }
+   .business{
+    .businessimgbottom{
+        transform: translateX(4rem);
+    }
+    .container{
+        flex-direction: column;
+     .col:first-of-type{
+        transform: translate(0) !important;
+        img{
+            scale: 1;
+            object-fit: contain;
+        }
+     }
+     .col:last-of-type{
+        @include flex(center,center,column);
+        text-align: center;
+     }
+    }
+   }
+   .testimonial{
+    display: none;
+   }
+   .testi-mobile{
+    display: block;
+    height: 50rem;
+   }
+  }

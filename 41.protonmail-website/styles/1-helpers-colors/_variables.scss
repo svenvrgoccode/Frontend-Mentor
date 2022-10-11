@@ -1,16 +1,16 @@
 // FONT SIZES
 
-$header1: clamp(4.7rem,5vw + 1rem,5rem); 
-$header2: clamp(3.4rem,4vw + 1rem,3.6rem);
+$header1: clamp(2.7rem,3vw + 1rem,4rem); 
+$header2: clamp(3.4rem,4vw + 1rem,3.8rem);
 $header3: clamp(2.5rem,3vw + 1rem,2.6rem); 
 $header4: clamp(1.4rem,2vw + 1rem,2rem);
 $header5: clamp(1.5rem,2vw + 1rem,2rem);
 $header6: clamp(1rem,1vw + 1rem,1.3rem);
-$text: clamp(1.3rem,2vw + 1rem,1.6rem);
-$text-small: clamp(1.1rem,1vw + 1rem,1.6rem);
+$text: clamp(1.3rem,2vw + 1rem,1.8rem);
+$text-small: clamp(1.4rem,1vw + 1rem,1.6rem);
 $small: clamp(1rem,1vw + 1rem,1.2rem);
 $logo: clamp(1.8rem,2vw + 1rem,2.4rem);
-$mainBtn: clamp(1.4rem,2vw + 1rem,2rem);
+$mainBtn: clamp(1.4rem,2vw + 1rem,2.3rem);
 $mobLinks: clamp(2.5rem,3vw + 1rem,2.6rem); 
 $md-txt: clamp(1.4rem,2vw + 1rem,1.3em);
 $lg-txt: clamp(1.8rem,2vw + 1rem,2.3rem);
@@ -28,7 +28,7 @@ $white:white;
 
 // COLOR PALLETE 
 
-
+$almost-black: #1F2937;
 $purple-main: #6D4AFF;
 $color-hover: #4A2DC5;
 $icon-hover: #EAE6FD;

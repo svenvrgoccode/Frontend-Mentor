@@ -2,8 +2,9 @@
 @use '../1-helpers-colors/variables' as *;
 
 button{
-    white-space: nowrap;
     cursor: pointer;
+    white-space: nowrap;
+    @include transition;
 }
 
 header{
@@ -66,13 +67,18 @@ header{
 
 main{
     button{
-        cursor: pointer;
-        @include transition;
-        background: $purple-main;
-        padding: 1.5rem 3rem;
-        border-radius: 20rem;
-        color: $text-color-white;
+        background-color: none;
+        padding: 2rem 4rem;
         border: 2px solid transparent;
+        border-radius: 20rem;
+        background: $purple-main;
+        color: $text-color-white;
+        font-weight: 600;
         font-size: $mainBtn;
+    }
+    .data{
+        button{
+            min-width: 42rem;
+        }
     }
 }

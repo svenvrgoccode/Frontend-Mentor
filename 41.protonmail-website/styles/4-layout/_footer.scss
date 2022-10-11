@@ -1,2 +1,122 @@
 @use '../1-helpers-colors/mixins' as *;
 @use '../1-helpers-colors/variables' as *;
+
+.foot-plus{
+    display: none;
+}
+
+footer{
+    p{
+        font-size: $text-small;
+    }
+    
+    padding: 8rem 0rem;
+    .letter{
+        height: 8rem;
+    }
+    .proton-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        p{
+            max-width: 15rem;
+        }
+        .icon-wrap{
+            display: flex;
+            gap: 1rem;
+            i{
+                color: $purple-main;
+                font-size: 2rem;
+            }
+        }
+    }
+    .lg-txt{
+        margin-bottom: 2rem;
+        font-weight: 500;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .row1{
+        display: flex;
+        .col{
+            flex: 1;
+        }
+        border-bottom: 1px solid #E2DBFF;
+        padding-bottom: 4rem;
+    }
+    .row2{
+        padding-top: 4rem;
+
+        .group{
+            display: flex;
+            gap: 4rem;
+        }
+        .support-wrap{
+            display: flex;
+            flex-direction: column;
+            margin-left: 5rem;
+        }
+        .support{
+            margin-top: 1rem;
+            transform: translateX(-5rem);
+            align-items: flex-start;
+            margin-left: 5rem;
+            display: flex;
+        }
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    select{
+        padding: 1rem 5rem;
+        border-radius: 20rem;
+        background: none;
+        border: 3px solid $purple-main;
+        color: $purple-main;
+        font-weight: 600;
+        appearance: none;
+        background-image: url(../icons/angle-down.svg);
+        background-repeat: no-repeat;
+        background-size: 1rem;
+        background-position: 13rem;
+    }
+    .europe{
+        margin-right: 4rem;
+    }
+    .select-wrap{
+        position: relative;
+        .globe{
+            position: absolute;
+            height: 1.8rem;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 1.4rem;
+            filter: invert(27%) sepia(100%) saturate(2821%) hue-rotate(242deg) brightness(101%) contrast(102%);
+        }
+    }
+    .row3{
+        padding-top: 6rem;
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: 4rem;
+        }
+    }
+    .row4{
+        li{
+            padding-top: 4rem;
+            font-size: $text-small;
+        }
+        ul{
+            display: flex;
+            gap: 2rem;
+            flex-direction: row;
+    
+        }
+    }
+   
+}

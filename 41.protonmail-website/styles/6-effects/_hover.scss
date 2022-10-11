@@ -144,3 +144,36 @@ main{
         }
     }
 }
+
+.rules{
+    .tab:hover{
+        border: 2px solid $purple-main;
+        p{
+            color: $purple-main;
+        }
+        .disc1::after{
+            width: 64%;
+        }
+        .disc2::after{
+            width: 79%;
+        }
+        .disc3::after{
+            width: 67%;
+        }
+        .disc4::after{
+            width: 64%;
+        }
+    }
+}
+
+.info{
+    .learn:hover::after{
+        width: 20%;
+    }
+}
+
+footer{
+    .plus-wrap:hover{
+        background: none !important;
+    }
+}

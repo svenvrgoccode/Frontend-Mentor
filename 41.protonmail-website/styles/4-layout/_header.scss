@@ -4,6 +4,7 @@
 .fa-bars{
     font-size: 3rem;
     display: none !important;
+    cursor: pointer;
 }
 
 .close{
@@ -154,7 +155,7 @@ header{
             height: 2rem;
         }
         .business{
-            height: 4rem;
+            height: 3rem;
         }
         transform: translateY(2rem);
         opacity: 0;
@@ -278,9 +279,13 @@ header{
 
     
   .mobile-header{
-
-    height: 100%;
+ 
     .mob-container{
+        background-color: white;
+        transform: translateX(100%);
+    
+        @include transition;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -375,6 +380,7 @@ header{
             filter: drop-shadow(22.7119px 23.941px 80px rgba(74,45,197,.11)) drop-shadow(8.74828px 9.22171px 25.4815px rgba(74,45,197,.0668148)) drop-shadow(1.8506px 1.95075px 6.51852px rgba(74,45,197,.0431852));
 
             }
+           
             .business-tab{
                 padding: 2rem;
                 min-width: calc(100% + 2rem);
@@ -399,7 +405,7 @@ header{
                     height: 2rem;
                 }
             }
-            .business{
+            .businessmob{
                 height: 4rem;
             }
             display: none;
@@ -479,6 +485,11 @@ header{
 .mobul.active{
     display: none !important;
 }
+
+.mob-container.active{
+    transform: translateX(0) 
+
+}
     
 
     
@@ -486,5 +497,14 @@ header{
 
 }
 
+.businessimg{
+    height: 4rem !important;
+}
 
+.dropdownLink{
+    transition: none !important;
+}
 
+.moblink{
+    transition: none !important;
+}

@@ -35,6 +35,8 @@ body{
 .xl-txt{
   font-size: $header2;
   color: $text-purple-black ;
+  line-height: 1.1;
+
 
 }
 
@@ -66,7 +68,7 @@ h1 {
   a,
   p {
     font-size: $text;
-    max-width: 35rem;
+    max-width: 50rem;
   color: $text-purple-black ;
 
 
