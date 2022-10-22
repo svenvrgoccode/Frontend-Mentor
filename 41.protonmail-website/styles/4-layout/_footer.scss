@@ -70,8 +70,13 @@ footer{
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        p{
+            
+            font-size: $small2 !important; 
+        }
     }
     select{
+        cursor: pointer;
         padding: 1rem 5rem;
         border-radius: 20rem;
         background: none;

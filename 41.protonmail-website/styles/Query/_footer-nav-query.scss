@@ -3,12 +3,7 @@
 
 
 
-// @media only screen and (max-width: 768px) {
-   
-//   }
-// @media only screen and (max-width: 992px) {
-   
-//   }
+
 @media only screen and (max-width: 1400px) {
 
     .desknav{
@@ -99,4 +94,42 @@
         }
     }
  }
+}
+
+
+
+@media only screen and (max-width: 700px){
+    .mobdropdown1 {
+        .tab{
+            padding: 1.5rem !important;
+            margin-bottom: 1rem;
+        }
+        .icon{
+            transform: translateX(1rem);
+        }
+      .business-tab{
+        p{
+            max-width: 25rem !important;
+        }
+      }
+    
+    }
+    .mobdropdown3 {
+        .tab{
+            p{
+                max-width: auto !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .mobdropdown1 {
+        .business-tab{
+            p{
+                max-width: 15rem !important;
+            }
+          }
+    
+    }
 }

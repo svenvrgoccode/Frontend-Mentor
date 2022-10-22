@@ -4,7 +4,6 @@
 .fa-bars{
     font-size: 3rem;
     display: none !important;
-    cursor: pointer;
 }
 
 .close{
@@ -41,7 +40,7 @@ header{
             }
         }
         .button-wrap{
-            padding-left: 4rem;
+            padding-left: 8rem;
             margin-left: auto;
             display: flex;
             align-items: center;
@@ -60,7 +59,7 @@ header{
     .dropdown{
         background-color: white;
         position: absolute;
-        box-shadow: 0 .25rem .5rem 0 rgba(74,45,197,.1);
+        box-shadow: 0.35rem .5rem 0 rgba(74,45,197,.1);
         @include transition;
 
     }
@@ -356,7 +355,7 @@ header{
 
             display: block;
             .tab{
-                min-width: calc(100% + 2rem);
+                min-width: calc(100% + 4rem);
 
                 @include transition;
                 border-radius: 0.5rem;
@@ -383,7 +382,8 @@ header{
            
             .business-tab{
                 padding: 2rem;
-                min-width: calc(100% + 2rem);
+                min-width: calc(100% + 4rem);
+                position: relative;
 
                 margin-top: 2rem;
                 display: flex;
@@ -393,6 +393,8 @@ header{
                     max-width: 50rem;
                 }
                 .icon-wrap{
+                    position: absolute;
+                    right: 1rem;
                     @include transition;
                     width: 5rem;
                     height: 5rem;
@@ -420,7 +422,7 @@ header{
                 @include transition;
                 border-radius: 0.5rem;
                 display: block;
-                min-width: calc(100% + 2rem);
+                min-width: calc(100% + 4rem);
 
                 padding: 2rem;
                 margin-bottom: 1rem;
@@ -428,13 +430,13 @@ header{
                 p{
                     font-size: $text-small;
                     font-weight: lighter;
-                    min-width: 570rem;
+                    min-width: auto;
                 }
             }
             .guide{
                 padding: 2rem;
                 p{
-                    min-width: 90rem;
+                    min-width: auto;
                 }
             }
          .border{

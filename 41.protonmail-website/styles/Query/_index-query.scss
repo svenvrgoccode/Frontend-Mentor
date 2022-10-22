@@ -12,8 +12,31 @@
 // @media only screen and (max-width: 1200px) {
    
 //   }
+@media (max-width: 1700px){
+    .testimonial-wrap{
+        transform: translate(-5em) !important;
+    
+        }
+        .testimonial-wrap.active{
+            transform: translateX(-60rem) !important;
+        }
+}
 
-@media only screen and (max-width: 1400px) {
+@media (max-width: 1600px){
+   
+    .testimonial-wrap{
+    transform: translate(5em) !important;
+
+    }
+
+    .testimonial-wrap.active{
+        transform: translateX(-65rem) !important;
+    }
+  
+}
+
+@media only screen and (max-width: 1508px) {
+  
     .intro{
     
         .icon-wrap{
@@ -32,12 +55,14 @@
             gap: 4rem;
         }
     }
+    .tab{
+        display: none;
+        gap: 0rem !important;
+    }
  
    .rules{
   
-    .col:last-of-type{
-        display: none;
-    }
+   
     .col:first-of-type{
         min-width: 100%;
         display: flex;
@@ -69,6 +94,8 @@
         }
     }
 
+ 
+
    }
    .reason{
     display: flex;
@@ -86,9 +113,8 @@
    }
    .testimonial{
  
+ 
     .testimonial-wrap{
-        transform: translate(-02rem);
-      
         .card{
             min-width: 50%;
         }
@@ -97,7 +123,8 @@
   }
 
 
-  @media (max-width: 1000px){
+  @media (max-width: 1300px){
+
    .intro{
     height: auto;
     margin-bottom: 10rem;
@@ -128,70 +155,12 @@
     height: 50rem;
     margin-bottom: 15rem;
    }
+ 
 
-   .rules{
-    .heading{
-        padding-top: 0rem;
-    }
-    .tab{
-        position: relative;
-    }
-
-    
-    h2{
-        margin-top: 6rem;
-    }
-    .container{
-        .tab{
-            min-width: 100%;
-            position: relative;
-        }
-        display: flex;
-        max-height: 100%;
-        flex-direction: column;
-        .group{
-            flex-direction: column;
-            min-width: 100% ;
-
-        }
    
-        .tab::after{
-            content: '';
-            width: 90%;
-            background-color: #EDEDED;
-            height: 0.5rem;
-            position: absolute;
-            display: block;
-            position: absolute;
-
-        }
-        .tab::after{
-            content: '';
-            display: block !important;
-            width: 90%;
-            background-color: #EDEDED;
-            height: 0.3rem;
-            position: absolute;
-            top: -3.7rem;
 
 
-        }
-        .data2:after{
-            display: none !important;
-        }
-        .data2::before{
-            content: '';
-            display: block !important;
-            width: 90%;
-            background-color: #EDEDED;
-            height: 0.3rem;
-            position: absolute;
-            top: -3.7rem;
-        }
-     
-      
-    }
-   }
+
    .info{
     .container{
        .group{
@@ -204,6 +173,7 @@
 
    }
    .story{
+    margin-bottom: 10rem;
     .container{
         display: flex;
         flex-direction: column;
@@ -249,3 +219,27 @@
     height: 50rem;
    }
   }
+
+
+  @media(max-width: 500px){
+    h1{
+        padding: 0rem 1rem;
+    }
+    button{
+        min-width: auto !important;
+    }
+    .rules{
+        .heading{
+            padding: 0rem 1rem;
+        }
+    }
+  }
+
+
+
+//   .group{
+//     padding: 0rem 10%;
+//     min-width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+// }
