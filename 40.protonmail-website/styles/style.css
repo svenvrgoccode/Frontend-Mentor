@@ -1285,6 +1285,25 @@ footer .part4 ul li::after {
   height: 8rem;
 }
 
+.privacy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.privacy h1 {
+  max-width: 80rem;
+  margin-bottom: 2rem;
+}
+.privacy button {
+  margin-top: 4rem;
+}
+
+footer {
+  display: none;
+}
+
 header nav li:hover a {
   color: #6D4AFF;
 }

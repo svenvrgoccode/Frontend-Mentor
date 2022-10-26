@@ -1,0 +1,21 @@
+@use '../1-helpers-colors/mixins' as *;
+@use '../1-helpers-colors/variables' as *;
+
+
+.privacy{
+    @include flex(center,center,column);
+    text-align: center;
+    h1{
+        max-width: 80rem;
+        margin-bottom: 2rem;
+    }
+    button{
+        margin-top: 4rem;
+    }
+}
+
+
+
+footer{
+    display: none;
+}
